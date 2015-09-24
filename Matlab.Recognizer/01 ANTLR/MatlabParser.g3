@@ -1,0 +1,688 @@
+/* 
+ * [The BSD 3-Clause License]
+ * Copyright (c) 2015, Samuel Suffos
+ * All rights reserved.
+ * 
+ * Redistribution and use in source and binary forms, with or without modification, 
+ * are permitted provided that the following conditions are met:
+ * 
+ * 1. Redistributions of source code must retain the above copyright notice, this list 
+ *    of conditions and the following disclaimer.
+ * 
+ * 2. Redistributions in binary form must reproduce the above copyright notice, this 
+ *    list of conditions and the following disclaimer in the documentation and/or other 
+ *    materials provided with the distribution.
+ * 
+ * 3. Neither the name of the copyright holder nor the names of its contributors may be 
+ *    used to endorse or promote products derived from this software without specific 
+ *    prior written permission.
+ * 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY 
+ * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES 
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT 
+ * SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, 
+ * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED 
+ * TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR 
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN 
+ * ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH 
+ * DAMAGE.
+ *
+ */
+
+// This file has been written in ANTLR 3.5.0.2
+// This file is part of a parser for Matlab 8.1 (R2013a) 
+
+parser grammar MatlabParser ;
+
+// OPTIONS ============================================================================================================
+
+options
+{
+    language = CSharp3 ;
+
+	tokenVocab = MatlabLexer ;
+
+	output = AST ;
+}
+
+// TOKENS =============================================================================================================
+
+tokens
+{
+    SCRIPTFILE ; FUNCTIONFILE ; CLASSFILE ;
+	CLASSREF ; FUNCTIONREF ;
+	OUTPUT ; INPUT ; ATTRIBUTE ;
+	EVENTSECTION ; PROPERTYSECTION ; METHODSECTION ; ENUMERATIONSECTION ;
+	EVENT ; PROPERTY ; REGULARMETHOD ; EXTERNALMETHOD ; ENUMERATION ;
+	ACTION ; ABORT ; IFELSE ; NESTEDFUNCTION ; SWITCHCASE ; TRYCATCH ; 
+	POSITIVE ; NEGATIVE ;
+	REGULARARRAY ; CELLARRAY ;
+	VCAT ; HCAT ;
+	VAR ; DOTEXPRESSION ; DOTNAME ; PARENTHESIS ; CURLYBRACE ; ATBASE ; 
+	FUNCTIONHANDLE ; ANONYMOUSFUNCTION ;
+	ALL ; STORAGE ;
+	NAME ; PRINT ; NOPRINT ;
+}
+
+// ACTIONS ============================================================================================================
+
+@parser::header 
+{
+/* 
+ * [The BSD 3-Clause License]
+ * Copyright (c) 2015, Samuel Suffos
+ * All rights reserved.
+ * 
+ * Redistribution and use in source and binary forms, with or without modification, 
+ * are permitted provided that the following conditions are met:
+ * 
+ * 1. Redistributions of source code must retain the above copyright notice, this list 
+ *    of conditions and the following disclaimer.
+ * 
+ * 2. Redistributions in binary form must reproduce the above copyright notice, this 
+ *    list of conditions and the following disclaimer in the documentation and/or other 
+ *    materials provided with the distribution.
+ * 
+ * 3. Neither the name of the copyright holder nor the names of its contributors may be 
+ *    used to endorse or promote products derived from this software without specific 
+ *    prior written permission.
+ * 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY 
+ * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES 
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT 
+ * SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, 
+ * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED 
+ * TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR 
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN 
+ * ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH 
+ * DAMAGE.
+ *
+ */
+}
+
+@parser::namespace {Matlab.Recognizer}
+
+@parser::modifier {internal}
+
+@parser::ctorModifier {public}
+
+// RULES ==============================================================================================================
+
+// FILE ---------------------------------------------------------------------------------------------------------------
+
+public file : scriptFile -> scriptFile 
+			| functionFile -> functionFile 
+			| classFile -> classFile 
+			;
+
+// SCRIPT FILE --------------------------------------------------------------------------------------------------------
+
+scriptFile : statements EOF -> ^(SCRIPTFILE[""] (statements)?) ;
+
+statements : (statement | xEOS)* -> (statement)* ;
+
+// FUNCTION FILE ------------------------------------------------------------------------------------------------------
+
+functionFile : (openFunctionFile)=> openFunctionFile -> openFunctionFile 
+			 | closeFunctionFile -> closeFunctionFile 
+			 ;
+
+// OPEN -----------------------------------------------------
+
+openFunctionFile : (EOL)* openFunctions EOF -> ^(FUNCTIONFILE[""] openFunctions) ;
+
+openFunctions : (openFunction)+ -> (openFunction)+ ;
+
+openFunction : FUNCTION functionSignature openBody -> ^(FUNCTION functionSignature (openBody)?) ;
+
+functionSignature : outputPortion functionName (inputPortion)? -> functionName (inputPortion)? (outputPortion)?
+				  | name (inputPortion)? -> name (inputPortion)?
+				  ;
+
+outputPortion : output ASSIGN -> output 
+			  | outputVector ASSIGN -> (outputVector)?
+			  ;
+
+output : name -> ^(OUTPUT[""] name) ;
+
+name : xID -> ^(NAME[""] xID) ;
+
+outputVector : LSQUARE (vectorOutputs)? RSQUARE -> (vectorOutputs)? ;
+
+vectorOutputs : vectorOutput ({Separator_CommaFollowsOrSpacesPrecede()}?=> (COMMA)? vectorOutput)* -> (vectorOutput)+ ;
+
+vectorOutput : name ({Method_SignatureIsActive()}?=> filter)? -> ^(OUTPUT[""] name (filter)?) ;
+
+filter : AT classReference -> classReference ;
+
+functionName : xFUNCTIONID -> ^(NAME[""] xFUNCTIONID) ;
+
+inputPortion : LPAREN (parameters)? RPAREN -> (parameters)? ;
+
+parameters : parameter (COMMA parameter)* -> (parameter)+ ;
+
+parameter : parameterName ({Method_SignatureIsActive()}?=> filter)? -> ^(INPUT[""] parameterName (filter)?) ;
+
+parameterName : xPARAMETERID -> ^(NAME[""] xPARAMETERID) ;
+
+openBody : (xEOS openItems)? -> (openItems)? ;
+
+openItems : (openItem | xEOS)* -> (openItem)* ;
+
+openItem : statement -> statement ;
+
+// CLOSE ----------------------------------------------------
+
+closeFunctionFile : (EOL)* closeFunctions (EOL)* EOF -> ^(FUNCTIONFILE[""] closeFunctions) ;
+
+closeFunctions : closeFunction ((EOL)* closeFunction)* -> (closeFunction)+ ;
+
+closeFunction : FUNCTION functionSignature closeBody END -> ^(FUNCTION functionSignature (closeBody)?) ;
+
+closeBody : (xEOS closeItems)? -> (closeItems)? ;
+
+closeItems : (closeItem | xEOS)* -> (closeItem)* ;
+
+closeItem : nestedFunction -> nestedFunction 
+          | statement -> statement 
+		  ;
+
+nestedFunction : FUNCTION functionSignature closeBody END -> ^(NESTEDFUNCTION[$FUNCTION] functionSignature (closeBody)?) ;
+
+// CLASS FILE ---------------------------------------------------------------------------------------------------------
+
+classFile : (EOL)* class (EOL)* (closeFunctions (EOL)*)? EOF -> ^(CLASSFILE[""] class (closeFunctions)?) ;
+
+class : CLASSDEF (annotationPortion)? name (genealogyPortion)? xEOS sections END -> ^(CLASSDEF name (genealogyPortion)? (annotationPortion)? (sections)?) ;
+
+annotationPortion : LPAREN attributes RPAREN -> attributes ;
+
+attributes : attribute (COMMA attribute)* -> (attribute)+ ;
+
+attribute : NOT name -> ^(ATTRIBUTE[""] name ^(VAR[""] ^(NAME[""] ^(ID["false"])))) 
+		  | name -> ^(ATTRIBUTE[""] name ^(VAR[""] ^(NAME[""] ^(ID["true"])))) 
+          | name ASSIGN expression -> ^(ATTRIBUTE[""] name expression) 
+		  ;
+
+genealogyPortion : LT baseClasses -> baseClasses ;
+
+baseClasses : classReference (AND classReference)* -> (classReference)+ ;
+
+classReference : fullClassName -> ^(CLASSREF[""] fullClassName) ;
+
+fullClassName : xID ({true}?=> DOT xANYID)* -> ^(NAME[""] xID (xANYID)*) ;
+
+sections : (section | xEOS)* -> (section)* ;
+
+section : eventSection -> eventSection  
+		| propertySection -> propertySection  
+		| methodSection -> methodSection 
+		| enumerationSection -> enumerationSection 
+		;
+
+// EVENTS ---------------------------------------------------
+
+eventSection : xEVENTS (annotationPortion)? events END -> ^(EVENTSECTION[$xEVENTS.start] (annotationPortion)? (events)?) ;
+
+events : (event | xEOS)* -> (event)* ;
+
+event : name xEOS -> ^(EVENT[""] name) ;
+
+// PROPERTIES -----------------------------------------------
+
+propertySection : xPROPERTIES (annotationPortion)? properties END -> ^(PROPERTYSECTION[$xPROPERTIES.start] (annotationPortion)? (properties)?) ;
+
+properties : (property | xEOS)* -> (property)* ;
+
+property : name (filter)? (ASSIGN expression)? -> ^(PROPERTY[""] name (filter)? (expression)?) ;
+
+// METHODS --------------------------------------------------
+
+methodSection : xMETHODS (annotationPortion)? methods END -> ^(METHODSECTION[$xMETHODS.start] (annotationPortion)? (methods)?) ;
+
+methods : (method | xEOS)* -> (method)* ;
+
+method : regularMethod -> regularMethod 
+	   | externalMethod -> externalMethod 
+	   ;
+
+regularMethod : FUNCTION methodSignature closeBody END -> ^(REGULARMETHOD[$FUNCTION] methodSignature (closeBody)?) ;
+
+methodSignature 
+@init {Method_EnterSignature();} : 
+  (outputPortion)? methodName1 (inputPortion)? -> methodName1 (inputPortion)? (outputPortion)?
+| outputPortion methodName2 (inputPortion)? -> methodName2 (inputPortion)? (outputPortion)?
+| methodName3 (inputPortion)? -> methodName3 (inputPortion)?
+;
+finally {Method_ExitSignature();}
+
+methodName1 : xID DOT xFUNCTIONID -> ^(NAME[""] xID xFUNCTIONID) ;
+
+methodName2 : xFUNCTIONID -> ^(NAME[""] xFUNCTIONID) ;
+
+methodName3 : xID -> ^(NAME[""] xID) ;
+
+externalMethod : methodSignature xEOS -> ^(EXTERNALMETHOD[""] methodSignature) ;
+
+// ENUMERATIONS ---------------------------------------------
+
+enumerationSection : xENUMERATION (annotationPortion)? enumerations END -> ^(ENUMERATIONSECTION[$xENUMERATION.start] (annotationPortion)? (enumerations)?) ;
+
+enumerations : (enumeration | xEOS)* -> (enumeration)* ;
+
+enumeration : name (call)? -> ^(ENUMERATION[""] name (call)?) ;
+
+call 
+@init {Balance_EnterParenthesis(); Index_EnterParenthesis();} : 
+LPAREN (expressions)? RPAREN -> (expressions)? ;
+finally {Index_ExitParenthesis(); Balance_ExitParenthesis();}
+
+expressions : expression (COMMA expression)* -> (expression)+ ;
+
+// STATEMENTS ---------------------------------------------------------------------------------------------------------
+
+statement : (assignment)=> assignment -> assignment  
+          | (action)=> action -> action  
+		  | (simpleCommand)=> simpleCommand -> simpleCommand  
+		  | (abortCommand)=> abortCommand -> abortCommand  
+		  | standardCommand -> standardCommand  
+		  | bang -> bang 
+          | break -> break  
+          | continue -> continue  
+          | for -> for 
+          | global -> global 
+          | if -> if 
+          | parfor -> parfor 
+          | persistent -> persistent 
+          | return -> return 
+		  | spmd -> spmd 
+          | switch -> switch 
+          | try -> try 
+          | while -> while 
+          ;         
+
+// ASSIGNMENT -----------------------------------------------
+
+assignment : {(Command_IsEnabled() || !Command_IsEnabled())}?=> assignmentCore -> assignmentCore ;
+
+assignmentCore : chain ASSIGN expression xEOS -> ^(ASSIGN chain expression xEOS) 
+			   | storage ASSIGN expression xEOS -> ^(ASSIGN storage expression xEOS) 
+			   ;
+
+storage 
+@init {Balance_EnterStorageSquareBrace();} : 
+LSQUARE (COMMA)? slots (COMMA)? RSQUARE -> ^(STORAGE[""] slots) ;
+finally {Balance_ExitStorageSquareBrace();}
+
+slots : slot ({Separator_CommaFollowsOrSpacesPrecede()}?=> (COMMA)? slot)* -> (slot)+ ;
+
+slot : chain -> chain 
+	 | metaclass -> metaclass 
+	 | NOT -> ^(VAR[""] ^(NAME[""] ID[$NOT]))
+	 ;
+
+// ACTION ---------------------------------------------------
+
+action : {(Command_IsEnabled() || !Command_IsEnabled())}?=> expression xEOS -> ^(ACTION[""] expression xEOS) ;
+
+// SIMPLE COMMAND -------------------------------------------
+
+simpleCommand : {Command_IsEnabled()}?=> var simpleTexts xEOS -> ^(ACTION[""] ^(PARENTHESIS[""] var simpleTexts) xEOS) ;
+
+simpleTexts : simpleText ({Separator_SpacesPrecede()}?=> simpleText)* -> (simpleText)+ ;
+
+simpleText 
+@init {string text = null;} : 
+(x1=simpleBlock {text = $x1.blockText;}) (options {greedy=true;}: {!Separator_SpacesPrecede()}?=> x2=simpleBlock {text += $x2.blockText;})* {text = Text_QuoteString(text);} -> STRING[$x1.start, text] ;
+
+simpleBlock returns [string blockText = null] : 
+  x1=STRING {$blockText = Text_UnquoteString($x1.text);} 
+| x2= ~(COMMA | SEMICOLON | EOL | STRING | CTRANS | TRANS | QUOTATION | LPAREN | RPAREN | LSQUARE | RSQUARE | LCURLY | RCURLY) {$blockText = $x2.text;} 
+;
+
+// ABORT COMMAND ----(triggers reparsing)--------------------
+
+abortCommand : {Command_IsEnabled()}?=> {Command_Mark();} var {Command_Abort();} -> ABORT ;
+
+// STANDARD COMMAND -----------------------------------------
+
+standardCommand : COMMAND standardTexts xEOS -> ^(ACTION[""] ^(PARENTHESIS[""] ^(VAR[""] ^(NAME[""] ID[$COMMAND])) standardTexts) xEOS) ;
+
+standardTexts : standardText ({Separator_SpacesPrecede()}?=> standardText)* -> (standardText)+ ;
+
+standardText 
+@init {string text = null;} : 
+(x1=standardBlock {text = $x1.blockText;}) (options {greedy=true;}: {!Separator_SpacesPrecede()}?=> x2=standardBlock {text += $x2.blockText;})* {text = Text_QuoteString(text);} -> STRING[$x1.start, text] ;
+
+standardBlock returns [string blockText = null] : 
+   x1=STRINGBLOCK {$blockText = Text_UnquoteString($x1.text);}
+ | x2=DEFAULTBLOCK {$blockText = $x2.text;}
+ ;
+
+// BANG -----------------------------------------------------
+
+bang 
+@init {string line = null;} : 
+EXCLAMATION LINE {line = Text_QuoteString($LINE.text);} xEOL -> ^(EXCLAMATION STRING[$LINE, line] xEOL) ;
+
+// BREAK ----------------------------------------------------
+
+break : BREAK xEOS -> ^(BREAK xEOS) ;
+
+// CONTINUE -------------------------------------------------
+
+continue : CONTINUE xEOS -> ^(CONTINUE xEOS) ;
+
+// FOR ------------------------------------------------------
+
+for : FOR forHead statements END xEOS -> ^(FOR forHead (statements)? xEOS) ;
+
+forHead : var ASSIGN expression -> var expression
+		| LPAREN var ASSIGN expression RPAREN -> var expression
+		;
+
+// GLOBAL ---------------------------------------------------
+
+global : GLOBAL (var)+ xEOS -> ^(GLOBAL (var)+ xEOS) ;
+
+// IF -------------------------------------------------------
+
+if : ifPart (elseIfPart)* (elsePart)? END xEOS -> ^(IFELSE[$ifPart.start] ifPart (elseIfPart)* (elsePart)? xEOS) ;
+
+ifPart : IF expression statements -> ^(IF expression (statements)?) ;
+
+elseIfPart : ELSEIF expression statements -> ^(ELSEIF expression (statements)?) ;
+
+elsePart : ELSE statements -> ^(ELSE (statements)?) ;
+
+// PARFOR ---------------------------------------------------
+
+parfor : PARFOR parforHead statements END xEOS -> ^(PARFOR parforHead (statements)? xEOS) ;
+
+parforHead : (LPAREN var ASSIGN expression COMMA)=> LPAREN var ASSIGN expression COMMA expression RPAREN -> var (expression)+ 
+		   | LPAREN var ASSIGN expression RPAREN -> var expression
+		   | var ASSIGN expression -> var expression
+		   ;
+
+// PERSISTENT -----------------------------------------------
+
+persistent : PERSISTENT (var)+ xEOS -> ^(PERSISTENT (var)+ xEOS) ;
+
+// RETURN ---------------------------------------------------
+
+return : RETURN xEOS -> ^(RETURN xEOS) ; 
+
+// SPMD -----------------------------------------------------
+
+spmd : SPMD (options {greedy=true;}: spmdHead)? statements END xEOS -> ^(SPMD (spmdHead)? (statements)? xEOS) ;
+
+spmdHead : LPAREN expression (COMMA expression)? RPAREN -> (expression)+ ;
+
+// SWITCH ---------------------------------------------------
+
+switch : switchPart (casePart)* (otherwisePart)? END xEOS -> ^(SWITCHCASE[$switchPart.start] switchPart (casePart)* (otherwisePart)? xEOS) ;
+
+switchPart : SWITCH expression (xEOS)* -> ^(SWITCH expression) ;
+
+casePart : CASE expression xEOS statements -> ^(CASE expression (statements)?) ;
+
+otherwisePart : OTHERWISE statements -> ^(OTHERWISE (statements)?) ;
+
+// TRY -------------------------------------------------------
+
+try : tryPart (catchPart)? END xEOS -> ^(TRYCATCH[$tryPart.start] tryPart (catchPart)? xEOS) ;
+
+tryPart : TRY statements -> ^(TRY (statements)?) ;
+
+catchPart : CATCH (options {greedy=true;}: capturePortion)? statements -> ^(CATCH (capturePortion)? (statements)?) ;
+
+capturePortion : var xEOS -> var ;
+
+// WHILE -----------------------------------------------------
+
+while : WHILE expression statements END xEOS -> ^(WHILE expression (statements)? xEOS) ;
+
+// EXPRESSIONS --------------------------------------------------------------------------------------------------------
+
+expression : expression11 -> expression11 ;
+
+expression11 : (x1=expression10 -> $x1) (options {greedy=true;}: SHORTOR x2=expression10 -> ^(SHORTOR $expression11 $x2))* ;
+
+expression10 : (x1=expression09 -> $x1) (options {greedy=true;}: SHORTAND x2=expression09 -> ^(SHORTAND $expression10 $x2))* ;
+
+expression09 : (x1=expression08 -> $x1) (options {greedy=true;}: OR x2=expression08 -> ^(OR $expression09 $x2))* ;
+
+expression08 : (x1=expression07 -> $x1) (options {greedy=true;}: AND x2=expression07 -> ^(AND $expression08 $x2))* ;
+
+expression07 : (x1=expression06 -> $x1) (options {greedy=true;}: op=operator06 x2=expression06 -> ^($op $expression07 $x2))* ;
+
+operator06 : LT -> LT
+		   | LTEQ -> LTEQ
+		   | GT -> GT
+		   | GTEQ -> GTEQ
+		   | EQ -> EQ
+		   | NOTEQ -> NOTEQ
+		   ;
+
+expression06 : (x1=expression05 -> $x1) (options {greedy=true;}: (options {greedy=true;}: COLON x2=expression05)+ -> ^(COLON (expression05)+))? ;
+
+expression05 : (x1=expression04 -> $x1) (options {greedy=true;}: {!Balance_InCreationOrStore_SpacesOnLeftButNotOnRight()}?=> op=operator04 x2=expression04 -> ^($op $expression05 $x2))* ;
+
+operator04 : PLUS -> PLUS
+		   | MINUS -> MINUS
+		   ;
+
+expression04 : (x1=expression03 -> $x1) (options {greedy=true;}: op=operator03 x2=expression03 -> ^($op $expression04 $x2))* ;
+
+operator03 : TIMES -> TIMES
+		   | RDIV -> RDIV
+		   | LDIV -> LDIV
+		   | MTIMES -> MTIMES
+		   | MRDIV -> MRDIV
+		   | MLDIV -> MLDIV
+		   ;
+
+expression03 : op=operator02 x1=expression03 -> ^($op $x1) 
+			 | x2=expression02 -> $x2 
+			 ;
+
+operator02 : PLUS -> POSITIVE[$PLUS]
+		   | MINUS -> NEGATIVE[$MINUS]
+		   | NOT -> NOT
+		   ;
+
+expression02 : (x1=expression00 -> $x1) 
+			   (options {greedy=true;} : 
+				    (op=operator01 x2=expression01 -> ^($op $expression02 $x2))
+				  | (TRANS -> ^(TRANS $expression02))
+				  | (CTRANS -> ^(CTRANS $expression02))
+			   )* ; 
+
+operator01 : POW -> POW
+		   | MPOW -> MPOW
+		   ;
+
+expression01 : op=operator02 x1=expression01 -> ^($op $x1) 
+			 | x2=expression00 -> $x2 
+			 ;
+
+expression00 : atom -> atom ;
+
+// ATOMS --------------------------------------------------------------------------------------------------------------
+
+atom : chain -> chain 
+     | real -> real 
+	 | imaginary -> imaginary 
+	 | string -> string 
+	 | regularArray -> regularArray 
+	 | cellArray -> cellArray 
+	 | parenthesized -> parenthesized 
+	 | end -> end 
+	 | functionHandle -> functionHandle 
+	 | anonymousFunction -> anonymousFunction 
+	 | metaclass -> metaclass  
+	 ;
+
+// VALUE -----------------------------------------------------
+
+chain 
+@init {Chain_Begin();} : 
+(x1=var -> $x1)
+(   (DOT LPAREN)=> x2=dotExpressionOperator -> ^(DOTEXPRESSION[$x2.start] $chain $x2) 
+  | x3=dotNameOperator -> ^(DOTNAME[$x3.start] $chain $x3) 
+  | x4=parenthesisOperator -> ^(PARENTHESIS[$x4.start] $chain ($x4)?) 
+  | x5=curlyBraceOperator -> ^(CURLYBRACE[$x5.start] $chain $x5) 
+  | x6=atBaseOperator -> ^(ATBASE[$x6.start] $chain $x6) 
+)* ;
+finally {Chain_End();}
+
+var : name -> ^(VAR[""] name) ;
+
+dotExpressionOperator 
+@init {Balance_EnterParenthesis();} : 
+{Chain_MayAddDotExpression()}?=> DOT LPAREN expression RPAREN -> expression ; 
+finally {Balance_ExitParenthesis(); Chain_AddedDotExpression();}
+
+dotNameOperator : {Chain_MayAddDotName()}?=> DOT anyName -> anyName ;
+finally {Chain_AddedDotName();}
+
+anyName : xANYID -> ^(NAME[""] xANYID) ;
+
+parenthesisOperator
+@init {Index_EnterParenthesis(); Balance_EnterParenthesis();} : 
+{Chain_MayAddParenthesis()}?=> {!Balance_InCreationOrStore_SpacesOnLeft()}?=> LPAREN (arguments)? RPAREN -> (arguments)? ;
+finally {Balance_ExitParenthesis(); Index_ExitParenthesis(); Chain_AddedParenthesis();}
+
+arguments : argument (COMMA argument)* -> (argument)+ ;
+
+argument : expression -> expression  
+		 | COLON -> ALL[$COLON] 
+		 ;
+
+curlyBraceOperator 
+@init {Index_EnterCurlyBrace(); Balance_EnterIndexCurlyBrace();} : 
+{Chain_MayAddCurlyBrace()}?=> {!Balance_InCreationOrStore_SpacesOnLeft()}?=> LCURLY arguments RCURLY -> arguments ;
+finally {Balance_ExitIndexCurlyBrace(); Index_ExitCurlyBrace(); Chain_AddedCurlyBrace();}
+
+atBaseOperator : {Chain_MayAddAtBase()}?=> {!Balance_InCreationOrStore_SpacesOnLeft()}?=> AT classReference -> classReference ;
+finally {Chain_AddedAtBase();}
+
+// REAL ------------------------------------------------------
+
+real : REAL -> REAL ;
+
+// IMAGINARY -------------------------------------------------
+
+imaginary : IMAGINARY -> IMAGINARY ;
+
+// STRING ----------------------------------------------------
+
+string : STRING -> STRING ;
+
+// REGULAR ARRAY ---------------------------------------------
+
+// REGULAR ARRAY ----(empty is handled at AST level)----------
+
+regularArray 
+@init {Balance_EnterCreationSquareBrace();} : 
+LSQUARE rows RSQUARE -> ^(REGULARARRAY[$LSQUARE] ^(VCAT[""] rows)) ;
+finally {Balance_ExitCreationSquareBrace();}
+
+rows : row ((SEMICOLON | EOL) row)* -> (row)+ ;
+
+row : (COMMA)? columns (COMMA)? -> ^(HCAT[""] columns) 
+	| COMMA -> HCAT[""] 
+	| () -> HCAT[""]
+	;
+
+columns : column ({Separator_CommaFollowsOrSpacesPrecede()}?=> (COMMA)? column)* -> (column)+ ;
+
+column : (NOT (COMMA | SEMICOLON | EOL | RSQUARE))=> NOT -> ^(VAR[""] ^(NAME[""] ID[$NOT]))
+	   | expression -> expression 
+	   ;
+
+// CELL ARRAY ----(empty is handled at AST level)-------------
+
+cellArray 
+@init {Balance_EnterCreationCurlyBrace();} : 
+LCURLY rows RCURLY -> ^(CELLARRAY[$LCURLY] ^(VCAT[""] rows)) ;
+finally {Balance_ExitCreationCurlyBrace();}
+
+// PARENTHESIZED ---------------------------------------------
+
+parenthesized 
+@init {Balance_EnterParenthesis();} : 
+LPAREN expression RPAREN -> expression ;
+finally {Balance_ExitParenthesis();}
+
+// END -------------------------------------------------------
+
+end : {Index_IsActive()}?=> END -> END ;
+
+// FUNCTION HANDLE -------------------------------------------
+
+functionHandle : AT functionReference -> ^(FUNCTIONHANDLE[$AT] functionReference) ;
+
+functionReference : fullFunctioName -> ^(FUNCTIONREF[""] fullFunctioName) ;
+
+fullFunctioName : xID (DOT xANYID)* -> ^(NAME[""] xID (xANYID)*) ;
+
+// ANONYMOUS FUNCTION ----------------------------------------
+
+anonymousFunction : AT inputPortion expression -> ^(ANONYMOUSFUNCTION[$AT] (inputPortion)? expression) ;
+
+// METACLASS -------------------------------------------------
+
+metaclass : QUESTION classReference -> ^(QUESTION classReference) ;
+
+// EXTRA --------------------------------------------------------------------------------------------------------------
+
+xEOS : SEMICOLON -> NOPRINT[$SEMICOLON]
+	 | COMMA -> PRINT[$COMMA] 
+	 | EOL -> PRINT[$EOL] 
+	 ;
+
+xEOL : EOL -> PRINT[$EOL] ;
+
+xID : ID -> ID ;
+
+xANYID : ID -> ID 
+	   | BREAK -> ID[$BREAK] 
+	   | CASE -> ID[$CASE] 
+	   | CATCH -> ID[$CATCH] 
+	   | CLASSDEF -> ID[$CLASSDEF] 
+	   | CONTINUE -> ID[$CONTINUE] 
+	   | ELSE -> ID[$ELSE] 
+	   | ELSEIF -> ID[$ELSEIF] 
+	   | END -> ID[$END] 
+	   | FOR -> ID[$FOR] 
+	   | FUNCTION -> ID[$FUNCTION] 
+	   | GLOBAL -> ID[$GLOBAL] 
+	   | IF -> ID[$IF] 
+	   | OTHERWISE -> ID[$OTHERWISE] 
+	   | PARFOR -> ID[$PARFOR] 
+	   | PERSISTENT -> ID[$PERSISTENT] 
+	   | RETURN -> ID[$RETURN] 
+	   | SPMD -> ID[$SPMD] 
+	   | SWITCH -> ID[$SWITCH] 
+	   | TRY -> ID[$TRY] 
+	   | WHILE -> ID[$WHILE] 
+	   ;
+
+xFUNCTIONID : ID -> ID 
+			| END -> ID[$END] 
+			;
+
+xPARAMETERID : ID -> ID  
+			 | NOT -> ID[$NOT]  
+			 ;
+
+xEVENTS : {Keyword_EventsIdFollows()}?=> ID -> ID ;
+
+xPROPERTIES : {Keyword_PropertiesIdFollows()}?=> ID -> ID ;
+
+xMETHODS : {Keyword_MethodsIdFollows()}?=> ID -> ID ;
+
+xENUMERATION : {Keyword_EnumerationIdFollows()}?=> ID -> ID ;

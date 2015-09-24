@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B4661D5-3E34-40FA-A605-A3F375E133B8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Matlab.Nodes</RootNamespace>
+    <AssemblyName>Matlab.Nodes</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="02 Node\00 Base\IMNode.cs" />
+    <Compile Include="02 Node\00 Base\MNode.cs" />
+    <Compile Include="01 Attribute\01 Main\InformationAttribute.cs" />
+    <Compile Include="01 Attribute\01 Main\StructureAttribute.cs" />
+    <Compile Include="02 Node\01 External\00 Base\ExternalNode.cs" />
+    <Compile Include="02 Node\01 External\01 Unit\UnitNode.cs" />
+    <Compile Include="02 Node\01 External\02 File\00 Base\FileNode.cs" />
+    <Compile Include="02 Node\01 External\02 File\01 Main\ClassFileNode.cs" />
+    <Compile Include="02 Node\01 External\02 File\01 Main\FunctionFileNode.cs" />
+    <Compile Include="02 Node\01 External\02 File\01 Main\ScriptFileNode.cs" />
+    <Compile Include="02 Node\02 Internal\00 Base\InternalNode.cs" />
+    <Compile Include="00 Text\Text.cs" />
+    <Compile Include="02 Node\02 Internal\01 Outer\03 Section\00 Base\SectionNode.cs" />
+    <Compile Include="02 Node\02 Internal\01 Outer\03 Section\01 Main\EnumerationSectionNode.cs" />
+    <Compile Include="02 Node\02 Internal\01 Outer\03 Section\01 Main\EventSectionNode.cs" />
+    <Compile Include="02 Node\02 Internal\01 Outer\03 Section\01 Main\MethodSectionNode.cs" />
+    <Compile Include="02 Node\02 Internal\01 Outer\03 Section\01 Main\PropertySectionNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\01 Statement\01 Regular\01 Main\ActionNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\01 Statement\01 Regular\01 Main\BangNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\01 Statement\01 Regular\01 Main\GlobalNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\01 Statement\01 Regular\01 Main\PersistentNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\01 Statement\01 Regular\00 Base\RegularStatementNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\01 Statement\02 Special\00 Base\SpecialStatementNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\01 ILValue\01 Main\ICompoundLValueNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\01 ILValue\01 Main\ISimpleLValueNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\03 Binary\01 Arithmetic\01 Main\MTimesNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\03 Binary\01 Arithmetic\01 Main\TimesNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\04 Unary\01 Arithmetic\00 Base\UnaryArithmeticNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\04 Unary\02 Logical\00 Base\UnaryLogicalNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\05 Atomic\01 Basic\01 Main\AllNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\03 Binary\03 Logical\01 Main\AndNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\05 Atomic\04 Delegate\01 Main\AnonymousFunctionNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\03 Binary\01 Arithmetic\00 Base\BinaryArithmeticNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\05 Atomic\02 Array\00 Base\ArrayNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\01 Statement\01 Regular\01 Main\AssignmentNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\05 Atomic\00 Base\AtomicNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\01 ILValue\00 Base\ILValueNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\04 IO\00 Base\IONode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\05 Atomic\03 Chain\01 Main\AtBaseNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\05 Atomic\01 Basic\00 Base\BasicNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\03 Binary\00 Base\BinaryNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\01 Statement\01 Regular\01 Main\BreakNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\02 Part\01 Main\CasePartNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\02 Part\01 Main\CatchPartNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\05 Atomic\02 Array\01 Main\CellArrayNode.cs" />
+    <Compile Include="02 Node\02 Internal\01 Outer\02 Class\ClassNode.cs" />
+    <Compile Include="02 Node\02 Internal\01 Outer\05 Attribute\AttributeNode.cs" />
+    <Compile Include="02 Node\02 Internal\03 Reference\01 Main\ClassRefNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\02 Nary\01 Main\ColonNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\02 Nary\01 Main\HCatNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\01 Statement\01 Regular\01 Main\ContinueNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\04 Unary\01 Arithmetic\01 Main\CTransNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\05 Atomic\03 Chain\01 Main\CurlyBraceNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\05 Atomic\04 Delegate\00 Base\DelegateNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\05 Atomic\03 Chain\01 Main\DotExpressionNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\05 Atomic\03 Chain\01 Main\DotNameNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\05 Atomic\01 Basic\01 Main\VarNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\02 Part\01 Main\ElseIfPartNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\02 Part\01 Main\ElsePartNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\05 Atomic\01 Basic\01 Main\EndNode.cs" />
+    <Compile Include="02 Node\02 Internal\01 Outer\04 Member\04 Enumeration\EnumerationNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\03 Binary\02 Relational\01 Main\EqNode.cs" />
+    <Compile Include="02 Node\02 Internal\01 Outer\04 Member\01 Event\EventNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\00 Base\ExpressionNode.cs" />
+    <Compile Include="02 Node\02 Internal\01 Outer\04 Member\03 Method\01 Main\ExternalMethodNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\01 Statement\01 Regular\01 Main\ForNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\05 Atomic\04 Delegate\01 Main\FunctionHandleNode.cs" />
+    <Compile Include="02 Node\02 Internal\01 Outer\01 Function\FunctionNode.cs" />
+    <Compile Include="02 Node\02 Internal\03 Reference\01 Main\FunctionRefNode.cs" />
+    <Compile Include="02 Node\02 Internal\01 Outer\00 Base\OuterNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\03 Binary\02 Relational\01 Main\GtEqNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\03 Binary\02 Relational\01 Main\GtNode.cs" />
+    <Compile Include="02 Node\02 Internal\05 Utility\01 Main\IdNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\01 Statement\01 Regular\01 Main\IfNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\02 Part\01 Main\IfPartNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\05 Atomic\01 Basic\01 Main\ImaginaryNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\04 IO\01 Main\InputNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\03 Binary\01 Arithmetic\01 Main\LDivNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\00 Base\InnerNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\03 Binary\03 Logical\00 Base\BinaryLogicalNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\03 Binary\02 Relational\01 Main\LtEqNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\03 Binary\02 Relational\01 Main\LtNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\05 Atomic\03 Chain\00 Base\ChainNode.cs" />
+    <Compile Include="02 Node\02 Internal\01 Outer\04 Member\00 Base\MemberNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\05 Atomic\05 Metaclass\MetaclassNode.cs" />
+    <Compile Include="02 Node\02 Internal\01 Outer\04 Member\03 Method\00 Base\MethodNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\03 Binary\01 Arithmetic\01 Main\MinusNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\03 Binary\01 Arithmetic\01 Main\MLDivNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\03 Binary\01 Arithmetic\01 Main\MPowNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\03 Binary\01 Arithmetic\01 Main\MRDivNode.cs" />
+    <Compile Include="02 Node\02 Internal\05 Utility\01 Main\NameNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\02 Nary\00 Base\NAryNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\04 Unary\01 Arithmetic\01 Main\NegativeNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\01 Statement\02 Special\01 Main\NestedFunctionNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\03 Binary\02 Relational\01 Main\NotEqNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\04 Unary\02 Logical\01 Main\NotNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\03 Binary\03 Logical\01 Main\OrNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\02 Part\01 Main\OtherwisePartNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\04 IO\01 Main\OutputNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\05 Atomic\03 Chain\01 Main\ParenthesisNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\01 Statement\01 Regular\01 Main\ParforNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\02 Part\00 Base\PartNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\03 Binary\01 Arithmetic\01 Main\PlusNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\04 Unary\01 Arithmetic\01 Main\PositiveNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\03 Binary\01 Arithmetic\01 Main\PowNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\05 Terminator\01 Main\PrintNode.cs" />
+    <Compile Include="03 Builder\NodeToXmlBuilder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="01 Attribute\00 Base\CoreAttribute.cs" />
+    <Compile Include="02 Node\02 Internal\01 Outer\04 Member\02 Property\PropertyNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\03 Binary\01 Arithmetic\01 Main\RDivNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\05 Atomic\01 Basic\01 Main\RealNode.cs" />
+    <Compile Include="02 Node\02 Internal\03 Reference\00 Base\ReferenceNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\05 Atomic\02 Array\01 Main\RegularArrayNode.cs" />
+    <Compile Include="02 Node\02 Internal\01 Outer\04 Member\03 Method\01 Main\RegularMethodNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\03 Binary\02 Relational\00 Base\BinaryRelationalNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\01 Statement\01 Regular\01 Main\ReturnNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\02 Nary\01 Main\VCatNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\03 Binary\03 Logical\01 Main\ShortAndNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\03 Binary\03 Logical\01 Main\ShortOrNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\01 Statement\01 Regular\01 Main\SpmdNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\01 Statement\00 Base\StatementNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\05 Atomic\06 Storage\StorageNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\05 Atomic\01 Basic\01 Main\StringNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\05 Terminator\01 Main\NoPrintNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\01 Statement\01 Regular\01 Main\SwitchNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\02 Part\01 Main\SwitchPartNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\05 Terminator\00 Base\TerminatorNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\04 Unary\01 Arithmetic\01 Main\TransNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\01 Statement\01 Regular\01 Main\TryNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\02 Part\01 Main\TryPartNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\03 Expression\04 Unary\00 Base\UnaryNode.cs" />
+    <Compile Include="02 Node\02 Internal\05 Utility\00 Base\UtilityNode.cs" />
+    <Compile Include="02 Node\02 Internal\02 Inner\01 Statement\01 Regular\01 Main\WhileNode.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Matlab.Info\Matlab.Info.csproj">
+      <Project>{19b76063-84db-4669-93ac-48ff86f0c92e}</Project>
+      <Name>Matlab.Info</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Matlab.Utils\Matlab.Utils.csproj">
+      <Project>{9c4a6086-55a5-4b97-b1db-962e49413a16}</Project>
+      <Name>Matlab.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

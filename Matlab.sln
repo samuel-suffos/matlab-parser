@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matlab.Utils", "Matlab.Utils\Matlab.Utils.csproj", "{9C4A6086-55A5-4B97-B1DB-962E49413A16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matlab.Recognizer", "Matlab.Recognizer\Matlab.Recognizer.csproj", "{BC2AEF66-FBBD-4E9F-BBA0-F13E0F0809CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matlab.Nodes", "Matlab.Nodes\Matlab.Nodes.csproj", "{3B4661D5-3E34-40FA-A605-A3F375E133B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matlab.Parser", "Matlab.Parser\Matlab.Parser.csproj", "{45033962-0704-4EDF-924B-46FF418BEDBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matlab.Info", "Matlab.Info\Matlab.Info.csproj", "{19B76063-84DB-4669-93AC-48FF86F0C92E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{57F5E352-F207-40F8-89C7-2BDE82B2FAD3}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C4A6086-55A5-4B97-B1DB-962E49413A16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C4A6086-55A5-4B97-B1DB-962E49413A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C4A6086-55A5-4B97-B1DB-962E49413A16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C4A6086-55A5-4B97-B1DB-962E49413A16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC2AEF66-FBBD-4E9F-BBA0-F13E0F0809CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC2AEF66-FBBD-4E9F-BBA0-F13E0F0809CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC2AEF66-FBBD-4E9F-BBA0-F13E0F0809CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC2AEF66-FBBD-4E9F-BBA0-F13E0F0809CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B4661D5-3E34-40FA-A605-A3F375E133B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B4661D5-3E34-40FA-A605-A3F375E133B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B4661D5-3E34-40FA-A605-A3F375E133B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B4661D5-3E34-40FA-A605-A3F375E133B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45033962-0704-4EDF-924B-46FF418BEDBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45033962-0704-4EDF-924B-46FF418BEDBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45033962-0704-4EDF-924B-46FF418BEDBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45033962-0704-4EDF-924B-46FF418BEDBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19B76063-84DB-4669-93AC-48FF86F0C92E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19B76063-84DB-4669-93AC-48FF86F0C92E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19B76063-84DB-4669-93AC-48FF86F0C92E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19B76063-84DB-4669-93AC-48FF86F0C92E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

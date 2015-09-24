@@ -1,0 +1,347 @@
+/* 
+ * [The BSD 3-Clause License]
+ * Copyright (c) 2015, Samuel Suffos
+ * All rights reserved.
+ * 
+ * Redistribution and use in source and binary forms, with or without modification, 
+ * are permitted provided that the following conditions are met:
+ * 
+ * 1. Redistributions of source code must retain the above copyright notice, this list 
+ *    of conditions and the following disclaimer.
+ * 
+ * 2. Redistributions in binary form must reproduce the above copyright notice, this 
+ *    list of conditions and the following disclaimer in the documentation and/or other 
+ *    materials provided with the distribution.
+ * 
+ * 3. Neither the name of the copyright holder nor the names of its contributors may be 
+ *    used to endorse or promote products derived from this software without specific 
+ *    prior written permission.
+ * 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY 
+ * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES 
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT 
+ * SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, 
+ * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED 
+ * TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR 
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN 
+ * ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH 
+ * DAMAGE.
+ *
+ */
+
+// This file has been written in ANTLR 3.5.0.2
+// This file is part of a lexer for Matlab 8.1 (R2013a)
+
+lexer grammar MatlabLexer ;
+
+// OPTIONS =============================================================================================================
+
+options
+{
+	language = CSharp3 ;
+}
+
+// TOKENS ==============================================================================================================
+
+tokens
+{
+	LINECOMMENT ; BLOCKCOMMENT ; 
+	ELLIPSIS ; SPACES ; EOL ;
+	BREAK ; CASE ; CATCH ; CLASSDEF ; CONTINUE ; ELSE ; ELSEIF ; END ; FOR ; FUNCTION ; GLOBAL ; IF ; OTHERWISE ; PARFOR ; PERSISTENT ; RETURN ; SPMD ; SWITCH ; TRY ; WHILE ;
+	REAL ; IMAGINARY ; STRING ; ID ; COMMAND ;
+	PLUS ; MINUS ; MTIMES ; TIMES ; MRDIV ; RDIV ; MLDIV ; LDIV ; MPOW ; POW ; CTRANS ; TRANS ; 
+	EQ ; NOTEQ ; LT ; LTEQ ; GT ; GTEQ ;
+	NOT ; AND ; SHORTAND ; OR ; SHORTOR ;
+	ASSIGN ; COMMA ; SEMICOLON ; COLON ; DOT ; LPAREN ; RPAREN ; LSQUARE ; RSQUARE ; LCURLY ; RCURLY ; AT ; QUESTION ; EXCLAMATION ;
+	QUOTATION ; UNKNOWN ;
+	STRINGBLOCK ; DEFAULTBLOCK ;
+	LINE ;
+}
+
+// ACTIONS =============================================================================================================
+
+@lexer::header 
+{
+/* 
+ * [The BSD 3-Clause License]
+ * Copyright (c) 2015, Samuel Suffos
+ * All rights reserved.
+ * 
+ * Redistribution and use in source and binary forms, with or without modification, 
+ * are permitted provided that the following conditions are met:
+ * 
+ * 1. Redistributions of source code must retain the above copyright notice, this list 
+ *    of conditions and the following disclaimer.
+ * 
+ * 2. Redistributions in binary form must reproduce the above copyright notice, this 
+ *    list of conditions and the following disclaimer in the documentation and/or other 
+ *    materials provided with the distribution.
+ * 
+ * 3. Neither the name of the copyright holder nor the names of its contributors may be 
+ *    used to endorse or promote products derived from this software without specific 
+ *    prior written permission.
+ * 
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY 
+ * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES 
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT 
+ * SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, 
+ * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED 
+ * TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR 
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN 
+ * ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH 
+ * DAMAGE.
+ *
+ */
+}
+
+@lexer::namespace {Matlab.Recognizer}
+
+@lexer::modifier {internal}
+
+@lexer::ctorModifier {public}
+
+// RULES ===============================================================================================================
+
+// MAIN ----------------------------------------------------------------------------------------------------------------
+
+START : {Machine_InMode(Mode.Default)}?=>	DEFAULT_MODE	{ $type = machine_TokenType; $channel = (int)machine_TokenChannel; }
+      | {Machine_InMode(Mode.Command)}?=>	COMMAND_MODE	{ $type = machine_TokenType; $channel = (int)machine_TokenChannel; }
+      | {Machine_InMode(Mode.Bang)}?=>		BANG_MODE		{ $type = machine_TokenType; $channel = (int)machine_TokenChannel; }
+	  ;
+	  
+fragment DEFAULT_MODE : LINECOMMENT1		{ Machine_Update(LINECOMMENT, Channel.Skipped, Mode.Default); }
+                      | LINECOMMENT2		{ Machine_Update(LINECOMMENT, Channel.Skipped, Mode.Default); }
+					  | LINECOMMENT3		{ Machine_Update(LINECOMMENT, Channel.Skipped, Mode.Default); }
+					  | BLOCKCOMMENT		{ Machine_Update(BLOCKCOMMENT, Channel.Spaces, Mode.Default); }
+					  | ELLIPSIS			{ Machine_Update(ELLIPSIS, Channel.Spaces, Mode.Default); }
+					  | SPACES				{ Machine_Update(SPACES, Channel.Spaces, Mode.Default); }
+					  | EOL					{ Machine_Update(EOL, Channel.Default, Mode.Default); }
+					  | (STRING)=> STRING	{ Machine_Update(STRING, Channel.Default, Mode.Default); }
+					  | QUOTATION			{ Machine_Update(QUOTATION, Channel.Default, Mode.Default); }
+					  | CTRANS				{ Machine_Update(CTRANS, Channel.Default, Mode.Default); }
+					  | REAL				{ Machine_Update(REAL, Channel.Default, Mode.Default); }
+					  | IMAGINARY			{ Machine_Update(IMAGINARY, Channel.Default, Mode.Default); }
+					  | ID					{ Machine_Update($text, ID, Channel.Default, Mode.Default); }
+					  | PLUS				{ Machine_Update(PLUS, Channel.Default, Mode.Default); }
+					  | MINUS				{ Machine_Update(MINUS, Channel.Default, Mode.Default); }
+					  | MTIMES				{ Machine_Update(MTIMES, Channel.Default, Mode.Default); }
+					  | TIMES				{ Machine_Update(TIMES, Channel.Default, Mode.Default); }
+					  | MRDIV				{ Machine_Update(MRDIV, Channel.Default, Mode.Default); }
+					  | RDIV				{ Machine_Update(RDIV, Channel.Default, Mode.Default); }
+					  | MLDIV				{ Machine_Update(MLDIV, Channel.Default, Mode.Default); }
+					  | LDIV				{ Machine_Update(LDIV, Channel.Default, Mode.Default); }
+					  | MPOW				{ Machine_Update(MPOW, Channel.Default, Mode.Default); }
+					  | POW					{ Machine_Update(POW, Channel.Default, Mode.Default); }
+					  | TRANS				{ Machine_Update(TRANS, Channel.Default, Mode.Default); }
+					  | EQ					{ Machine_Update(EQ, Channel.Default, Mode.Default); }
+					  | NOTEQ				{ Machine_Update(NOTEQ, Channel.Default, Mode.Default); }
+					  | LT					{ Machine_Update(LT, Channel.Default, Mode.Default); }
+					  | LTEQ				{ Machine_Update(LTEQ, Channel.Default, Mode.Default); }
+					  | GT					{ Machine_Update(GT, Channel.Default, Mode.Default); }
+					  | GTEQ				{ Machine_Update(GTEQ, Channel.Default, Mode.Default); }
+					  | NOT					{ Machine_Update(NOT, Channel.Default, Mode.Default); }
+					  | AND					{ Machine_Update(AND, Channel.Default, Mode.Default); }
+					  | SHORTAND			{ Machine_Update(SHORTAND, Channel.Default, Mode.Default); }
+					  | OR					{ Machine_Update(OR, Channel.Default, Mode.Default); }
+					  | SHORTOR				{ Machine_Update(SHORTOR, Channel.Default, Mode.Default); }
+					  | ASSIGN				{ Machine_Update(ASSIGN, Channel.Default, Mode.Default); }
+					  | COMMA				{ Machine_Update(COMMA, Channel.Default, Mode.Default); }
+					  | SEMICOLON			{ Machine_Update(SEMICOLON, Channel.Default, Mode.Default); }
+					  | COLON				{ Machine_Update(COLON, Channel.Default, Mode.Default); }
+					  | DOT					{ Machine_Update(DOT, Channel.Default, Mode.Default); }
+					  | LPAREN				{ Machine_Update(LPAREN, Channel.Default, Mode.Default); }
+					  | RPAREN				{ Machine_Update(RPAREN, Channel.Default, Mode.Default); }
+					  | LSQUARE				{ Machine_Update(LSQUARE, Channel.Default, Mode.Default); }
+					  | RSQUARE				{ Machine_Update(RSQUARE, Channel.Default, Mode.Default); }
+					  | LCURLY				{ Machine_Update(LCURLY, Channel.Default, Mode.Default); }
+					  | RCURLY				{ Machine_Update(RCURLY, Channel.Default, Mode.Default); }
+					  | AT					{ Machine_Update(AT, Channel.Default, Mode.Default); }
+					  | QUESTION			{ Machine_Update(QUESTION, Channel.Default, Mode.Default); }
+					  | EXCLAMATION			{ Machine_Update(EXCLAMATION, Channel.Default, Mode.Bang); }
+					  | UNKNOWN				{ Machine_Update(UNKNOWN, Channel.Default, Mode.Default); }
+					  ;
+
+fragment COMMAND_MODE : LINECOMMENT1		{ Machine_Update(LINECOMMENT, Channel.Skipped, Mode.Command); }
+                      | LINECOMMENT2		{ Machine_Update(LINECOMMENT, Channel.Skipped, Mode.Command); }
+					  | LINECOMMENT3		{ Machine_Update(LINECOMMENT, Channel.Skipped, Mode.Command); }
+					  | BLOCKCOMMENT		{ Machine_Update(BLOCKCOMMENT, Channel.Spaces, Mode.Command); }
+					  | ELLIPSIS			{ Machine_Update(ELLIPSIS, Channel.Spaces, Mode.Command); }
+					  | SPACES				{ Machine_Update(SPACES, Channel.Spaces, Mode.Command); }
+					  | EOL					{ Machine_Update(EOL, Channel.Default, Mode.Default); }
+					  | COMMA				{ Machine_Update(COMMA, Channel.Default, Mode.Default); }
+					  | SEMICOLON			{ Machine_Update(SEMICOLON, Channel.Default, Mode.Default); }
+					  | STRINGBLOCK			{ Machine_Update(STRINGBLOCK, Channel.Default, Mode.Command); }
+					  | DEFAULTBLOCK1		{ Machine_Update(DEFAULTBLOCK, Channel.Default, Mode.Command); }
+					  | DEFAULTBLOCK2		{ Machine_Update(DEFAULTBLOCK, Channel.Default, Mode.Command); }
+					  | DEFAULTBLOCK3		{ Machine_Update(DEFAULTBLOCK, Channel.Default, Mode.Command); }
+					  | DEFAULTBLOCK4		{ Machine_Update(DEFAULTBLOCK, Channel.Default, Mode.Command); }
+					  ;
+
+fragment BANG_MODE : EOL					{ Machine_Update(EOL, Channel.Default, Mode.Default); }
+				   | LINE					{ Machine_Update(LINE, Channel.Default, Mode.Bang); }
+				   ;
+
+// AUXILIARY -----------------------------------------------------------------------------------------------------------
+
+fragment LETTER : 'a' .. 'z' | 'A' .. 'Z' ;
+
+fragment DIGIT : '0' .. '9' ;
+
+fragment EXP : 'e' | 'E' | 'd' | 'D' ;
+
+fragment IMG : 'i' | 'j' ;
+
+fragment SIGN : '+' | '-' ;
+
+fragment POINT : '.' ;
+
+fragment WS : ' ' | '\t' ;
+
+fragment NUMBER : ((DIGIT)+ ('.' (DIGIT)*)? | '.' (DIGIT)+) (EXP (SIGN)? (DIGIT)+)? ;
+
+// BUILDERS ------------------------------------------------------------------------------------------------------------
+
+// COMMENTS -------------------------------------------------
+
+fragment LINECOMMENT1 : {!Spaces_SpacesPrecedeInLine()}?=> '%' (~('\r' | '\n'))* ;
+                   
+fragment LINECOMMENT2 : {Spaces_SpacesPrecedeInLine()}?=> '%' '{' (WS)* ~(' ' | '\t' | '\r' | '\n') (~('\r' | '\n'))* ;
+
+fragment LINECOMMENT3 : {Spaces_SpacesPrecedeInLine()}?=> '%' (~('{' | '\r' | '\n') (~('\r' | '\n'))*)? ;
+
+fragment BLOCKCOMMENT : {Spaces_SpacesPrecedeInLine()}?=>
+                        '%' '{' (WS)* EOL
+                        (    (WS)* BLOCKCOMMENT
+         				   | (WS)* EOL
+         				   | (WS)* ~('%' | ' ' | '\t' | '\r' | '\n') (~('\r' | '\n'))* EOL
+         				   | (WS)* '%' EOL
+         				   | (WS)* '%' ~('{' | '}' | '\r' | '\n') (~('\r' | '\n'))* EOL
+         				   | (WS)* '%' ('{' | '}') (WS)* ~(' ' | '\t' | '\r' | '\n') (~('\r' | '\n'))* EOL 
+                        )*
+                        (WS)* '%' '}' (WS)* EOL ;
+
+// SPECIAL --------------------------------------------------
+
+fragment ELLIPSIS : {Text_ThreeDotsFollow()}?=> '...' (~('\r' | '\n'))* EOL ;
+
+fragment SPACES : (WS)+ ;
+
+fragment EOL : '\r\n' | '\r' | '\n' ;
+
+// QUOTATION RELATED ----------------------------------------
+
+fragment STRING : {!Quotation_TransposeIsEnabled()}?=> '\'' ('\'\'' | ~('\'' | '\r' | '\n'))* '\'' ;
+
+fragment QUOTATION : {!Quotation_TransposeIsEnabled()}?=> '\'' ;
+
+fragment CTRANS : {Quotation_TransposeIsEnabled()}?=> '\'' ;
+
+// ELEMENTS -------------------------------------------------
+
+fragment REAL : NUMBER ;
+
+fragment IMAGINARY : NUMBER IMG ;
+
+fragment ID : LETTER ('_' | LETTER | DIGIT)* ;
+
+// ARITHMETIC OPERATORS -------------------------------------
+
+fragment PLUS : '+' ;
+
+fragment MINUS : '-' ;
+
+fragment MTIMES : '*' ;
+
+fragment TIMES : '.*' ;
+
+fragment MRDIV : '/' ;
+
+fragment RDIV : './' ;
+
+fragment MLDIV : '\\' ;
+
+fragment LDIV : '.\\' ;
+
+fragment MPOW : '^' ;
+
+fragment POW : '.^' ;
+
+fragment TRANS : '.\'' ;
+
+// RELATIONAL OPERATORS -------------------------------------
+
+fragment EQ : '==' ;
+
+fragment NOTEQ : '~=' ;
+
+fragment LT : '<' ;
+
+fragment LTEQ : '<=' ;
+
+fragment GT : '>' ;
+
+fragment GTEQ : '>=' ;
+
+// LOGICAL OPERATORS ----------------------------------------
+
+fragment NOT : '~' ;
+
+fragment AND : '&' ;
+
+fragment SHORTAND : '&&' ;
+
+fragment OR : '|' ;
+
+fragment SHORTOR : '||' ;
+
+// SYMBOLS --------------------------------------------------
+
+fragment ASSIGN : '=' ;
+
+fragment COMMA : ',' ;
+
+fragment SEMICOLON : ';' ;
+
+fragment COLON : ':' ;
+
+fragment DOT : '.' ;
+
+fragment LPAREN : '(' ;
+
+fragment RPAREN : ')' ;
+
+fragment LSQUARE : '[' ;
+
+fragment RSQUARE : ']' ;
+
+fragment LCURLY : '{' ;
+
+fragment RCURLY : '}' ;
+
+fragment AT : '@' ;
+
+fragment QUESTION : '?' ;
+
+fragment EXCLAMATION : '!' ;
+
+// EXTRA ----------------------------------------------------
+
+fragment UNKNOWN : ~('%' | '.' | ' ' | '\t' | '\r' | '\n' | '0' .. '9' | '\'' | 'a' .. 'z' | 'A' .. 'Z' | '+' | '-' | '*' | '\\' | '/' | '^' | '=' | '~' | '<' | '>' | '&' | '|' | ',' | ';' | ':' | '(' | '[' | '{' | ')' | ']' | '}' | '@' | '?' | '!') ;
+
+// BLOCKS ---------------------------------------------------
+
+fragment STRINGBLOCK : '\'' ('\'\'' | ~('\'' | '\r' | '\n'))* '\'' ;
+
+fragment DEFAULTBLOCK1 : ('(' | '[' | '{') (DEFAULTBLOCK1 | DEFAULTBLOCK3 | ~('(' | '[' | '{' | ')' | ']' | '}' | '.' | ';' | '\r' | '\n'))* (')' | ']' | '}')? ; 
+
+fragment DEFAULTBLOCK2 : (')' | ']' | '}') (DEFAULTBLOCK2 | DEFAULTBLOCK3 | ~('(' | '[' | '{' | ')' | ']' | '}' | '.' | ';' | '\r' | '\n'))* ('(' | '[' | '{')? ; 
+
+fragment DEFAULTBLOCK3 : {!Text_ThreeDotsFollow()}?=> '.' ('.')? ;
+
+fragment DEFAULTBLOCK4 : (~('\'' | '(' | '[' | '{' | ')' | ']' | '}' | '.' | '%'  | ' ' | '\t' | ',' | ';' | '\r' | '\n'))+ ;
+
+// LINE -----------------------------------------------------
+
+fragment LINE : (~('\r' | '\n'))+ ;

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9C4A6086-55A5-4B97-B1DB-962E49413A16}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Matlab.Utils</RootNamespace>
+    <AssemblyName>Matlab.Utils</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="00 Helper\Checker.cs" />
+    <Compile Include="00 Helper\EnumerablePlus.cs" />
+    <Compile Include="01 Sequence\ISequence.cs" />
+    <Compile Include="01 Sequence\ReadOnlySequence.cs" />
+    <Compile Include="01 Sequence\Sequence.cs" />
+    <Compile Include="02 Report\IReport.cs" />
+    <Compile Include="02 Report\Message.cs" />
+    <Compile Include="02 Report\ReadOnlyReport.cs" />
+    <Compile Include="02 Report\Report.cs" />
+    <Compile Include="02 Report\Severity.cs" />
+    <Compile Include="03 Result\IResult.cs" />
+    <Compile Include="03 Result\Result.cs" />
+    <Compile Include="04 Exception\InternalException.cs" />
+    <Compile Include="05 Freezable\IFreezable.cs" />
+    <Compile Include="06 Node\INode.cs" />
+    <Compile Include="06 Node\Node.cs" />
+    <Compile Include="06 Node\NodeCollection.cs" />
+    <Compile Include="07 Visitor\Visitor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Matlab.Info\Matlab.Info.csproj">
+      <Project>{19b76063-84db-4669-93ac-48ff86f0c92e}</Project>
+      <Name>Matlab.Info</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
