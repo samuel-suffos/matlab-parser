@@ -85,6 +85,20 @@ namespace Matlab.Recognizer
 
         #endregion
 
+        #region BOOLEAN METHODS:
+
+        private bool True()
+        {
+            return true;
+        }
+
+        private bool False()
+        {
+            return false;
+        }
+
+        #endregion
+
         #endregion
 
         #region GROUP MEMBERS:

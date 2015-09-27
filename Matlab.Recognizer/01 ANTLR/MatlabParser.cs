@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// $ANTLR 3.5.0.2 d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3 2015-09-23 12:38:53
+// $ANTLR 3.5.0.2 d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3 2015-09-27 18:24:05
 
 // The variable 'variable' is assigned but its value is never used.
 #pragma warning disable 219
@@ -584,7 +584,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 					{
 						int LA2_3 = input.LA(3);
 
-						if (((((Command_IsEnabled() || !Command_IsEnabled()))&&(Index_IsActive()))))
+						if ((((True())&&(Index_IsActive()))))
 						{
 							alt2 = 1;
 						}
@@ -595,7 +595,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 					{
 						int LA2_3 = input.LA(3);
 
-						if (((((Command_IsEnabled() || !Command_IsEnabled()))&&(Index_IsActive()))))
+						if ((((True())&&(Index_IsActive()))))
 						{
 							alt2 = 1;
 						}
@@ -606,25 +606,25 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 					{
 						int LA2_3 = input.LA(3);
 
-						if (((((Command_IsEnabled() || !Command_IsEnabled()))&&(Index_IsActive()))))
+						if ((((True())&&(Index_IsActive()))))
 						{
 							alt2 = 1;
 						}
 
 
 					}
-					else if ((LA2_2==AND||LA2_2==COLON||LA2_2==CTRANS||LA2_2==EQ||(LA2_2>=GT && LA2_2<=GTEQ)||LA2_2==LDIV||(LA2_2>=LT && LA2_2<=MTIMES)||LA2_2==NOTEQ||LA2_2==OR||LA2_2==PLUS||LA2_2==POW||LA2_2==RDIV||(LA2_2>=SHORTAND && LA2_2<=SHORTOR)||(LA2_2>=TIMES && LA2_2<=TRANS)) && ((((Command_IsEnabled() || !Command_IsEnabled()))&&(Index_IsActive()))))
+					else if ((LA2_2==AND||LA2_2==COLON||LA2_2==CTRANS||LA2_2==EQ||(LA2_2>=GT && LA2_2<=GTEQ)||LA2_2==LDIV||(LA2_2>=LT && LA2_2<=MTIMES)||LA2_2==NOTEQ||LA2_2==OR||LA2_2==PLUS||LA2_2==POW||LA2_2==RDIV||(LA2_2>=SHORTAND && LA2_2<=SHORTOR)||(LA2_2>=TIMES && LA2_2<=TRANS)) && (((True())&&(Index_IsActive()))))
 					{
 						alt2 = 1;
 					}
 
 
 				}
-				else if ((LA2_1==ID) && ((((Command_IsEnabled() || !Command_IsEnabled()))||(Command_IsEnabled()))))
+				else if ((LA2_1==ID) && (((True())||(Command_IsEnabled()))))
 				{
 					alt2 = 1;
 				}
-				else if ((LA2_1==AT||LA2_1==IMAGINARY||LA2_1==LCURLY||(LA2_1>=LPAREN && LA2_1<=LSQUARE)||LA2_1==MINUS||LA2_1==NOT||LA2_1==PLUS||LA2_1==QUESTION||LA2_1==REAL||LA2_1==STRING) && (((Command_IsEnabled() || !Command_IsEnabled()))))
+				else if ((LA2_1==AT||LA2_1==IMAGINARY||LA2_1==LCURLY||(LA2_1>=LPAREN && LA2_1<=LSQUARE)||LA2_1==MINUS||LA2_1==NOT||LA2_1==PLUS||LA2_1==QUESTION||LA2_1==REAL||LA2_1==STRING) && ((True())))
 				{
 					alt2 = 1;
 				}
@@ -3299,19 +3299,19 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				try { DebugEnterDecision(18, false);
 				int LA18_1 = input.LA(1);
 
-				if ((LA18_1==ID) && ((((Command_IsEnabled() || !Command_IsEnabled()))||(Command_IsEnabled()))))
+				if ((LA18_1==ID) && (((True())||(Command_IsEnabled()))))
 				{
 					alt18 = 1;
 				}
-				else if ((LA18_1==IMAGINARY||LA18_1==LCURLY||(LA18_1>=LPAREN && LA18_1<=LSQUARE)||LA18_1==MINUS||LA18_1==NOT||LA18_1==PLUS||LA18_1==REAL||LA18_1==STRING) && (((Command_IsEnabled() || !Command_IsEnabled()))))
+				else if ((LA18_1==IMAGINARY||LA18_1==LCURLY||(LA18_1>=LPAREN && LA18_1<=LSQUARE)||LA18_1==MINUS||LA18_1==NOT||LA18_1==PLUS||LA18_1==REAL||LA18_1==STRING) && ((True())))
 				{
 					alt18 = 1;
 				}
-				else if ((LA18_1==END) && ((((Command_IsEnabled() || !Command_IsEnabled()))&&(Index_IsActive()))))
+				else if ((LA18_1==END) && (((True())&&(Index_IsActive()))))
 				{
 					alt18 = 1;
 				}
-				else if ((LA18_1==AT||LA18_1==QUESTION) && (((Command_IsEnabled() || !Command_IsEnabled()))))
+				else if ((LA18_1==AT||LA18_1==QUESTION) && ((True())))
 				{
 					alt18 = 1;
 				}
@@ -4183,7 +4183,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				{
 					int LA24_2 = input.LA(2);
 
-					if (((((Command_IsEnabled() || !Command_IsEnabled()))&&(Index_IsActive()))))
+					if ((((True())&&(Index_IsActive()))))
 					{
 						alt24 = 1;
 					}
@@ -4194,11 +4194,11 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				{
 					alt24 = 1;
 				}
-				else if ((LA24_1==ID) && ((((Command_IsEnabled() || !Command_IsEnabled()))||(Command_IsEnabled()))))
+				else if ((LA24_1==ID) && (((True())||(Command_IsEnabled()))))
 				{
 					alt24 = 1;
 				}
-				else if ((LA24_1==AT||LA24_1==IMAGINARY||LA24_1==LCURLY||(LA24_1>=LPAREN && LA24_1<=LSQUARE)||LA24_1==MINUS||LA24_1==NOT||LA24_1==PLUS||LA24_1==QUESTION||LA24_1==REAL||LA24_1==STRING) && (((Command_IsEnabled() || !Command_IsEnabled()))))
+				else if ((LA24_1==AT||LA24_1==IMAGINARY||LA24_1==LCURLY||(LA24_1>=LPAREN && LA24_1<=LSQUARE)||LA24_1==MINUS||LA24_1==NOT||LA24_1==PLUS||LA24_1==QUESTION||LA24_1==REAL||LA24_1==STRING) && ((True())))
 				{
 					alt24 = 1;
 				}
@@ -4347,19 +4347,19 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			{
 				alt25 = 1;
 			}
-			else if ((LA25_1==ID) && ((((Command_IsEnabled() || !Command_IsEnabled()))||(Command_IsEnabled()))))
+			else if ((LA25_1==ID) && (((True())||(Command_IsEnabled()))))
 			{
 				alt25 = 2;
 			}
-			else if ((LA25_1==IMAGINARY||LA25_1==LCURLY||(LA25_1>=LPAREN && LA25_1<=LSQUARE)||LA25_1==MINUS||LA25_1==NOT||LA25_1==PLUS||LA25_1==REAL||LA25_1==STRING) && (((Command_IsEnabled() || !Command_IsEnabled()))))
+			else if ((LA25_1==IMAGINARY||LA25_1==LCURLY||(LA25_1>=LPAREN && LA25_1<=LSQUARE)||LA25_1==MINUS||LA25_1==NOT||LA25_1==PLUS||LA25_1==REAL||LA25_1==STRING) && ((True())))
 			{
 				alt25 = 2;
 			}
-			else if ((LA25_1==END) && ((((Command_IsEnabled() || !Command_IsEnabled()))&&(Index_IsActive()))))
+			else if ((LA25_1==END) && (((True())&&(Index_IsActive()))))
 			{
 				alt25 = 2;
 			}
-			else if ((LA25_1==AT||LA25_1==QUESTION) && (((Command_IsEnabled() || !Command_IsEnabled()))))
+			else if ((LA25_1==AT||LA25_1==QUESTION) && ((True())))
 			{
 				alt25 = 2;
 			}
@@ -9902,11 +9902,11 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			{
 				int LA57_2 = input.LA(2);
 
-				if (((EvaluatePredicate(synpred2_MatlabParser_fragment)&&((Command_IsEnabled() || !Command_IsEnabled())))))
+				if (((EvaluatePredicate(synpred2_MatlabParser_fragment)&&(True()))))
 				{
 					alt57 = 1;
 				}
-				else if (((EvaluatePredicate(synpred3_MatlabParser_fragment)&&((Command_IsEnabled() || !Command_IsEnabled())))))
+				else if (((EvaluatePredicate(synpred3_MatlabParser_fragment)&&(True()))))
 				{
 					alt57 = 2;
 				}
@@ -9930,11 +9930,11 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			{
 				int LA57_2 = input.LA(2);
 
-				if (((EvaluatePredicate(synpred2_MatlabParser_fragment)&&((Command_IsEnabled() || !Command_IsEnabled())))))
+				if (((EvaluatePredicate(synpred2_MatlabParser_fragment)&&(True()))))
 				{
 					alt57 = 1;
 				}
-				else if (((EvaluatePredicate(synpred3_MatlabParser_fragment)&&((Command_IsEnabled() || !Command_IsEnabled())))))
+				else if (((EvaluatePredicate(synpred3_MatlabParser_fragment)&&(True()))))
 				{
 					alt57 = 2;
 				}
@@ -9946,47 +9946,47 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 					throw nvae;
 				}
 			}
-			else if ((LA57_1==PLUS) && ((EvaluatePredicate(synpred3_MatlabParser_fragment)&&((Command_IsEnabled() || !Command_IsEnabled())))))
+			else if ((LA57_1==PLUS) && ((EvaluatePredicate(synpred3_MatlabParser_fragment)&&(True()))))
 			{
 				alt57 = 2;
 			}
-			else if ((LA57_1==MINUS) && ((EvaluatePredicate(synpred3_MatlabParser_fragment)&&((Command_IsEnabled() || !Command_IsEnabled())))))
+			else if ((LA57_1==MINUS) && ((EvaluatePredicate(synpred3_MatlabParser_fragment)&&(True()))))
 			{
 				alt57 = 2;
 			}
-			else if ((LA57_1==NOT) && ((EvaluatePredicate(synpred3_MatlabParser_fragment)&&((Command_IsEnabled() || !Command_IsEnabled())))))
+			else if ((LA57_1==NOT) && ((EvaluatePredicate(synpred3_MatlabParser_fragment)&&(True()))))
 			{
 				alt57 = 2;
 			}
-			else if ((LA57_1==REAL) && ((EvaluatePredicate(synpred3_MatlabParser_fragment)&&((Command_IsEnabled() || !Command_IsEnabled())))))
+			else if ((LA57_1==REAL) && ((EvaluatePredicate(synpred3_MatlabParser_fragment)&&(True()))))
 			{
 				alt57 = 2;
 			}
-			else if ((LA57_1==IMAGINARY) && ((EvaluatePredicate(synpred3_MatlabParser_fragment)&&((Command_IsEnabled() || !Command_IsEnabled())))))
+			else if ((LA57_1==IMAGINARY) && ((EvaluatePredicate(synpred3_MatlabParser_fragment)&&(True()))))
 			{
 				alt57 = 2;
 			}
-			else if ((LA57_1==STRING) && ((EvaluatePredicate(synpred3_MatlabParser_fragment)&&((Command_IsEnabled() || !Command_IsEnabled())))))
+			else if ((LA57_1==STRING) && ((EvaluatePredicate(synpred3_MatlabParser_fragment)&&(True()))))
 			{
 				alt57 = 2;
 			}
-			else if ((LA57_1==LCURLY) && ((EvaluatePredicate(synpred3_MatlabParser_fragment)&&((Command_IsEnabled() || !Command_IsEnabled())))))
+			else if ((LA57_1==LCURLY) && ((EvaluatePredicate(synpred3_MatlabParser_fragment)&&(True()))))
 			{
 				alt57 = 2;
 			}
-			else if ((LA57_1==LPAREN) && ((EvaluatePredicate(synpred3_MatlabParser_fragment)&&((Command_IsEnabled() || !Command_IsEnabled())))))
+			else if ((LA57_1==LPAREN) && ((EvaluatePredicate(synpred3_MatlabParser_fragment)&&(True()))))
 			{
 				alt57 = 2;
 			}
-			else if ((LA57_1==END) && (((EvaluatePredicate(synpred3_MatlabParser_fragment)&&((Command_IsEnabled() || !Command_IsEnabled())))&&(Index_IsActive()))))
+			else if ((LA57_1==END) && (((EvaluatePredicate(synpred3_MatlabParser_fragment)&&(True()))&&(Index_IsActive()))))
 			{
 				alt57 = 2;
 			}
-			else if ((LA57_1==AT) && ((EvaluatePredicate(synpred3_MatlabParser_fragment)&&((Command_IsEnabled() || !Command_IsEnabled())))))
+			else if ((LA57_1==AT) && ((EvaluatePredicate(synpred3_MatlabParser_fragment)&&(True()))))
 			{
 				alt57 = 2;
 			}
-			else if ((LA57_1==QUESTION) && ((EvaluatePredicate(synpred3_MatlabParser_fragment)&&((Command_IsEnabled() || !Command_IsEnabled())))))
+			else if ((LA57_1==QUESTION) && ((EvaluatePredicate(synpred3_MatlabParser_fragment)&&(True()))))
 			{
 				alt57 = 2;
 			}
@@ -10788,7 +10788,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 
 		RewriteRuleSubtreeStream stream_assignmentCore=new RewriteRuleSubtreeStream(adaptor,"rule assignmentCore");
 		try { DebugEnterRule(GrammarFileName, "assignment");
-		DebugLocation(308, 97);
+		DebugLocation(308, 58);
 		try
 		{
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:308:12: ({...}? => assignmentCore -> assignmentCore )
@@ -10796,12 +10796,12 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:308:14: {...}? => assignmentCore
 			{
 			DebugLocation(308, 14);
-			if (!(((Command_IsEnabled() || !Command_IsEnabled()))))
+			if (!((True())))
 			{
 				if (state.backtracking>0) {state.failed=true; return retval;}
-				throw new FailedPredicateException(input, "assignment", "(Command_IsEnabled() || !Command_IsEnabled())");
+				throw new FailedPredicateException(input, "assignment", "True()");
 			}
-			DebugLocation(308, 65);
+			DebugLocation(308, 26);
 			PushFollow(Follow._assignmentCore_in_assignment2471);
 			assignmentCore191=assignmentCore();
 			PopFollow();
@@ -10822,9 +10822,9 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.Tree:null);
 
 			root_0 = (object)adaptor.Nil();
-			// 308:80: -> assignmentCore
+			// 308:41: -> assignmentCore
 			{
-				DebugLocation(308, 83);
+				DebugLocation(308, 44);
 				adaptor.AddChild(root_0, stream_assignmentCore.NextTree());
 
 			}
@@ -10855,7 +10855,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			LeaveRule("assignment", 63);
 			LeaveRule_assignment();
 		}
-		DebugLocation(308, 97);
+		DebugLocation(308, 58);
 		} finally { DebugExitRule(GrammarFileName, "assignment"); }
 		return retval;
 
@@ -11691,7 +11691,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 		RewriteRuleSubtreeStream stream_expression=new RewriteRuleSubtreeStream(adaptor,"rule expression");
 		RewriteRuleSubtreeStream stream_xEOS=new RewriteRuleSubtreeStream(adaptor,"rule xEOS");
 		try { DebugEnterRule(GrammarFileName, "action");
-		DebugLocation(328, 109);
+		DebugLocation(328, 70);
 		try
 		{
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:328:8: ({...}? => expression xEOS -> ^( ACTION[\"\"] expression xEOS ) )
@@ -11699,18 +11699,18 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:328:10: {...}? => expression xEOS
 			{
 			DebugLocation(328, 10);
-			if (!(((Command_IsEnabled() || !Command_IsEnabled()))))
+			if (!((True())))
 			{
 				if (state.backtracking>0) {state.failed=true; return retval;}
-				throw new FailedPredicateException(input, "action", "(Command_IsEnabled() || !Command_IsEnabled())");
+				throw new FailedPredicateException(input, "action", "True()");
 			}
-			DebugLocation(328, 61);
+			DebugLocation(328, 22);
 			PushFollow(Follow._expression_in_action2672);
 			expression211=expression();
 			PopFollow();
 			if (state.failed) return retval;
 			if (state.backtracking == 0) stream_expression.Add(expression211.Tree);
-			DebugLocation(328, 72);
+			DebugLocation(328, 33);
 			PushFollow(Follow._xEOS_in_action2674);
 			xEOS212=xEOS();
 			PopFollow();
@@ -11731,18 +11731,18 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.Tree:null);
 
 			root_0 = (object)adaptor.Nil();
-			// 328:77: -> ^( ACTION[\"\"] expression xEOS )
+			// 328:38: -> ^( ACTION[\"\"] expression xEOS )
 			{
-				DebugLocation(328, 80);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:328:80: ^( ACTION[\"\"] expression xEOS )
+				DebugLocation(328, 41);
+				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:328:41: ^( ACTION[\"\"] expression xEOS )
 				{
 				object root_1 = (object)adaptor.Nil();
-				DebugLocation(328, 82);
+				DebugLocation(328, 43);
 				root_1 = (object)adaptor.BecomeRoot((object)adaptor.Create(ACTION, ""), root_1);
 
-				DebugLocation(328, 93);
+				DebugLocation(328, 54);
 				adaptor.AddChild(root_1, stream_expression.NextTree());
-				DebugLocation(328, 104);
+				DebugLocation(328, 65);
 				adaptor.AddChild(root_1, stream_xEOS.NextTree());
 
 				adaptor.AddChild(root_0, root_1);
@@ -11776,7 +11776,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			LeaveRule("action", 68);
 			LeaveRule_action();
 		}
-		DebugLocation(328, 109);
+		DebugLocation(328, 70);
 		} finally { DebugExitRule(GrammarFileName, "action"); }
 		return retval;
 
@@ -15224,7 +15224,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			{
 				int LA76_2 = input.LA(2);
 
-				if ((!((((Command_IsEnabled() || !Command_IsEnabled()))))))
+				if ((!(((True())))))
 				{
 					alt76 = 1;
 				}
@@ -16365,7 +16365,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 	partial void EnterRule_catchPart();
 	partial void LeaveRule_catchPart();
 	// $ANTLR start "catchPart"
-	// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:439:1: catchPart : CATCH ( options {greedy=true; } : capturePortion )? statements -> ^( CATCH ( capturePortion )? ( statements )? ) ;
+	// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:439:1: catchPart : CATCH ( options {greedy=true; } :{...}? => capturePortion )? statements -> ^( CATCH ( capturePortion )? ( statements )? ) ;
 	[GrammarRule("catchPart")]
 	private AstParserRuleReturnScope<object, IToken> catchPart()
 	{
@@ -16386,70 +16386,71 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 		RewriteRuleSubtreeStream stream_capturePortion=new RewriteRuleSubtreeStream(adaptor,"rule capturePortion");
 		RewriteRuleSubtreeStream stream_statements=new RewriteRuleSubtreeStream(adaptor,"rule statements");
 		try { DebugEnterRule(GrammarFileName, "catchPart");
-		DebugLocation(439, 115);
+		DebugLocation(439, 127);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:439:11: ( CATCH ( options {greedy=true; } : capturePortion )? statements -> ^( CATCH ( capturePortion )? ( statements )? ) )
+			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:439:11: ( CATCH ( options {greedy=true; } :{...}? => capturePortion )? statements -> ^( CATCH ( capturePortion )? ( statements )? ) )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:439:13: CATCH ( options {greedy=true; } : capturePortion )? statements
+			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:439:13: CATCH ( options {greedy=true; } :{...}? => capturePortion )? statements
 			{
 			DebugLocation(439, 13);
 			CATCH315=(IToken)Match(input,CATCH,Follow._CATCH_in_catchPart3789); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_CATCH.Add(CATCH315);
 
 			DebugLocation(439, 19);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:439:19: ( options {greedy=true; } : capturePortion )?
+			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:439:19: ( options {greedy=true; } :{...}? => capturePortion )?
 			int alt82=2;
 			try { DebugEnterSubRule(82);
 			try { DebugEnterDecision(82, false);
 			int LA82_1 = input.LA(1);
 
-			if ((LA82_1==ID))
+			if ((LA82_1==ID) && (((True())||(Command_IsEnabled()))))
 			{
-				switch (input.LA(2))
+				int LA82_2 = input.LA(2);
+
+				if ((LA82_2==SEMICOLON) && (((True())||(Command_IsEnabled()))))
 				{
-				case SEMICOLON:
-					{
 					int LA82_3 = input.LA(3);
 
-					if ((!(((((Command_IsEnabled() || !Command_IsEnabled()))||(Command_IsEnabled()))))))
+					if (((True())))
 					{
 						alt82 = 1;
 					}
-					}
-					break;
-				case COMMA:
-					{
-					int LA82_3 = input.LA(3);
-
-					if ((!(((((Command_IsEnabled() || !Command_IsEnabled()))||(Command_IsEnabled()))))))
-					{
-						alt82 = 1;
-					}
-					}
-					break;
-				case EOL:
-					{
-					int LA82_3 = input.LA(3);
-
-					if ((!(((((Command_IsEnabled() || !Command_IsEnabled()))||(Command_IsEnabled()))))))
-					{
-						alt82 = 1;
-					}
-					}
-					break;
 				}
+				else if ((LA82_2==COMMA) && (((True())||(Command_IsEnabled()))))
+				{
+					int LA82_3 = input.LA(3);
 
+					if (((True())))
+					{
+						alt82 = 1;
+					}
+				}
+				else if ((LA82_2==EOL) && (((True())||(Command_IsEnabled()))))
+				{
+					int LA82_3 = input.LA(3);
+
+					if (((True())))
+					{
+						alt82 = 1;
+					}
+				}
 			}
 			} finally { DebugExitDecision(82); }
 			switch (alt82)
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:439:44: capturePortion
+				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:439:44: {...}? => capturePortion
 				{
 				DebugLocation(439, 44);
-				PushFollow(Follow._capturePortion_in_catchPart3800);
+				if (!((True())))
+				{
+					if (state.backtracking>0) {state.failed=true; return retval;}
+					throw new FailedPredicateException(input, "catchPart", "True()");
+				}
+				DebugLocation(439, 56);
+				PushFollow(Follow._capturePortion_in_catchPart3803);
 				capturePortion316=capturePortion();
 				PopFollow();
 				if (state.failed) return retval;
@@ -16461,8 +16462,8 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			}
 			} finally { DebugExitSubRule(82); }
 
-			DebugLocation(439, 61);
-			PushFollow(Follow._statements_in_catchPart3804);
+			DebugLocation(439, 73);
+			PushFollow(Follow._statements_in_catchPart3807);
 			statements317=statements();
 			PopFollow();
 			if (state.failed) return retval;
@@ -16482,29 +16483,29 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.Tree:null);
 
 			root_0 = (object)adaptor.Nil();
-			// 439:72: -> ^( CATCH ( capturePortion )? ( statements )? )
+			// 439:84: -> ^( CATCH ( capturePortion )? ( statements )? )
 			{
-				DebugLocation(439, 75);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:439:75: ^( CATCH ( capturePortion )? ( statements )? )
+				DebugLocation(439, 87);
+				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:439:87: ^( CATCH ( capturePortion )? ( statements )? )
 				{
 				object root_1 = (object)adaptor.Nil();
-				DebugLocation(439, 77);
+				DebugLocation(439, 89);
 				root_1 = (object)adaptor.BecomeRoot(stream_CATCH.NextNode(), root_1);
 
-				DebugLocation(439, 83);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:439:83: ( capturePortion )?
+				DebugLocation(439, 95);
+				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:439:95: ( capturePortion )?
 				if (stream_capturePortion.HasNext)
 				{
-					DebugLocation(439, 84);
+					DebugLocation(439, 96);
 					adaptor.AddChild(root_1, stream_capturePortion.NextTree());
 
 				}
 				stream_capturePortion.Reset();
-				DebugLocation(439, 101);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:439:101: ( statements )?
+				DebugLocation(439, 113);
+				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:439:113: ( statements )?
 				if (stream_statements.HasNext)
 				{
-					DebugLocation(439, 102);
+					DebugLocation(439, 114);
 					adaptor.AddChild(root_1, stream_statements.NextTree());
 
 				}
@@ -16541,7 +16542,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			LeaveRule("catchPart", 100);
 			LeaveRule_catchPart();
 		}
-		DebugLocation(439, 115);
+		DebugLocation(439, 127);
 		} finally { DebugExitRule(GrammarFileName, "catchPart"); }
 		return retval;
 
@@ -16577,13 +16578,13 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:441:18: var xEOS
 			{
 			DebugLocation(441, 18);
-			PushFollow(Follow._var_in_capturePortion3829);
+			PushFollow(Follow._var_in_capturePortion3832);
 			var318=var();
 			PopFollow();
 			if (state.failed) return retval;
 			if (state.backtracking == 0) stream_var.Add(var318.Tree);
 			DebugLocation(441, 22);
-			PushFollow(Follow._xEOS_in_capturePortion3831);
+			PushFollow(Follow._xEOS_in_capturePortion3834);
 			xEOS319=xEOS();
 			PopFollow();
 			if (state.failed) return retval;
@@ -16680,27 +16681,27 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:445:9: WHILE expression statements END xEOS
 			{
 			DebugLocation(445, 9);
-			WHILE320=(IToken)Match(input,WHILE,Follow._WHILE_in_while3846); if (state.failed) return retval; 
+			WHILE320=(IToken)Match(input,WHILE,Follow._WHILE_in_while3849); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_WHILE.Add(WHILE320);
 
 			DebugLocation(445, 15);
-			PushFollow(Follow._expression_in_while3848);
+			PushFollow(Follow._expression_in_while3851);
 			expression321=expression();
 			PopFollow();
 			if (state.failed) return retval;
 			if (state.backtracking == 0) stream_expression.Add(expression321.Tree);
 			DebugLocation(445, 26);
-			PushFollow(Follow._statements_in_while3850);
+			PushFollow(Follow._statements_in_while3853);
 			statements322=statements();
 			PopFollow();
 			if (state.failed) return retval;
 			if (state.backtracking == 0) stream_statements.Add(statements322.Tree);
 			DebugLocation(445, 37);
-			END323=(IToken)Match(input,END,Follow._END_in_while3852); if (state.failed) return retval; 
+			END323=(IToken)Match(input,END,Follow._END_in_while3855); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_END.Add(END323);
 
 			DebugLocation(445, 41);
-			PushFollow(Follow._xEOS_in_while3854);
+			PushFollow(Follow._xEOS_in_while3857);
 			xEOS324=xEOS();
 			PopFollow();
 			if (state.failed) return retval;
@@ -16808,7 +16809,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:449:14: expression11
 			{
 			DebugLocation(449, 14);
-			PushFollow(Follow._expression11_in_expression3880);
+			PushFollow(Follow._expression11_in_expression3883);
 			expression11325=expression11();
 			PopFollow();
 			if (state.failed) return retval;
@@ -16904,7 +16905,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:451:17: x1= expression10
 			{
 			DebugLocation(451, 19);
-			PushFollow(Follow._expression10_in_expression113896);
+			PushFollow(Follow._expression10_in_expression113899);
 			x1=expression10();
 			PopFollow();
 			if (state.failed) return retval;
@@ -16961,11 +16962,11 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:451:66: SHORTOR x2= expression10
 					{
 					DebugLocation(451, 66);
-					SHORTOR326=(IToken)Match(input,SHORTOR,Follow._SHORTOR_in_expression113913); if (state.failed) return retval; 
+					SHORTOR326=(IToken)Match(input,SHORTOR,Follow._SHORTOR_in_expression113916); if (state.failed) return retval; 
 					if (state.backtracking == 0) stream_SHORTOR.Add(SHORTOR326);
 
 					DebugLocation(451, 76);
-					PushFollow(Follow._expression10_in_expression113917);
+					PushFollow(Follow._expression10_in_expression113920);
 					x2=expression10();
 					PopFollow();
 					if (state.failed) return retval;
@@ -17088,7 +17089,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:453:17: x1= expression09
 			{
 			DebugLocation(453, 19);
-			PushFollow(Follow._expression09_in_expression103943);
+			PushFollow(Follow._expression09_in_expression103946);
 			x1=expression09();
 			PopFollow();
 			if (state.failed) return retval;
@@ -17145,11 +17146,11 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:453:66: SHORTAND x2= expression09
 					{
 					DebugLocation(453, 66);
-					SHORTAND327=(IToken)Match(input,SHORTAND,Follow._SHORTAND_in_expression103960); if (state.failed) return retval; 
+					SHORTAND327=(IToken)Match(input,SHORTAND,Follow._SHORTAND_in_expression103963); if (state.failed) return retval; 
 					if (state.backtracking == 0) stream_SHORTAND.Add(SHORTAND327);
 
 					DebugLocation(453, 77);
-					PushFollow(Follow._expression09_in_expression103964);
+					PushFollow(Follow._expression09_in_expression103967);
 					x2=expression09();
 					PopFollow();
 					if (state.failed) return retval;
@@ -17272,7 +17273,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:455:17: x1= expression08
 			{
 			DebugLocation(455, 19);
-			PushFollow(Follow._expression08_in_expression093990);
+			PushFollow(Follow._expression08_in_expression093993);
 			x1=expression08();
 			PopFollow();
 			if (state.failed) return retval;
@@ -17329,11 +17330,11 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:455:66: OR x2= expression08
 					{
 					DebugLocation(455, 66);
-					OR328=(IToken)Match(input,OR,Follow._OR_in_expression094007); if (state.failed) return retval; 
+					OR328=(IToken)Match(input,OR,Follow._OR_in_expression094010); if (state.failed) return retval; 
 					if (state.backtracking == 0) stream_OR.Add(OR328);
 
 					DebugLocation(455, 71);
-					PushFollow(Follow._expression08_in_expression094011);
+					PushFollow(Follow._expression08_in_expression094014);
 					x2=expression08();
 					PopFollow();
 					if (state.failed) return retval;
@@ -17456,7 +17457,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:457:17: x1= expression07
 			{
 			DebugLocation(457, 19);
-			PushFollow(Follow._expression07_in_expression084037);
+			PushFollow(Follow._expression07_in_expression084040);
 			x1=expression07();
 			PopFollow();
 			if (state.failed) return retval;
@@ -17513,11 +17514,11 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:457:66: AND x2= expression07
 					{
 					DebugLocation(457, 66);
-					AND329=(IToken)Match(input,AND,Follow._AND_in_expression084054); if (state.failed) return retval; 
+					AND329=(IToken)Match(input,AND,Follow._AND_in_expression084057); if (state.failed) return retval; 
 					if (state.backtracking == 0) stream_AND.Add(AND329);
 
 					DebugLocation(457, 72);
-					PushFollow(Follow._expression07_in_expression084058);
+					PushFollow(Follow._expression07_in_expression084061);
 					x2=expression07();
 					PopFollow();
 					if (state.failed) return retval;
@@ -17639,7 +17640,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:459:17: x1= expression06
 			{
 			DebugLocation(459, 19);
-			PushFollow(Follow._expression06_in_expression074084);
+			PushFollow(Follow._expression06_in_expression074087);
 			x1=expression06();
 			PopFollow();
 			if (state.failed) return retval;
@@ -17722,13 +17723,13 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:459:66: op= operator06 x2= expression06
 					{
 					DebugLocation(459, 68);
-					PushFollow(Follow._operator06_in_expression074103);
+					PushFollow(Follow._operator06_in_expression074106);
 					op=operator06();
 					PopFollow();
 					if (state.failed) return retval;
 					if (state.backtracking == 0) stream_operator06.Add(op.Tree);
 					DebugLocation(459, 82);
-					PushFollow(Follow._expression06_in_expression074107);
+					PushFollow(Follow._expression06_in_expression074110);
 					x2=expression06();
 					PopFollow();
 					if (state.failed) return retval;
@@ -17906,7 +17907,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:461:14: LT
 				{
 				DebugLocation(461, 14);
-				LT330=(IToken)Match(input,LT,Follow._LT_in_operator064131); if (state.failed) return retval; 
+				LT330=(IToken)Match(input,LT,Follow._LT_in_operator064134); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_LT.Add(LT330);
 
 
@@ -17942,7 +17943,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:462:8: LTEQ
 				{
 				DebugLocation(462, 8);
-				LTEQ331=(IToken)Match(input,LTEQ,Follow._LTEQ_in_operator064144); if (state.failed) return retval; 
+				LTEQ331=(IToken)Match(input,LTEQ,Follow._LTEQ_in_operator064147); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_LTEQ.Add(LTEQ331);
 
 
@@ -17978,7 +17979,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:463:8: GT
 				{
 				DebugLocation(463, 8);
-				GT332=(IToken)Match(input,GT,Follow._GT_in_operator064157); if (state.failed) return retval; 
+				GT332=(IToken)Match(input,GT,Follow._GT_in_operator064160); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_GT.Add(GT332);
 
 
@@ -18014,7 +18015,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:464:8: GTEQ
 				{
 				DebugLocation(464, 8);
-				GTEQ333=(IToken)Match(input,GTEQ,Follow._GTEQ_in_operator064170); if (state.failed) return retval; 
+				GTEQ333=(IToken)Match(input,GTEQ,Follow._GTEQ_in_operator064173); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_GTEQ.Add(GTEQ333);
 
 
@@ -18050,7 +18051,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:465:8: EQ
 				{
 				DebugLocation(465, 8);
-				EQ334=(IToken)Match(input,EQ,Follow._EQ_in_operator064183); if (state.failed) return retval; 
+				EQ334=(IToken)Match(input,EQ,Follow._EQ_in_operator064186); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_EQ.Add(EQ334);
 
 
@@ -18086,7 +18087,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:466:8: NOTEQ
 				{
 				DebugLocation(466, 8);
-				NOTEQ335=(IToken)Match(input,NOTEQ,Follow._NOTEQ_in_operator064196); if (state.failed) return retval; 
+				NOTEQ335=(IToken)Match(input,NOTEQ,Follow._NOTEQ_in_operator064199); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_NOTEQ.Add(NOTEQ335);
 
 
@@ -18182,7 +18183,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:469:17: x1= expression05
 			{
 			DebugLocation(469, 19);
-			PushFollow(Follow._expression05_in_expression064217);
+			PushFollow(Follow._expression05_in_expression064220);
 			x1=expression05();
 			PopFollow();
 			if (state.failed) return retval;
@@ -18258,11 +18259,11 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 						// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:469:91: COLON x2= expression05
 						{
 						DebugLocation(469, 91);
-						COLON336=(IToken)Match(input,COLON,Follow._COLON_in_expression064243); if (state.failed) return retval; 
+						COLON336=(IToken)Match(input,COLON,Follow._COLON_in_expression064246); if (state.failed) return retval; 
 						if (state.backtracking == 0) stream_COLON.Add(COLON336);
 
 						DebugLocation(469, 99);
-						PushFollow(Follow._expression05_in_expression064247);
+						PushFollow(Follow._expression05_in_expression064250);
 						x2=expression05();
 						PopFollow();
 						if (state.failed) return retval;
@@ -18404,7 +18405,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:471:17: x1= expression04
 			{
 			DebugLocation(471, 19);
-			PushFollow(Follow._expression04_in_expression054274);
+			PushFollow(Follow._expression04_in_expression054277);
 			x1=expression04();
 			PopFollow();
 			if (state.failed) return retval;
@@ -18447,7 +18448,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				try { DebugEnterDecision(91, false);
 				int LA91_1 = input.LA(1);
 
-				if ((LA91_1==PLUS) && ((((Command_IsEnabled() || !Command_IsEnabled()))||(Separator_CommaFollowsOrSpacesPrecede())||(!Balance_InCreationOrStore_SpacesOnLeftButNotOnRight()))))
+				if ((LA91_1==PLUS) && (((True())||(Separator_CommaFollowsOrSpacesPrecede())||(!Balance_InCreationOrStore_SpacesOnLeftButNotOnRight()))))
 				{
 					int LA91_2 = input.LA(2);
 
@@ -18458,7 +18459,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 
 
 				}
-				else if ((LA91_1==MINUS) && ((((Command_IsEnabled() || !Command_IsEnabled()))||(Separator_CommaFollowsOrSpacesPrecede())||(!Balance_InCreationOrStore_SpacesOnLeftButNotOnRight()))))
+				else if ((LA91_1==MINUS) && (((True())||(Separator_CommaFollowsOrSpacesPrecede())||(!Balance_InCreationOrStore_SpacesOnLeftButNotOnRight()))))
 				{
 					int LA91_2 = input.LA(2);
 
@@ -18485,13 +18486,13 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 						throw new FailedPredicateException(input, "expression05", "!Balance_InCreationOrStore_SpacesOnLeftButNotOnRight()");
 					}
 					DebugLocation(471, 128);
-					PushFollow(Follow._operator04_in_expression054296);
+					PushFollow(Follow._operator04_in_expression054299);
 					op=operator04();
 					PopFollow();
 					if (state.failed) return retval;
 					if (state.backtracking == 0) stream_operator04.Add(op.Tree);
 					DebugLocation(471, 142);
-					PushFollow(Follow._expression04_in_expression054300);
+					PushFollow(Follow._expression04_in_expression054303);
 					x2=expression04();
 					PopFollow();
 					if (state.failed) return retval;
@@ -18633,7 +18634,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:473:14: PLUS
 				{
 				DebugLocation(473, 14);
-				PLUS337=(IToken)Match(input,PLUS,Follow._PLUS_in_operator044324); if (state.failed) return retval; 
+				PLUS337=(IToken)Match(input,PLUS,Follow._PLUS_in_operator044327); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_PLUS.Add(PLUS337);
 
 
@@ -18669,7 +18670,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:474:8: MINUS
 				{
 				DebugLocation(474, 8);
-				MINUS338=(IToken)Match(input,MINUS,Follow._MINUS_in_operator044337); if (state.failed) return retval; 
+				MINUS338=(IToken)Match(input,MINUS,Follow._MINUS_in_operator044340); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_MINUS.Add(MINUS338);
 
 
@@ -18764,7 +18765,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:477:17: x1= expression03
 			{
 			DebugLocation(477, 19);
-			PushFollow(Follow._expression03_in_expression044358);
+			PushFollow(Follow._expression03_in_expression044361);
 			x1=expression03();
 			PopFollow();
 			if (state.failed) return retval;
@@ -18847,13 +18848,13 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:477:66: op= operator03 x2= expression03
 					{
 					DebugLocation(477, 68);
-					PushFollow(Follow._operator03_in_expression044377);
+					PushFollow(Follow._operator03_in_expression044380);
 					op=operator03();
 					PopFollow();
 					if (state.failed) return retval;
 					if (state.backtracking == 0) stream_operator03.Add(op.Tree);
 					DebugLocation(477, 82);
-					PushFollow(Follow._expression03_in_expression044381);
+					PushFollow(Follow._expression03_in_expression044384);
 					x2=expression03();
 					PopFollow();
 					if (state.failed) return retval;
@@ -19031,7 +19032,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:479:14: TIMES
 				{
 				DebugLocation(479, 14);
-				TIMES339=(IToken)Match(input,TIMES,Follow._TIMES_in_operator034405); if (state.failed) return retval; 
+				TIMES339=(IToken)Match(input,TIMES,Follow._TIMES_in_operator034408); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_TIMES.Add(TIMES339);
 
 
@@ -19067,7 +19068,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:480:8: RDIV
 				{
 				DebugLocation(480, 8);
-				RDIV340=(IToken)Match(input,RDIV,Follow._RDIV_in_operator034418); if (state.failed) return retval; 
+				RDIV340=(IToken)Match(input,RDIV,Follow._RDIV_in_operator034421); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_RDIV.Add(RDIV340);
 
 
@@ -19103,7 +19104,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:481:8: LDIV
 				{
 				DebugLocation(481, 8);
-				LDIV341=(IToken)Match(input,LDIV,Follow._LDIV_in_operator034431); if (state.failed) return retval; 
+				LDIV341=(IToken)Match(input,LDIV,Follow._LDIV_in_operator034434); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_LDIV.Add(LDIV341);
 
 
@@ -19139,7 +19140,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:482:8: MTIMES
 				{
 				DebugLocation(482, 8);
-				MTIMES342=(IToken)Match(input,MTIMES,Follow._MTIMES_in_operator034444); if (state.failed) return retval; 
+				MTIMES342=(IToken)Match(input,MTIMES,Follow._MTIMES_in_operator034447); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_MTIMES.Add(MTIMES342);
 
 
@@ -19175,7 +19176,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:483:8: MRDIV
 				{
 				DebugLocation(483, 8);
-				MRDIV343=(IToken)Match(input,MRDIV,Follow._MRDIV_in_operator034457); if (state.failed) return retval; 
+				MRDIV343=(IToken)Match(input,MRDIV,Follow._MRDIV_in_operator034460); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_MRDIV.Add(MRDIV343);
 
 
@@ -19211,7 +19212,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:484:8: MLDIV
 				{
 				DebugLocation(484, 8);
-				MLDIV344=(IToken)Match(input,MLDIV,Follow._MLDIV_in_operator034470); if (state.failed) return retval; 
+				MLDIV344=(IToken)Match(input,MLDIV,Follow._MLDIV_in_operator034473); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_MLDIV.Add(MLDIV344);
 
 
@@ -19333,13 +19334,13 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:487:16: op= operator02 x1= expression03
 				{
 				DebugLocation(487, 18);
-				PushFollow(Follow._operator02_in_expression034490);
+				PushFollow(Follow._operator02_in_expression034493);
 				op=operator02();
 				PopFollow();
 				if (state.failed) return retval;
 				if (state.backtracking == 0) stream_operator02.Add(op.Tree);
 				DebugLocation(487, 32);
-				PushFollow(Follow._expression03_in_expression034494);
+				PushFollow(Follow._expression03_in_expression034497);
 				x1=expression03();
 				PopFollow();
 				if (state.failed) return retval;
@@ -19389,7 +19390,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:488:7: x2= expression02
 				{
 				DebugLocation(488, 9);
-				PushFollow(Follow._expression02_in_expression034515);
+				PushFollow(Follow._expression02_in_expression034518);
 				x2=expression02();
 				PopFollow();
 				if (state.failed) return retval;
@@ -19518,7 +19519,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:491:14: PLUS
 				{
 				DebugLocation(491, 14);
-				PLUS345=(IToken)Match(input,PLUS,Follow._PLUS_in_operator024534); if (state.failed) return retval; 
+				PLUS345=(IToken)Match(input,PLUS,Follow._PLUS_in_operator024537); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_PLUS.Add(PLUS345);
 
 
@@ -19554,7 +19555,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:492:8: MINUS
 				{
 				DebugLocation(492, 8);
-				MINUS346=(IToken)Match(input,MINUS,Follow._MINUS_in_operator024548); if (state.failed) return retval; 
+				MINUS346=(IToken)Match(input,MINUS,Follow._MINUS_in_operator024551); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_MINUS.Add(MINUS346);
 
 
@@ -19590,7 +19591,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:493:8: NOT
 				{
 				DebugLocation(493, 8);
-				NOT347=(IToken)Match(input,NOT,Follow._NOT_in_operator024562); if (state.failed) return retval; 
+				NOT347=(IToken)Match(input,NOT,Follow._NOT_in_operator024565); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_NOT.Add(NOT347);
 
 
@@ -19692,7 +19693,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:496:17: x1= expression00
 			{
 			DebugLocation(496, 19);
-			PushFollow(Follow._expression00_in_expression024583);
+			PushFollow(Follow._expression00_in_expression024586);
 			x1=expression00();
 			PopFollow();
 			if (state.failed) return retval;
@@ -19770,13 +19771,13 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:498:10: op= operator01 x2= expression01
 					{
 					DebugLocation(498, 12);
-					PushFollow(Follow._operator01_in_expression024620);
+					PushFollow(Follow._operator01_in_expression024623);
 					op=operator01();
 					PopFollow();
 					if (state.failed) return retval;
 					if (state.backtracking == 0) stream_operator01.Add(op.Tree);
 					DebugLocation(498, 26);
-					PushFollow(Follow._expression01_in_expression024624);
+					PushFollow(Follow._expression01_in_expression024627);
 					x2=expression01();
 					PopFollow();
 					if (state.failed) return retval;
@@ -19836,7 +19837,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:499:10: TRANS
 					{
 					DebugLocation(499, 10);
-					TRANS348=(IToken)Match(input,TRANS,Follow._TRANS_in_expression024649); if (state.failed) return retval; 
+					TRANS348=(IToken)Match(input,TRANS,Follow._TRANS_in_expression024652); if (state.failed) return retval; 
 					if (state.backtracking == 0) stream_TRANS.Add(TRANS348);
 
 
@@ -19890,7 +19891,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:500:10: CTRANS
 					{
 					DebugLocation(500, 10);
-					CTRANS349=(IToken)Match(input,CTRANS,Follow._CTRANS_in_expression024670); if (state.failed) return retval; 
+					CTRANS349=(IToken)Match(input,CTRANS,Follow._CTRANS_in_expression024673); if (state.failed) return retval; 
 					if (state.backtracking == 0) stream_CTRANS.Add(CTRANS349);
 
 
@@ -20029,7 +20030,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:503:14: POW
 				{
 				DebugLocation(503, 14);
-				POW350=(IToken)Match(input,POW,Follow._POW_in_operator014699); if (state.failed) return retval; 
+				POW350=(IToken)Match(input,POW,Follow._POW_in_operator014702); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_POW.Add(POW350);
 
 
@@ -20065,7 +20066,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:504:8: MPOW
 				{
 				DebugLocation(504, 8);
-				MPOW351=(IToken)Match(input,MPOW,Follow._MPOW_in_operator014712); if (state.failed) return retval; 
+				MPOW351=(IToken)Match(input,MPOW,Follow._MPOW_in_operator014715); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_MPOW.Add(MPOW351);
 
 
@@ -20187,13 +20188,13 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:507:16: op= operator02 x1= expression01
 				{
 				DebugLocation(507, 18);
-				PushFollow(Follow._operator02_in_expression014732);
+				PushFollow(Follow._operator02_in_expression014735);
 				op=operator02();
 				PopFollow();
 				if (state.failed) return retval;
 				if (state.backtracking == 0) stream_operator02.Add(op.Tree);
 				DebugLocation(507, 32);
-				PushFollow(Follow._expression01_in_expression014736);
+				PushFollow(Follow._expression01_in_expression014739);
 				x1=expression01();
 				PopFollow();
 				if (state.failed) return retval;
@@ -20243,7 +20244,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:508:7: x2= expression00
 				{
 				DebugLocation(508, 9);
-				PushFollow(Follow._expression00_in_expression014757);
+				PushFollow(Follow._expression00_in_expression014760);
 				x2=expression00();
 				PopFollow();
 				if (state.failed) return retval;
@@ -20333,7 +20334,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:511:16: atom
 			{
 			DebugLocation(511, 16);
-			PushFollow(Follow._atom_in_expression004776);
+			PushFollow(Follow._atom_in_expression004779);
 			atom352=atom();
 			PopFollow();
 			if (state.failed) return retval;
@@ -20511,7 +20512,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:515:8: chain
 				{
 				DebugLocation(515, 8);
-				PushFollow(Follow._chain_in_atom4791);
+				PushFollow(Follow._chain_in_atom4794);
 				chain353=chain();
 				PopFollow();
 				if (state.failed) return retval;
@@ -20549,7 +20550,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:516:8: real
 				{
 				DebugLocation(516, 8);
-				PushFollow(Follow._real_in_atom4805);
+				PushFollow(Follow._real_in_atom4808);
 				real354=real();
 				PopFollow();
 				if (state.failed) return retval;
@@ -20587,7 +20588,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:517:5: imaginary
 				{
 				DebugLocation(517, 5);
-				PushFollow(Follow._imaginary_in_atom4816);
+				PushFollow(Follow._imaginary_in_atom4819);
 				imaginary355=imaginary();
 				PopFollow();
 				if (state.failed) return retval;
@@ -20625,7 +20626,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:518:5: string
 				{
 				DebugLocation(518, 5);
-				PushFollow(Follow._string_in_atom4827);
+				PushFollow(Follow._string_in_atom4830);
 				string356=@string();
 				PopFollow();
 				if (state.failed) return retval;
@@ -20663,7 +20664,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:519:5: regularArray
 				{
 				DebugLocation(519, 5);
-				PushFollow(Follow._regularArray_in_atom4838);
+				PushFollow(Follow._regularArray_in_atom4841);
 				regularArray357=regularArray();
 				PopFollow();
 				if (state.failed) return retval;
@@ -20701,7 +20702,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:520:5: cellArray
 				{
 				DebugLocation(520, 5);
-				PushFollow(Follow._cellArray_in_atom4849);
+				PushFollow(Follow._cellArray_in_atom4852);
 				cellArray358=cellArray();
 				PopFollow();
 				if (state.failed) return retval;
@@ -20739,7 +20740,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:521:5: parenthesized
 				{
 				DebugLocation(521, 5);
-				PushFollow(Follow._parenthesized_in_atom4860);
+				PushFollow(Follow._parenthesized_in_atom4863);
 				parenthesized359=parenthesized();
 				PopFollow();
 				if (state.failed) return retval;
@@ -20777,7 +20778,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:522:5: end
 				{
 				DebugLocation(522, 5);
-				PushFollow(Follow._end_in_atom4871);
+				PushFollow(Follow._end_in_atom4874);
 				end360=end();
 				PopFollow();
 				if (state.failed) return retval;
@@ -20815,7 +20816,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:523:5: functionHandle
 				{
 				DebugLocation(523, 5);
-				PushFollow(Follow._functionHandle_in_atom4882);
+				PushFollow(Follow._functionHandle_in_atom4885);
 				functionHandle361=functionHandle();
 				PopFollow();
 				if (state.failed) return retval;
@@ -20853,7 +20854,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:524:5: anonymousFunction
 				{
 				DebugLocation(524, 5);
-				PushFollow(Follow._anonymousFunction_in_atom4893);
+				PushFollow(Follow._anonymousFunction_in_atom4896);
 				anonymousFunction362=anonymousFunction();
 				PopFollow();
 				if (state.failed) return retval;
@@ -20891,7 +20892,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:525:5: metaclass
 				{
 				DebugLocation(525, 5);
-				PushFollow(Follow._metaclass_in_atom4904);
+				PushFollow(Follow._metaclass_in_atom4907);
 				metaclass363=metaclass();
 				PopFollow();
 				if (state.failed) return retval;
@@ -20996,7 +20997,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:532:2: x1= var
 			{
 			DebugLocation(532, 4);
-			PushFollow(Follow._var_in_chain4933);
+			PushFollow(Follow._var_in_chain4936);
 			x1=var();
 			PopFollow();
 			if (state.failed) return retval;
@@ -21054,7 +21055,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:533:5: ( DOT LPAREN )=>x2= dotExpressionOperator
 					{
 					DebugLocation(533, 22);
-					PushFollow(Follow._dotExpressionOperator_in_chain4954);
+					PushFollow(Follow._dotExpressionOperator_in_chain4957);
 					x2=dotExpressionOperator();
 					PopFollow();
 					if (state.failed) return retval;
@@ -21105,7 +21106,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:534:5: x3= dotNameOperator
 					{
 					DebugLocation(534, 7);
-					PushFollow(Follow._dotNameOperator_in_chain4976);
+					PushFollow(Follow._dotNameOperator_in_chain4979);
 					x3=dotNameOperator();
 					PopFollow();
 					if (state.failed) return retval;
@@ -21156,7 +21157,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:535:5: x4= parenthesisOperator
 					{
 					DebugLocation(535, 7);
-					PushFollow(Follow._parenthesisOperator_in_chain4998);
+					PushFollow(Follow._parenthesisOperator_in_chain5001);
 					x4=parenthesisOperator();
 					PopFollow();
 					if (state.failed) return retval;
@@ -21214,7 +21215,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:536:5: x5= curlyBraceOperator
 					{
 					DebugLocation(536, 7);
-					PushFollow(Follow._curlyBraceOperator_in_chain5023);
+					PushFollow(Follow._curlyBraceOperator_in_chain5026);
 					x5=curlyBraceOperator();
 					PopFollow();
 					if (state.failed) return retval;
@@ -21265,7 +21266,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:537:5: x6= atBaseOperator
 					{
 					DebugLocation(537, 7);
-					PushFollow(Follow._atBaseOperator_in_chain5045);
+					PushFollow(Follow._atBaseOperator_in_chain5048);
 					x6=atBaseOperator();
 					PopFollow();
 					if (state.failed) return retval;
@@ -21380,7 +21381,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:541:7: name
 			{
 			DebugLocation(541, 7);
-			PushFollow(Follow._name_in_var5075);
+			PushFollow(Follow._name_in_var5078);
 			name364=name();
 			PopFollow();
 			if (state.failed) return retval;
@@ -21493,21 +21494,21 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				throw new FailedPredicateException(input, "dotExpressionOperator", "Chain_MayAddDotExpression()");
 			}
 			DebugLocation(545, 34);
-			DOT365=(IToken)Match(input,DOT,Follow._DOT_in_dotExpressionOperator5103); if (state.failed) return retval; 
+			DOT365=(IToken)Match(input,DOT,Follow._DOT_in_dotExpressionOperator5106); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_DOT.Add(DOT365);
 
 			DebugLocation(545, 38);
-			LPAREN366=(IToken)Match(input,LPAREN,Follow._LPAREN_in_dotExpressionOperator5105); if (state.failed) return retval; 
+			LPAREN366=(IToken)Match(input,LPAREN,Follow._LPAREN_in_dotExpressionOperator5108); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_LPAREN.Add(LPAREN366);
 
 			DebugLocation(545, 45);
-			PushFollow(Follow._expression_in_dotExpressionOperator5107);
+			PushFollow(Follow._expression_in_dotExpressionOperator5110);
 			expression367=expression();
 			PopFollow();
 			if (state.failed) return retval;
 			if (state.backtracking == 0) stream_expression.Add(expression367.Tree);
 			DebugLocation(545, 56);
-			RPAREN368=(IToken)Match(input,RPAREN,Follow._RPAREN_in_dotExpressionOperator5109); if (state.failed) return retval; 
+			RPAREN368=(IToken)Match(input,RPAREN,Follow._RPAREN_in_dotExpressionOperator5112); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_RPAREN.Add(RPAREN368);
 
 
@@ -21602,11 +21603,11 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				throw new FailedPredicateException(input, "dotNameOperator", "Chain_MayAddDotName()");
 			}
 			DebugLocation(548, 46);
-			DOT369=(IToken)Match(input,DOT,Follow._DOT_in_dotNameOperator5130); if (state.failed) return retval; 
+			DOT369=(IToken)Match(input,DOT,Follow._DOT_in_dotNameOperator5133); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_DOT.Add(DOT369);
 
 			DebugLocation(548, 50);
-			PushFollow(Follow._anyName_in_dotNameOperator5132);
+			PushFollow(Follow._anyName_in_dotNameOperator5135);
 			anyName370=anyName();
 			PopFollow();
 			if (state.failed) return retval;
@@ -21694,7 +21695,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:551:11: xANYID
 			{
 			DebugLocation(551, 11);
-			PushFollow(Follow._xANYID_in_anyName5149);
+			PushFollow(Follow._xANYID_in_anyName5152);
 			xANYID371=xANYID();
 			PopFollow();
 			if (state.failed) return retval;
@@ -21810,7 +21811,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				throw new FailedPredicateException(input, "parenthesisOperator", "!Balance_InCreationOrStore_SpacesOnLeft()");
 			}
 			DebugLocation(555, 79);
-			LPAREN372=(IToken)Match(input,LPAREN,Follow._LPAREN_in_parenthesisOperator5179); if (state.failed) return retval; 
+			LPAREN372=(IToken)Match(input,LPAREN,Follow._LPAREN_in_parenthesisOperator5182); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_LPAREN.Add(LPAREN372);
 
 			DebugLocation(555, 86);
@@ -21840,7 +21841,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:555:87: arguments
 				{
 				DebugLocation(555, 87);
-				PushFollow(Follow._arguments_in_parenthesisOperator5182);
+				PushFollow(Follow._arguments_in_parenthesisOperator5185);
 				arguments373=arguments();
 				PopFollow();
 				if (state.failed) return retval;
@@ -21853,7 +21854,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			} finally { DebugExitSubRule(102); }
 
 			DebugLocation(555, 99);
-			RPAREN374=(IToken)Match(input,RPAREN,Follow._RPAREN_in_parenthesisOperator5186); if (state.failed) return retval; 
+			RPAREN374=(IToken)Match(input,RPAREN,Follow._RPAREN_in_parenthesisOperator5189); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_RPAREN.Add(RPAREN374);
 
 
@@ -21950,7 +21951,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:558:13: argument ( COMMA argument )*
 			{
 			DebugLocation(558, 13);
-			PushFollow(Follow._argument_in_arguments5206);
+			PushFollow(Follow._argument_in_arguments5209);
 			argument375=argument();
 			PopFollow();
 			if (state.failed) return retval;
@@ -21978,11 +21979,11 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:558:23: COMMA argument
 					{
 					DebugLocation(558, 23);
-					COMMA376=(IToken)Match(input,COMMA,Follow._COMMA_in_arguments5209); if (state.failed) return retval; 
+					COMMA376=(IToken)Match(input,COMMA,Follow._COMMA_in_arguments5212); if (state.failed) return retval; 
 					if (state.backtracking == 0) stream_COMMA.Add(COMMA376);
 
 					DebugLocation(558, 29);
-					PushFollow(Follow._argument_in_arguments5211);
+					PushFollow(Follow._argument_in_arguments5214);
 					argument377=argument();
 					PopFollow();
 					if (state.failed) return retval;
@@ -22127,7 +22128,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:560:12: expression
 				{
 				DebugLocation(560, 12);
-				PushFollow(Follow._expression_in_argument5229);
+				PushFollow(Follow._expression_in_argument5232);
 				expression378=expression();
 				PopFollow();
 				if (state.failed) return retval;
@@ -22165,7 +22166,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:561:6: COLON
 				{
 				DebugLocation(561, 6);
-				COLON379=(IToken)Match(input,COLON,Follow._COLON_in_argument5242); if (state.failed) return retval; 
+				COLON379=(IToken)Match(input,COLON,Follow._COLON_in_argument5245); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_COLON.Add(COLON379);
 
 
@@ -22271,17 +22272,17 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				throw new FailedPredicateException(input, "curlyBraceOperator", "!Balance_InCreationOrStore_SpacesOnLeft()");
 			}
 			DebugLocation(566, 78);
-			LCURLY380=(IToken)Match(input,LCURLY,Follow._LCURLY_in_curlyBraceOperator5273); if (state.failed) return retval; 
+			LCURLY380=(IToken)Match(input,LCURLY,Follow._LCURLY_in_curlyBraceOperator5276); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_LCURLY.Add(LCURLY380);
 
 			DebugLocation(566, 85);
-			PushFollow(Follow._arguments_in_curlyBraceOperator5275);
+			PushFollow(Follow._arguments_in_curlyBraceOperator5278);
 			arguments381=arguments();
 			PopFollow();
 			if (state.failed) return retval;
 			if (state.backtracking == 0) stream_arguments.Add(arguments381.Tree);
 			DebugLocation(566, 95);
-			RCURLY382=(IToken)Match(input,RCURLY,Follow._RCURLY_in_curlyBraceOperator5277); if (state.failed) return retval; 
+			RCURLY382=(IToken)Match(input,RCURLY,Follow._RCURLY_in_curlyBraceOperator5280); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_RCURLY.Add(RCURLY382);
 
 
@@ -22382,11 +22383,11 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				throw new FailedPredicateException(input, "atBaseOperator", "!Balance_InCreationOrStore_SpacesOnLeft()");
 			}
 			DebugLocation(569, 91);
-			AT383=(IToken)Match(input,AT,Follow._AT_in_atBaseOperator5300); if (state.failed) return retval; 
+			AT383=(IToken)Match(input,AT,Follow._AT_in_atBaseOperator5303); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_AT.Add(AT383);
 
 			DebugLocation(569, 94);
-			PushFollow(Follow._classReference_in_atBaseOperator5302);
+			PushFollow(Follow._classReference_in_atBaseOperator5305);
 			classReference384=classReference();
 			PopFollow();
 			if (state.failed) return retval;
@@ -22475,7 +22476,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:574:8: REAL
 			{
 			DebugLocation(574, 8);
-			REAL385=(IToken)Match(input,REAL,Follow._REAL_in_real5321); if (state.failed) return retval; 
+			REAL385=(IToken)Match(input,REAL,Follow._REAL_in_real5324); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_REAL.Add(REAL385);
 
 
@@ -22561,7 +22562,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:578:13: IMAGINARY
 			{
 			DebugLocation(578, 13);
-			IMAGINARY386=(IToken)Match(input,IMAGINARY,Follow._IMAGINARY_in_imaginary5336); if (state.failed) return retval; 
+			IMAGINARY386=(IToken)Match(input,IMAGINARY,Follow._IMAGINARY_in_imaginary5339); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_IMAGINARY.Add(IMAGINARY386);
 
 
@@ -22647,7 +22648,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:582:10: STRING
 			{
 			DebugLocation(582, 10);
-			STRING387=(IToken)Match(input,STRING,Follow._STRING_in_string5351); if (state.failed) return retval; 
+			STRING387=(IToken)Match(input,STRING,Follow._STRING_in_string5354); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_STRING.Add(STRING387);
 
 
@@ -22739,17 +22740,17 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:590:1: LSQUARE rows RSQUARE
 			{
 			DebugLocation(590, 1);
-			LSQUARE388=(IToken)Match(input,LSQUARE,Follow._LSQUARE_in_regularArray5375); if (state.failed) return retval; 
+			LSQUARE388=(IToken)Match(input,LSQUARE,Follow._LSQUARE_in_regularArray5378); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_LSQUARE.Add(LSQUARE388);
 
 			DebugLocation(590, 9);
-			PushFollow(Follow._rows_in_regularArray5377);
+			PushFollow(Follow._rows_in_regularArray5380);
 			rows389=rows();
 			PopFollow();
 			if (state.failed) return retval;
 			if (state.backtracking == 0) stream_rows.Add(rows389.Tree);
 			DebugLocation(590, 14);
-			RSQUARE390=(IToken)Match(input,RSQUARE,Follow._RSQUARE_in_regularArray5379); if (state.failed) return retval; 
+			RSQUARE390=(IToken)Match(input,RSQUARE,Follow._RSQUARE_in_regularArray5382); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_RSQUARE.Add(RSQUARE390);
 
 
@@ -22862,7 +22863,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:593:8: row ( ( SEMICOLON | EOL ) row )*
 			{
 			DebugLocation(593, 8);
-			PushFollow(Follow._row_in_rows5406);
+			PushFollow(Follow._row_in_rows5409);
 			row391=row();
 			PopFollow();
 			if (state.failed) return retval;
@@ -22919,7 +22920,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 						// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:593:14: SEMICOLON
 						{
 						DebugLocation(593, 14);
-						SEMICOLON392=(IToken)Match(input,SEMICOLON,Follow._SEMICOLON_in_rows5410); if (state.failed) return retval; 
+						SEMICOLON392=(IToken)Match(input,SEMICOLON,Follow._SEMICOLON_in_rows5413); if (state.failed) return retval; 
 						if (state.backtracking == 0) stream_SEMICOLON.Add(SEMICOLON392);
 
 
@@ -22930,7 +22931,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 						// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:593:26: EOL
 						{
 						DebugLocation(593, 26);
-						EOL393=(IToken)Match(input,EOL,Follow._EOL_in_rows5414); if (state.failed) return retval; 
+						EOL393=(IToken)Match(input,EOL,Follow._EOL_in_rows5417); if (state.failed) return retval; 
 						if (state.backtracking == 0) stream_EOL.Add(EOL393);
 
 
@@ -22941,7 +22942,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 					} finally { DebugExitSubRule(105); }
 
 					DebugLocation(593, 31);
-					PushFollow(Follow._row_in_rows5417);
+					PushFollow(Follow._row_in_rows5420);
 					row394=row();
 					PopFollow();
 					if (state.failed) return retval;
@@ -23151,7 +23152,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:595:8: COMMA
 					{
 					DebugLocation(595, 8);
-					COMMA395=(IToken)Match(input,COMMA,Follow._COMMA_in_row5436); if (state.failed) return retval; 
+					COMMA395=(IToken)Match(input,COMMA,Follow._COMMA_in_row5439); if (state.failed) return retval; 
 					if (state.backtracking == 0) stream_COMMA.Add(COMMA395);
 
 
@@ -23162,7 +23163,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				} finally { DebugExitSubRule(107); }
 
 				DebugLocation(595, 16);
-				PushFollow(Follow._columns_in_row5440);
+				PushFollow(Follow._columns_in_row5443);
 				columns396=columns();
 				PopFollow();
 				if (state.failed) return retval;
@@ -23186,7 +23187,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:595:25: COMMA
 					{
 					DebugLocation(595, 25);
-					COMMA397=(IToken)Match(input,COMMA,Follow._COMMA_in_row5443); if (state.failed) return retval; 
+					COMMA397=(IToken)Match(input,COMMA,Follow._COMMA_in_row5446); if (state.failed) return retval; 
 					if (state.backtracking == 0) stream_COMMA.Add(COMMA397);
 
 
@@ -23239,7 +23240,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:596:4: COMMA
 				{
 				DebugLocation(596, 4);
-				COMMA398=(IToken)Match(input,COMMA,Follow._COMMA_in_row5460); if (state.failed) return retval; 
+				COMMA398=(IToken)Match(input,COMMA,Follow._COMMA_in_row5463); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_COMMA.Add(COMMA398);
 
 
@@ -23369,7 +23370,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:600:11: column ({...}? => ( COMMA )? column )*
 			{
 			DebugLocation(600, 11);
-			PushFollow(Follow._column_in_columns5487);
+			PushFollow(Follow._column_in_columns5490);
 			column399=column();
 			PopFollow();
 			if (state.failed) return retval;
@@ -23444,7 +23445,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 						// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:600:65: COMMA
 						{
 						DebugLocation(600, 65);
-						COMMA400=(IToken)Match(input,COMMA,Follow._COMMA_in_columns5494); if (state.failed) return retval; 
+						COMMA400=(IToken)Match(input,COMMA,Follow._COMMA_in_columns5497); if (state.failed) return retval; 
 						if (state.backtracking == 0) stream_COMMA.Add(COMMA400);
 
 
@@ -23455,7 +23456,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 					} finally { DebugExitSubRule(110); }
 
 					DebugLocation(600, 73);
-					PushFollow(Follow._column_in_columns5498);
+					PushFollow(Follow._column_in_columns5501);
 					column401=column();
 					PopFollow();
 					if (state.failed) return retval;
@@ -23616,7 +23617,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:602:10: ( NOT ( COMMA | SEMICOLON | EOL | RSQUARE ) )=> NOT
 				{
 				DebugLocation(602, 54);
-				NOT402=(IToken)Match(input,NOT,Follow._NOT_in_column5537); if (state.failed) return retval; 
+				NOT402=(IToken)Match(input,NOT,Follow._NOT_in_column5540); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_NOT.Add(NOT402);
 
 
@@ -23672,7 +23673,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:603:7: expression
 				{
 				DebugLocation(603, 7);
-				PushFollow(Follow._expression_in_column5560);
+				PushFollow(Follow._expression_in_column5563);
 				expression403=expression();
 				PopFollow();
 				if (state.failed) return retval;
@@ -23768,17 +23769,17 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:610:1: LCURLY rows RCURLY
 			{
 			DebugLocation(610, 1);
-			LCURLY404=(IToken)Match(input,LCURLY,Follow._LCURLY_in_cellArray5587); if (state.failed) return retval; 
+			LCURLY404=(IToken)Match(input,LCURLY,Follow._LCURLY_in_cellArray5590); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_LCURLY.Add(LCURLY404);
 
 			DebugLocation(610, 8);
-			PushFollow(Follow._rows_in_cellArray5589);
+			PushFollow(Follow._rows_in_cellArray5592);
 			rows405=rows();
 			PopFollow();
 			if (state.failed) return retval;
 			if (state.backtracking == 0) stream_rows.Add(rows405.Tree);
 			DebugLocation(610, 13);
-			RCURLY406=(IToken)Match(input,RCURLY,Follow._RCURLY_in_cellArray5591); if (state.failed) return retval; 
+			RCURLY406=(IToken)Match(input,RCURLY,Follow._RCURLY_in_cellArray5594); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_RCURLY.Add(RCURLY406);
 
 
@@ -23891,17 +23892,17 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:617:1: LPAREN expression RPAREN
 			{
 			DebugLocation(617, 1);
-			LPAREN407=(IToken)Match(input,LPAREN,Follow._LPAREN_in_parenthesized5627); if (state.failed) return retval; 
+			LPAREN407=(IToken)Match(input,LPAREN,Follow._LPAREN_in_parenthesized5630); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_LPAREN.Add(LPAREN407);
 
 			DebugLocation(617, 8);
-			PushFollow(Follow._expression_in_parenthesized5629);
+			PushFollow(Follow._expression_in_parenthesized5632);
 			expression408=expression();
 			PopFollow();
 			if (state.failed) return retval;
 			if (state.backtracking == 0) stream_expression.Add(expression408.Tree);
 			DebugLocation(617, 19);
-			RPAREN409=(IToken)Match(input,RPAREN,Follow._RPAREN_in_parenthesized5631); if (state.failed) return retval; 
+			RPAREN409=(IToken)Match(input,RPAREN,Follow._RPAREN_in_parenthesized5634); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_RPAREN.Add(RPAREN409);
 
 
@@ -23994,7 +23995,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				throw new FailedPredicateException(input, "end", "Index_IsActive()");
 			}
 			DebugLocation(622, 29);
-			END410=(IToken)Match(input,END,Follow._END_in_end5653); if (state.failed) return retval; 
+			END410=(IToken)Match(input,END,Follow._END_in_end5656); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_END.Add(END410);
 
 
@@ -24082,11 +24083,11 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:626:18: AT functionReference
 			{
 			DebugLocation(626, 18);
-			AT411=(IToken)Match(input,AT,Follow._AT_in_functionHandle5668); if (state.failed) return retval; 
+			AT411=(IToken)Match(input,AT,Follow._AT_in_functionHandle5671); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_AT.Add(AT411);
 
 			DebugLocation(626, 21);
-			PushFollow(Follow._functionReference_in_functionHandle5670);
+			PushFollow(Follow._functionReference_in_functionHandle5673);
 			functionReference412=functionReference();
 			PopFollow();
 			if (state.failed) return retval;
@@ -24183,7 +24184,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:628:21: fullFunctioName
 			{
 			DebugLocation(628, 21);
-			PushFollow(Follow._fullFunctioName_in_functionReference5688);
+			PushFollow(Follow._fullFunctioName_in_functionReference5691);
 			fullFunctioName413=fullFunctioName();
 			PopFollow();
 			if (state.failed) return retval;
@@ -24285,7 +24286,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:630:19: xID ( DOT xANYID )*
 			{
 			DebugLocation(630, 19);
-			PushFollow(Follow._xID_in_fullFunctioName5706);
+			PushFollow(Follow._xID_in_fullFunctioName5709);
 			xID414=xID();
 			PopFollow();
 			if (state.failed) return retval;
@@ -24313,11 +24314,11 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:630:24: DOT xANYID
 					{
 					DebugLocation(630, 24);
-					DOT415=(IToken)Match(input,DOT,Follow._DOT_in_fullFunctioName5709); if (state.failed) return retval; 
+					DOT415=(IToken)Match(input,DOT,Follow._DOT_in_fullFunctioName5712); if (state.failed) return retval; 
 					if (state.backtracking == 0) stream_DOT.Add(DOT415);
 
 					DebugLocation(630, 28);
-					PushFollow(Follow._xANYID_in_fullFunctioName5711);
+					PushFollow(Follow._xANYID_in_fullFunctioName5714);
 					xANYID416=xANYID();
 					PopFollow();
 					if (state.failed) return retval;
@@ -24442,17 +24443,17 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:634:21: AT inputPortion expression
 			{
 			DebugLocation(634, 21);
-			AT417=(IToken)Match(input,AT,Follow._AT_in_anonymousFunction5738); if (state.failed) return retval; 
+			AT417=(IToken)Match(input,AT,Follow._AT_in_anonymousFunction5741); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_AT.Add(AT417);
 
 			DebugLocation(634, 24);
-			PushFollow(Follow._inputPortion_in_anonymousFunction5740);
+			PushFollow(Follow._inputPortion_in_anonymousFunction5743);
 			inputPortion418=inputPortion();
 			PopFollow();
 			if (state.failed) return retval;
 			if (state.backtracking == 0) stream_inputPortion.Add(inputPortion418.Tree);
 			DebugLocation(634, 37);
-			PushFollow(Follow._expression_in_anonymousFunction5742);
+			PushFollow(Follow._expression_in_anonymousFunction5745);
 			expression419=expression();
 			PopFollow();
 			if (state.failed) return retval;
@@ -24561,11 +24562,11 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:638:13: QUESTION classReference
 			{
 			DebugLocation(638, 13);
-			QUESTION420=(IToken)Match(input,QUESTION,Follow._QUESTION_in_metaclass5767); if (state.failed) return retval; 
+			QUESTION420=(IToken)Match(input,QUESTION,Follow._QUESTION_in_metaclass5770); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_QUESTION.Add(QUESTION420);
 
 			DebugLocation(638, 22);
-			PushFollow(Follow._classReference_in_metaclass5769);
+			PushFollow(Follow._classReference_in_metaclass5772);
 			classReference421=classReference();
 			PopFollow();
 			if (state.failed) return retval;
@@ -24701,7 +24702,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:642:8: SEMICOLON
 				{
 				DebugLocation(642, 8);
-				SEMICOLON422=(IToken)Match(input,SEMICOLON,Follow._SEMICOLON_in_xEOS5788); if (state.failed) return retval; 
+				SEMICOLON422=(IToken)Match(input,SEMICOLON,Follow._SEMICOLON_in_xEOS5791); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_SEMICOLON.Add(SEMICOLON422);
 
 
@@ -24737,7 +24738,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:643:5: COMMA
 				{
 				DebugLocation(643, 5);
-				COMMA423=(IToken)Match(input,COMMA,Follow._COMMA_in_xEOS5799); if (state.failed) return retval; 
+				COMMA423=(IToken)Match(input,COMMA,Follow._COMMA_in_xEOS5802); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_COMMA.Add(COMMA423);
 
 
@@ -24773,7 +24774,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:644:5: EOL
 				{
 				DebugLocation(644, 5);
-				EOL424=(IToken)Match(input,EOL,Follow._EOL_in_xEOS5811); if (state.failed) return retval; 
+				EOL424=(IToken)Match(input,EOL,Follow._EOL_in_xEOS5814); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_EOL.Add(EOL424);
 
 
@@ -24861,7 +24862,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:647:8: EOL
 			{
 			DebugLocation(647, 8);
-			EOL425=(IToken)Match(input,EOL,Follow._EOL_in_xEOL5828); if (state.failed) return retval; 
+			EOL425=(IToken)Match(input,EOL,Follow._EOL_in_xEOL5831); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_EOL.Add(EOL425);
 
 
@@ -24947,7 +24948,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:649:7: ID
 			{
 			DebugLocation(649, 7);
-			ID426=(IToken)Match(input,ID,Follow._ID_in_xID5842); if (state.failed) return retval; 
+			ID426=(IToken)Match(input,ID,Follow._ID_in_xID5845); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_ID.Add(ID426);
 
 
@@ -25215,7 +25216,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:651:10: ID
 				{
 				DebugLocation(651, 10);
-				ID427=(IToken)Match(input,ID,Follow._ID_in_xANYID5855); if (state.failed) return retval; 
+				ID427=(IToken)Match(input,ID,Follow._ID_in_xANYID5858); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_ID.Add(ID427);
 
 
@@ -25251,7 +25252,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:652:7: BREAK
 				{
 				DebugLocation(652, 7);
-				BREAK428=(IToken)Match(input,BREAK,Follow._BREAK_in_xANYID5868); if (state.failed) return retval; 
+				BREAK428=(IToken)Match(input,BREAK,Follow._BREAK_in_xANYID5871); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_BREAK.Add(BREAK428);
 
 
@@ -25287,7 +25288,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:653:7: CASE
 				{
 				DebugLocation(653, 7);
-				CASE429=(IToken)Match(input,CASE,Follow._CASE_in_xANYID5882); if (state.failed) return retval; 
+				CASE429=(IToken)Match(input,CASE,Follow._CASE_in_xANYID5885); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_CASE.Add(CASE429);
 
 
@@ -25323,7 +25324,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:654:7: CATCH
 				{
 				DebugLocation(654, 7);
-				CATCH430=(IToken)Match(input,CATCH,Follow._CATCH_in_xANYID5896); if (state.failed) return retval; 
+				CATCH430=(IToken)Match(input,CATCH,Follow._CATCH_in_xANYID5899); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_CATCH.Add(CATCH430);
 
 
@@ -25359,7 +25360,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:655:7: CLASSDEF
 				{
 				DebugLocation(655, 7);
-				CLASSDEF431=(IToken)Match(input,CLASSDEF,Follow._CLASSDEF_in_xANYID5910); if (state.failed) return retval; 
+				CLASSDEF431=(IToken)Match(input,CLASSDEF,Follow._CLASSDEF_in_xANYID5913); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_CLASSDEF.Add(CLASSDEF431);
 
 
@@ -25395,7 +25396,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:656:7: CONTINUE
 				{
 				DebugLocation(656, 7);
-				CONTINUE432=(IToken)Match(input,CONTINUE,Follow._CONTINUE_in_xANYID5924); if (state.failed) return retval; 
+				CONTINUE432=(IToken)Match(input,CONTINUE,Follow._CONTINUE_in_xANYID5927); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_CONTINUE.Add(CONTINUE432);
 
 
@@ -25431,7 +25432,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:657:7: ELSE
 				{
 				DebugLocation(657, 7);
-				ELSE433=(IToken)Match(input,ELSE,Follow._ELSE_in_xANYID5938); if (state.failed) return retval; 
+				ELSE433=(IToken)Match(input,ELSE,Follow._ELSE_in_xANYID5941); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_ELSE.Add(ELSE433);
 
 
@@ -25467,7 +25468,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:658:7: ELSEIF
 				{
 				DebugLocation(658, 7);
-				ELSEIF434=(IToken)Match(input,ELSEIF,Follow._ELSEIF_in_xANYID5952); if (state.failed) return retval; 
+				ELSEIF434=(IToken)Match(input,ELSEIF,Follow._ELSEIF_in_xANYID5955); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_ELSEIF.Add(ELSEIF434);
 
 
@@ -25503,7 +25504,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:659:7: END
 				{
 				DebugLocation(659, 7);
-				END435=(IToken)Match(input,END,Follow._END_in_xANYID5966); if (state.failed) return retval; 
+				END435=(IToken)Match(input,END,Follow._END_in_xANYID5969); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_END.Add(END435);
 
 
@@ -25539,7 +25540,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:660:7: FOR
 				{
 				DebugLocation(660, 7);
-				FOR436=(IToken)Match(input,FOR,Follow._FOR_in_xANYID5980); if (state.failed) return retval; 
+				FOR436=(IToken)Match(input,FOR,Follow._FOR_in_xANYID5983); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_FOR.Add(FOR436);
 
 
@@ -25575,7 +25576,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:661:7: FUNCTION
 				{
 				DebugLocation(661, 7);
-				FUNCTION437=(IToken)Match(input,FUNCTION,Follow._FUNCTION_in_xANYID5994); if (state.failed) return retval; 
+				FUNCTION437=(IToken)Match(input,FUNCTION,Follow._FUNCTION_in_xANYID5997); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_FUNCTION.Add(FUNCTION437);
 
 
@@ -25611,7 +25612,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:662:7: GLOBAL
 				{
 				DebugLocation(662, 7);
-				GLOBAL438=(IToken)Match(input,GLOBAL,Follow._GLOBAL_in_xANYID6008); if (state.failed) return retval; 
+				GLOBAL438=(IToken)Match(input,GLOBAL,Follow._GLOBAL_in_xANYID6011); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_GLOBAL.Add(GLOBAL438);
 
 
@@ -25647,7 +25648,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:663:7: IF
 				{
 				DebugLocation(663, 7);
-				IF439=(IToken)Match(input,IF,Follow._IF_in_xANYID6022); if (state.failed) return retval; 
+				IF439=(IToken)Match(input,IF,Follow._IF_in_xANYID6025); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_IF.Add(IF439);
 
 
@@ -25683,7 +25684,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:664:7: OTHERWISE
 				{
 				DebugLocation(664, 7);
-				OTHERWISE440=(IToken)Match(input,OTHERWISE,Follow._OTHERWISE_in_xANYID6036); if (state.failed) return retval; 
+				OTHERWISE440=(IToken)Match(input,OTHERWISE,Follow._OTHERWISE_in_xANYID6039); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_OTHERWISE.Add(OTHERWISE440);
 
 
@@ -25719,7 +25720,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:665:7: PARFOR
 				{
 				DebugLocation(665, 7);
-				PARFOR441=(IToken)Match(input,PARFOR,Follow._PARFOR_in_xANYID6050); if (state.failed) return retval; 
+				PARFOR441=(IToken)Match(input,PARFOR,Follow._PARFOR_in_xANYID6053); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_PARFOR.Add(PARFOR441);
 
 
@@ -25755,7 +25756,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:666:7: PERSISTENT
 				{
 				DebugLocation(666, 7);
-				PERSISTENT442=(IToken)Match(input,PERSISTENT,Follow._PERSISTENT_in_xANYID6064); if (state.failed) return retval; 
+				PERSISTENT442=(IToken)Match(input,PERSISTENT,Follow._PERSISTENT_in_xANYID6067); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_PERSISTENT.Add(PERSISTENT442);
 
 
@@ -25791,7 +25792,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:667:7: RETURN
 				{
 				DebugLocation(667, 7);
-				RETURN443=(IToken)Match(input,RETURN,Follow._RETURN_in_xANYID6078); if (state.failed) return retval; 
+				RETURN443=(IToken)Match(input,RETURN,Follow._RETURN_in_xANYID6081); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_RETURN.Add(RETURN443);
 
 
@@ -25827,7 +25828,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:668:7: SPMD
 				{
 				DebugLocation(668, 7);
-				SPMD444=(IToken)Match(input,SPMD,Follow._SPMD_in_xANYID6092); if (state.failed) return retval; 
+				SPMD444=(IToken)Match(input,SPMD,Follow._SPMD_in_xANYID6095); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_SPMD.Add(SPMD444);
 
 
@@ -25863,7 +25864,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:669:7: SWITCH
 				{
 				DebugLocation(669, 7);
-				SWITCH445=(IToken)Match(input,SWITCH,Follow._SWITCH_in_xANYID6106); if (state.failed) return retval; 
+				SWITCH445=(IToken)Match(input,SWITCH,Follow._SWITCH_in_xANYID6109); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_SWITCH.Add(SWITCH445);
 
 
@@ -25899,7 +25900,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:670:7: TRY
 				{
 				DebugLocation(670, 7);
-				TRY446=(IToken)Match(input,TRY,Follow._TRY_in_xANYID6120); if (state.failed) return retval; 
+				TRY446=(IToken)Match(input,TRY,Follow._TRY_in_xANYID6123); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_TRY.Add(TRY446);
 
 
@@ -25935,7 +25936,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:671:7: WHILE
 				{
 				DebugLocation(671, 7);
-				WHILE447=(IToken)Match(input,WHILE,Follow._WHILE_in_xANYID6134); if (state.failed) return retval; 
+				WHILE447=(IToken)Match(input,WHILE,Follow._WHILE_in_xANYID6137); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_WHILE.Add(WHILE447);
 
 
@@ -26049,7 +26050,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:674:15: ID
 				{
 				DebugLocation(674, 15);
-				ID448=(IToken)Match(input,ID,Follow._ID_in_xFUNCTIONID6153); if (state.failed) return retval; 
+				ID448=(IToken)Match(input,ID,Follow._ID_in_xFUNCTIONID6156); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_ID.Add(ID448);
 
 
@@ -26085,7 +26086,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:675:6: END
 				{
 				DebugLocation(675, 6);
-				END449=(IToken)Match(input,END,Follow._END_in_xFUNCTIONID6165); if (state.failed) return retval; 
+				END449=(IToken)Match(input,END,Follow._END_in_xFUNCTIONID6168); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_END.Add(END449);
 
 
@@ -26199,7 +26200,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:678:16: ID
 				{
 				DebugLocation(678, 16);
-				ID450=(IToken)Match(input,ID,Follow._ID_in_xPARAMETERID6183); if (state.failed) return retval; 
+				ID450=(IToken)Match(input,ID,Follow._ID_in_xPARAMETERID6186); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_ID.Add(ID450);
 
 
@@ -26235,7 +26236,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:679:7: NOT
 				{
 				DebugLocation(679, 7);
-				NOT451=(IToken)Match(input,NOT,Follow._NOT_in_xPARAMETERID6197); if (state.failed) return retval; 
+				NOT451=(IToken)Match(input,NOT,Follow._NOT_in_xPARAMETERID6200); if (state.failed) return retval; 
 				if (state.backtracking == 0) stream_NOT.Add(NOT451);
 
 
@@ -26329,7 +26330,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				throw new FailedPredicateException(input, "xEVENTS", "Keyword_EventsIdFollows()");
 			}
 			DebugLocation(682, 42);
-			ID452=(IToken)Match(input,ID,Follow._ID_in_xEVENTS6220); if (state.failed) return retval; 
+			ID452=(IToken)Match(input,ID,Follow._ID_in_xEVENTS6223); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_ID.Add(ID452);
 
 
@@ -26421,7 +26422,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				throw new FailedPredicateException(input, "xPROPERTIES", "Keyword_PropertiesIdFollows()");
 			}
 			DebugLocation(684, 50);
-			ID453=(IToken)Match(input,ID,Follow._ID_in_xPROPERTIES6236); if (state.failed) return retval; 
+			ID453=(IToken)Match(input,ID,Follow._ID_in_xPROPERTIES6239); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_ID.Add(ID453);
 
 
@@ -26513,7 +26514,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				throw new FailedPredicateException(input, "xMETHODS", "Keyword_MethodsIdFollows()");
 			}
 			DebugLocation(686, 44);
-			ID454=(IToken)Match(input,ID,Follow._ID_in_xMETHODS6252); if (state.failed) return retval; 
+			ID454=(IToken)Match(input,ID,Follow._ID_in_xMETHODS6255); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_ID.Add(ID454);
 
 
@@ -26605,7 +26606,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				throw new FailedPredicateException(input, "xENUMERATION", "Keyword_EnumerationIdFollows()");
 			}
 			DebugLocation(688, 52);
-			ID455=(IToken)Match(input,ID,Follow._ID_in_xENUMERATION6268); if (state.failed) return retval; 
+			ID455=(IToken)Match(input,ID,Follow._ID_in_xENUMERATION6271); if (state.failed) return retval; 
 			if (state.backtracking == 0) stream_ID.Add(ID455);
 
 
@@ -26888,9 +26889,9 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:533:6: DOT LPAREN
 			{
 			DebugLocation(533, 6);
-			Match(input,DOT,Follow._DOT_in_synpred7_MatlabParser4946); if (state.failed) return;
+			Match(input,DOT,Follow._DOT_in_synpred7_MatlabParser4949); if (state.failed) return;
 			DebugLocation(533, 10);
-			Match(input,LPAREN,Follow._LPAREN_in_synpred7_MatlabParser4948); if (state.failed) return;
+			Match(input,LPAREN,Follow._LPAREN_in_synpred7_MatlabParser4951); if (state.failed) return;
 
 			}
 
@@ -26920,7 +26921,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabParser.g3:602:11: NOT ( COMMA | SEMICOLON | EOL | RSQUARE )
 			{
 			DebugLocation(602, 11);
-			Match(input,NOT,Follow._NOT_in_synpred8_MatlabParser5517); if (state.failed) return;
+			Match(input,NOT,Follow._NOT_in_synpred8_MatlabParser5520); if (state.failed) return;
 			DebugLocation(602, 15);
 			if (input.LA(1)==COMMA||input.LA(1)==EOL||(input.LA(1)>=RSQUARE && input.LA(1)<=SEMICOLON))
 			{
@@ -27077,13 +27078,13 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 		case 0:
 			{
 				input.Rewind();
-				if ((LA1_1==ID) && ((((Command_IsEnabled() || !Command_IsEnabled()))||(Command_IsEnabled())))) {s = 1;}
+				if ((LA1_1==ID) && (((True())||(Command_IsEnabled())))) {s = 1;}
 
-				else if ((LA1_1==IMAGINARY||LA1_1==LCURLY||(LA1_1>=LPAREN && LA1_1<=LSQUARE)||LA1_1==MINUS||LA1_1==NOT||LA1_1==PLUS||LA1_1==REAL||LA1_1==STRING) && (((Command_IsEnabled() || !Command_IsEnabled())))) {s = 2;}
+				else if ((LA1_1==IMAGINARY||LA1_1==LCURLY||(LA1_1>=LPAREN && LA1_1<=LSQUARE)||LA1_1==MINUS||LA1_1==NOT||LA1_1==PLUS||LA1_1==REAL||LA1_1==STRING) && ((True()))) {s = 2;}
 
-				else if ((LA1_1==END) && ((((Command_IsEnabled() || !Command_IsEnabled()))&&(Index_IsActive())))) {s = 3;}
+				else if ((LA1_1==END) && (((True())&&(Index_IsActive())))) {s = 3;}
 
-				else if ((LA1_1==AT||LA1_1==QUESTION) && (((Command_IsEnabled() || !Command_IsEnabled())))) {s = 4;}
+				else if ((LA1_1==AT||LA1_1==QUESTION) && ((True()))) {s = 4;}
 
 				else if ((LA1_1==EOF||LA1_1==BREAK||(LA1_1>=COMMA && LA1_1<=COMMAND)||LA1_1==CONTINUE||LA1_1==EXCLAMATION||LA1_1==FOR||LA1_1==GLOBAL||LA1_1==IF||(LA1_1>=PARFOR && LA1_1<=PERSISTENT)||LA1_1==RETURN||LA1_1==SEMICOLON||LA1_1==SPMD||LA1_1==SWITCH||LA1_1==TRY||LA1_1==WHILE)) {s = 5;}
 
@@ -27443,21 +27444,21 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				input.Rewind();
 				if ((LA101_1==ASSIGN||LA101_1==COMMA||LA101_1==ID)) {s = 1;}
 
-				else if ((LA101_1==NOT||LA101_1==QUESTION) && (((Separator_CommaFollowsOrSpacesPrecede())||((Command_IsEnabled() || !Command_IsEnabled()))))) {s = 4;}
+				else if ((LA101_1==NOT||LA101_1==QUESTION) && (((Separator_CommaFollowsOrSpacesPrecede())||(True())))) {s = 4;}
 
 				else if ((LA101_1==CTRANS||LA101_1==LDIV||(LA101_1>=MLDIV && LA101_1<=MTIMES)||LA101_1==POW||LA101_1==RDIV||LA101_1==RSQUARE||(LA101_1>=TIMES && LA101_1<=TRANS))) {s = 6;}
 
-				else if ((LA101_1==MINUS||LA101_1==PLUS) && (((!Balance_InCreationOrStore_SpacesOnLeftButNotOnRight())||((Command_IsEnabled() || !Command_IsEnabled()))||(Separator_CommaFollowsOrSpacesPrecede())))) {s = 17;}
+				else if ((LA101_1==MINUS||LA101_1==PLUS) && (((!Balance_InCreationOrStore_SpacesOnLeftButNotOnRight())||(True())||(Separator_CommaFollowsOrSpacesPrecede())))) {s = 17;}
 
 				else if ((LA101_1==AND||LA101_1==COLON||(LA101_1>=END && LA101_1<=EQ)||(LA101_1>=GT && LA101_1<=GTEQ)||(LA101_1>=LT && LA101_1<=LTEQ)||LA101_1==NOTEQ||LA101_1==OR||LA101_1==RPAREN||(LA101_1>=SEMICOLON && LA101_1<=SHORTOR))) {s = 19;}
 
-				else if ((LA101_1==IMAGINARY||LA101_1==LSQUARE||LA101_1==REAL||LA101_1==STRING) && ((((Command_IsEnabled() || !Command_IsEnabled()))||(Separator_CommaFollowsOrSpacesPrecede())))) {s = 34;}
+				else if ((LA101_1==IMAGINARY||LA101_1==LSQUARE||LA101_1==REAL||LA101_1==STRING) && (((True())||(Separator_CommaFollowsOrSpacesPrecede())))) {s = 34;}
 
-				else if ((LA101_1==LCURLY) && ((((Command_IsEnabled() || !Command_IsEnabled()))||(Separator_CommaFollowsOrSpacesPrecede())||((Chain_MayAddCurlyBrace())&&(!Balance_InCreationOrStore_SpacesOnLeft()))))) {s = 38;}
+				else if ((LA101_1==LCURLY) && (((True())||(Separator_CommaFollowsOrSpacesPrecede())||((Chain_MayAddCurlyBrace())&&(!Balance_InCreationOrStore_SpacesOnLeft()))))) {s = 38;}
 
-				else if ((LA101_1==LPAREN) && ((((Command_IsEnabled() || !Command_IsEnabled()))||(Separator_CommaFollowsOrSpacesPrecede())||((Chain_MayAddParenthesis())&&(!Balance_InCreationOrStore_SpacesOnLeft()))))) {s = 39;}
+				else if ((LA101_1==LPAREN) && (((True())||(Separator_CommaFollowsOrSpacesPrecede())||((Chain_MayAddParenthesis())&&(!Balance_InCreationOrStore_SpacesOnLeft()))))) {s = 39;}
 
-				else if ((LA101_1==AT) && ((((Command_IsEnabled() || !Command_IsEnabled()))||(Separator_CommaFollowsOrSpacesPrecede())||((Chain_MayAddAtBase())&&(!Balance_InCreationOrStore_SpacesOnLeft()))))) {s = 40;}
+				else if ((LA101_1==AT) && (((True())||(Separator_CommaFollowsOrSpacesPrecede())||((Chain_MayAddAtBase())&&(!Balance_InCreationOrStore_SpacesOnLeft()))))) {s = 40;}
 
 				else if (((LA101_1>=BREAK && LA101_1<=CASE)||LA101_1==COMMAND||LA101_1==CONTINUE||(LA101_1>=ELSE && LA101_1<=ELSEIF)||LA101_1==EXCLAMATION||LA101_1==FOR||LA101_1==GLOBAL||LA101_1==IF||(LA101_1>=OTHERWISE && LA101_1<=PERSISTENT)||LA101_1==RCURLY||LA101_1==RETURN||LA101_1==SPMD||LA101_1==SWITCH||LA101_1==TRY||LA101_1==WHILE)) {s = 41;}
 
@@ -27471,7 +27472,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				input.Rewind();
 				if ((((Chain_MayAddCurlyBrace())&&(!Balance_InCreationOrStore_SpacesOnLeft())))) {s = 61;}
 
-				else if (((((Command_IsEnabled() || !Command_IsEnabled()))||(Separator_CommaFollowsOrSpacesPrecede())))) {s = 41;}
+				else if ((((True())||(Separator_CommaFollowsOrSpacesPrecede())))) {s = 41;}
 
 				input.Seek(index101_1);
 				break;
@@ -27481,7 +27482,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				input.Rewind();
 				if ((((Chain_MayAddParenthesis())&&(!Balance_InCreationOrStore_SpacesOnLeft())))) {s = 62;}
 
-				else if (((((Command_IsEnabled() || !Command_IsEnabled()))||(Separator_CommaFollowsOrSpacesPrecede())))) {s = 41;}
+				else if ((((True())||(Separator_CommaFollowsOrSpacesPrecede())))) {s = 41;}
 
 				input.Seek(index101_1);
 				break;
@@ -27491,7 +27492,7 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 				input.Rewind();
 				if ((((Chain_MayAddAtBase())&&(!Balance_InCreationOrStore_SpacesOnLeft())))) {s = 63;}
 
-				else if (((((Command_IsEnabled() || !Command_IsEnabled()))||(Separator_CommaFollowsOrSpacesPrecede())))) {s = 41;}
+				else if ((((True())||(Separator_CommaFollowsOrSpacesPrecede())))) {s = 41;}
 
 				input.Seek(index101_1);
 				break;
@@ -27848,180 +27849,180 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 		public static readonly BitSet _TRY_in_tryPart3767 = new BitSet(new ulong[]{0x2130172AC002C240UL,0x2950989CUL});
 		public static readonly BitSet _statements_in_tryPart3769 = new BitSet(new ulong[]{0x2UL});
 		public static readonly BitSet _CATCH_in_catchPart3789 = new BitSet(new ulong[]{0x2130172AC002C240UL,0x2950989CUL});
-		public static readonly BitSet _capturePortion_in_catchPart3800 = new BitSet(new ulong[]{0x2130172AC002C240UL,0x2950989CUL});
-		public static readonly BitSet _statements_in_catchPart3804 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _var_in_capturePortion3829 = new BitSet(new ulong[]{0x80004000UL,0x8000UL});
-		public static readonly BitSet _xEOS_in_capturePortion3831 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _WHILE_in_while3846 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
-		public static readonly BitSet _expression_in_while3848 = new BitSet(new ulong[]{0x2130172AC002C240UL,0x2950989CUL});
-		public static readonly BitSet _statements_in_while3850 = new BitSet(new ulong[]{0x40000000UL});
-		public static readonly BitSet _END_in_while3852 = new BitSet(new ulong[]{0x80004000UL,0x8000UL});
-		public static readonly BitSet _xEOS_in_while3854 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _expression11_in_expression3880 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _expression10_in_expression113896 = new BitSet(new ulong[]{0x2UL,0x20000UL});
-		public static readonly BitSet _SHORTOR_in_expression113913 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
-		public static readonly BitSet _expression10_in_expression113917 = new BitSet(new ulong[]{0x2UL,0x20000UL});
-		public static readonly BitSet _expression09_in_expression103943 = new BitSet(new ulong[]{0x2UL,0x10000UL});
-		public static readonly BitSet _SHORTAND_in_expression103960 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
-		public static readonly BitSet _expression09_in_expression103964 = new BitSet(new ulong[]{0x2UL,0x10000UL});
-		public static readonly BitSet _expression08_in_expression093990 = new BitSet(new ulong[]{0x2UL,0x1UL});
-		public static readonly BitSet _OR_in_expression094007 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
-		public static readonly BitSet _expression08_in_expression094011 = new BitSet(new ulong[]{0x2UL,0x1UL});
-		public static readonly BitSet _expression07_in_expression084037 = new BitSet(new ulong[]{0x12UL});
-		public static readonly BitSet _AND_in_expression084054 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
-		public static readonly BitSet _expression07_in_expression084058 = new BitSet(new ulong[]{0x12UL});
-		public static readonly BitSet _expression06_in_expression074084 = new BitSet(new ulong[]{0x40C000C100000002UL});
-		public static readonly BitSet _operator06_in_expression074103 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
-		public static readonly BitSet _expression06_in_expression074107 = new BitSet(new ulong[]{0x40C000C100000002UL});
-		public static readonly BitSet _LT_in_operator064131 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _LTEQ_in_operator064144 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _GT_in_operator064157 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _GTEQ_in_operator064170 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _EQ_in_operator064183 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _NOTEQ_in_operator064196 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _expression05_in_expression064217 = new BitSet(new ulong[]{0x2002UL});
-		public static readonly BitSet _COLON_in_expression064243 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
-		public static readonly BitSet _expression05_in_expression064247 = new BitSet(new ulong[]{0x2002UL});
-		public static readonly BitSet _expression04_in_expression054274 = new BitSet(new ulong[]{0x100000000000002UL,0x10UL});
-		public static readonly BitSet _operator04_in_expression054296 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
-		public static readonly BitSet _expression04_in_expression054300 = new BitSet(new ulong[]{0x100000000000002UL,0x10UL});
-		public static readonly BitSet _PLUS_in_operator044324 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _MINUS_in_operator044337 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _expression03_in_expression044358 = new BitSet(new ulong[]{0x1A00200000000002UL,0x2000400UL});
-		public static readonly BitSet _operator03_in_expression044377 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
-		public static readonly BitSet _expression03_in_expression044381 = new BitSet(new ulong[]{0x1A00200000000002UL,0x2000400UL});
-		public static readonly BitSet _TIMES_in_operator034405 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _RDIV_in_operator034418 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _LDIV_in_operator034431 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _MTIMES_in_operator034444 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _MRDIV_in_operator034457 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _MLDIV_in_operator034470 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _operator02_in_expression034490 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
-		public static readonly BitSet _expression03_in_expression034494 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _expression02_in_expression034515 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _PLUS_in_operator024534 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _MINUS_in_operator024548 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _NOT_in_operator024562 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _expression00_in_expression024583 = new BitSet(new ulong[]{0x400000000040002UL,0x4000040UL});
-		public static readonly BitSet _operator01_in_expression024620 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
-		public static readonly BitSet _expression01_in_expression024624 = new BitSet(new ulong[]{0x400000000040002UL,0x4000040UL});
-		public static readonly BitSet _TRANS_in_expression024649 = new BitSet(new ulong[]{0x400000000040002UL,0x4000040UL});
-		public static readonly BitSet _CTRANS_in_expression024670 = new BitSet(new ulong[]{0x400000000040002UL,0x4000040UL});
-		public static readonly BitSet _POW_in_operator014699 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _MPOW_in_operator014712 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _operator02_in_expression014732 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
-		public static readonly BitSet _expression01_in_expression014736 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _expression00_in_expression014757 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _atom_in_expression004776 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _chain_in_atom4791 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _real_in_atom4805 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _imaginary_in_atom4816 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _string_in_atom4827 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _regularArray_in_atom4838 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _cellArray_in_atom4849 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _parenthesized_in_atom4860 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _end_in_atom4871 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _functionHandle_in_atom4882 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _anonymousFunction_in_atom4893 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _metaclass_in_atom4904 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _var_in_chain4933 = new BitSet(new ulong[]{0x10100004000042UL});
-		public static readonly BitSet _dotExpressionOperator_in_chain4954 = new BitSet(new ulong[]{0x10100004000042UL});
-		public static readonly BitSet _dotNameOperator_in_chain4976 = new BitSet(new ulong[]{0x10100004000042UL});
-		public static readonly BitSet _parenthesisOperator_in_chain4998 = new BitSet(new ulong[]{0x10100004000042UL});
-		public static readonly BitSet _curlyBraceOperator_in_chain5023 = new BitSet(new ulong[]{0x10100004000042UL});
-		public static readonly BitSet _atBaseOperator_in_chain5045 = new BitSet(new ulong[]{0x10100004000042UL});
-		public static readonly BitSet _name_in_var5075 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _DOT_in_dotExpressionOperator5103 = new BitSet(new ulong[]{0x10000000000000UL});
-		public static readonly BitSet _LPAREN_in_dotExpressionOperator5105 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
-		public static readonly BitSet _expression_in_dotExpressionOperator5107 = new BitSet(new ulong[]{0x0UL,0x2000UL});
-		public static readonly BitSet _RPAREN_in_dotExpressionOperator5109 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _DOT_in_dotNameOperator5130 = new BitSet(new ulong[]{0x33870021E00UL,0x2910100EUL});
-		public static readonly BitSet _anyName_in_dotNameOperator5132 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _xANYID_in_anyName5149 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _LPAREN_in_parenthesisOperator5179 = new BitSet(new ulong[]{0x2130150040002040UL,0x402890UL});
-		public static readonly BitSet _arguments_in_parenthesisOperator5182 = new BitSet(new ulong[]{0x0UL,0x2000UL});
-		public static readonly BitSet _RPAREN_in_parenthesisOperator5186 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _argument_in_arguments5206 = new BitSet(new ulong[]{0x4002UL});
-		public static readonly BitSet _COMMA_in_arguments5209 = new BitSet(new ulong[]{0x2130150040002040UL,0x400890UL});
-		public static readonly BitSet _argument_in_arguments5211 = new BitSet(new ulong[]{0x4002UL});
-		public static readonly BitSet _expression_in_argument5229 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _COLON_in_argument5242 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _LCURLY_in_curlyBraceOperator5273 = new BitSet(new ulong[]{0x2130150040002040UL,0x400890UL});
-		public static readonly BitSet _arguments_in_curlyBraceOperator5275 = new BitSet(new ulong[]{0x0UL,0x200UL});
-		public static readonly BitSet _RCURLY_in_curlyBraceOperator5277 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _AT_in_atBaseOperator5300 = new BitSet(new ulong[]{0x10000000000UL});
-		public static readonly BitSet _classReference_in_atBaseOperator5302 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _REAL_in_real5321 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _IMAGINARY_in_imaginary5336 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _STRING_in_string5351 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _LSQUARE_in_regularArray5375 = new BitSet(new ulong[]{0x21301500C0004040UL,0x408890UL});
-		public static readonly BitSet _rows_in_regularArray5377 = new BitSet(new ulong[]{0x0UL,0x4000UL});
-		public static readonly BitSet _RSQUARE_in_regularArray5379 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _row_in_rows5406 = new BitSet(new ulong[]{0x80000002UL,0x8000UL});
-		public static readonly BitSet _SEMICOLON_in_rows5410 = new BitSet(new ulong[]{0x21301500C0004040UL,0x408890UL});
-		public static readonly BitSet _EOL_in_rows5414 = new BitSet(new ulong[]{0x21301500C0004040UL,0x408890UL});
-		public static readonly BitSet _row_in_rows5417 = new BitSet(new ulong[]{0x80000002UL,0x8000UL});
-		public static readonly BitSet _COMMA_in_row5436 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
-		public static readonly BitSet _columns_in_row5440 = new BitSet(new ulong[]{0x4002UL});
-		public static readonly BitSet _COMMA_in_row5443 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _COMMA_in_row5460 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _column_in_columns5487 = new BitSet(new ulong[]{0x2130150040004042UL,0x400890UL});
-		public static readonly BitSet _COMMA_in_columns5494 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
-		public static readonly BitSet _column_in_columns5498 = new BitSet(new ulong[]{0x2130150040004042UL,0x400890UL});
-		public static readonly BitSet _NOT_in_column5537 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _expression_in_column5560 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _LCURLY_in_cellArray5587 = new BitSet(new ulong[]{0x21301500C0004040UL,0x408890UL});
-		public static readonly BitSet _rows_in_cellArray5589 = new BitSet(new ulong[]{0x0UL,0x200UL});
-		public static readonly BitSet _RCURLY_in_cellArray5591 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _LPAREN_in_parenthesized5627 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
-		public static readonly BitSet _expression_in_parenthesized5629 = new BitSet(new ulong[]{0x0UL,0x2000UL});
-		public static readonly BitSet _RPAREN_in_parenthesized5631 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _END_in_end5653 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _AT_in_functionHandle5668 = new BitSet(new ulong[]{0x10000000000UL});
-		public static readonly BitSet _functionReference_in_functionHandle5670 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _fullFunctioName_in_functionReference5688 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _xID_in_fullFunctioName5706 = new BitSet(new ulong[]{0x4000002UL});
-		public static readonly BitSet _DOT_in_fullFunctioName5709 = new BitSet(new ulong[]{0x33870021E00UL,0x2910100EUL});
-		public static readonly BitSet _xANYID_in_fullFunctioName5711 = new BitSet(new ulong[]{0x4000002UL});
-		public static readonly BitSet _AT_in_anonymousFunction5738 = new BitSet(new ulong[]{0x10000000000000UL});
-		public static readonly BitSet _inputPortion_in_anonymousFunction5740 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
-		public static readonly BitSet _expression_in_anonymousFunction5742 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _QUESTION_in_metaclass5767 = new BitSet(new ulong[]{0x10000000000UL});
-		public static readonly BitSet _classReference_in_metaclass5769 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _SEMICOLON_in_xEOS5788 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _COMMA_in_xEOS5799 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _EOL_in_xEOS5811 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _EOL_in_xEOL5828 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _ID_in_xID5842 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _ID_in_xANYID5855 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _BREAK_in_xANYID5868 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _CASE_in_xANYID5882 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _CATCH_in_xANYID5896 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _CLASSDEF_in_xANYID5910 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _CONTINUE_in_xANYID5924 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _ELSE_in_xANYID5938 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _ELSEIF_in_xANYID5952 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _END_in_xANYID5966 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _FOR_in_xANYID5980 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _FUNCTION_in_xANYID5994 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _GLOBAL_in_xANYID6008 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _IF_in_xANYID6022 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _OTHERWISE_in_xANYID6036 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _PARFOR_in_xANYID6050 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _PERSISTENT_in_xANYID6064 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _RETURN_in_xANYID6078 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _SPMD_in_xANYID6092 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _SWITCH_in_xANYID6106 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _TRY_in_xANYID6120 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _WHILE_in_xANYID6134 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _ID_in_xFUNCTIONID6153 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _END_in_xFUNCTIONID6165 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _ID_in_xPARAMETERID6183 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _NOT_in_xPARAMETERID6197 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _ID_in_xEVENTS6220 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _ID_in_xPROPERTIES6236 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _ID_in_xMETHODS6252 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _ID_in_xENUMERATION6268 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _capturePortion_in_catchPart3803 = new BitSet(new ulong[]{0x2130172AC002C240UL,0x2950989CUL});
+		public static readonly BitSet _statements_in_catchPart3807 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _var_in_capturePortion3832 = new BitSet(new ulong[]{0x80004000UL,0x8000UL});
+		public static readonly BitSet _xEOS_in_capturePortion3834 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _WHILE_in_while3849 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
+		public static readonly BitSet _expression_in_while3851 = new BitSet(new ulong[]{0x2130172AC002C240UL,0x2950989CUL});
+		public static readonly BitSet _statements_in_while3853 = new BitSet(new ulong[]{0x40000000UL});
+		public static readonly BitSet _END_in_while3855 = new BitSet(new ulong[]{0x80004000UL,0x8000UL});
+		public static readonly BitSet _xEOS_in_while3857 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _expression11_in_expression3883 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _expression10_in_expression113899 = new BitSet(new ulong[]{0x2UL,0x20000UL});
+		public static readonly BitSet _SHORTOR_in_expression113916 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
+		public static readonly BitSet _expression10_in_expression113920 = new BitSet(new ulong[]{0x2UL,0x20000UL});
+		public static readonly BitSet _expression09_in_expression103946 = new BitSet(new ulong[]{0x2UL,0x10000UL});
+		public static readonly BitSet _SHORTAND_in_expression103963 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
+		public static readonly BitSet _expression09_in_expression103967 = new BitSet(new ulong[]{0x2UL,0x10000UL});
+		public static readonly BitSet _expression08_in_expression093993 = new BitSet(new ulong[]{0x2UL,0x1UL});
+		public static readonly BitSet _OR_in_expression094010 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
+		public static readonly BitSet _expression08_in_expression094014 = new BitSet(new ulong[]{0x2UL,0x1UL});
+		public static readonly BitSet _expression07_in_expression084040 = new BitSet(new ulong[]{0x12UL});
+		public static readonly BitSet _AND_in_expression084057 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
+		public static readonly BitSet _expression07_in_expression084061 = new BitSet(new ulong[]{0x12UL});
+		public static readonly BitSet _expression06_in_expression074087 = new BitSet(new ulong[]{0x40C000C100000002UL});
+		public static readonly BitSet _operator06_in_expression074106 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
+		public static readonly BitSet _expression06_in_expression074110 = new BitSet(new ulong[]{0x40C000C100000002UL});
+		public static readonly BitSet _LT_in_operator064134 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _LTEQ_in_operator064147 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _GT_in_operator064160 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _GTEQ_in_operator064173 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _EQ_in_operator064186 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _NOTEQ_in_operator064199 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _expression05_in_expression064220 = new BitSet(new ulong[]{0x2002UL});
+		public static readonly BitSet _COLON_in_expression064246 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
+		public static readonly BitSet _expression05_in_expression064250 = new BitSet(new ulong[]{0x2002UL});
+		public static readonly BitSet _expression04_in_expression054277 = new BitSet(new ulong[]{0x100000000000002UL,0x10UL});
+		public static readonly BitSet _operator04_in_expression054299 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
+		public static readonly BitSet _expression04_in_expression054303 = new BitSet(new ulong[]{0x100000000000002UL,0x10UL});
+		public static readonly BitSet _PLUS_in_operator044327 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _MINUS_in_operator044340 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _expression03_in_expression044361 = new BitSet(new ulong[]{0x1A00200000000002UL,0x2000400UL});
+		public static readonly BitSet _operator03_in_expression044380 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
+		public static readonly BitSet _expression03_in_expression044384 = new BitSet(new ulong[]{0x1A00200000000002UL,0x2000400UL});
+		public static readonly BitSet _TIMES_in_operator034408 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _RDIV_in_operator034421 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _LDIV_in_operator034434 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _MTIMES_in_operator034447 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _MRDIV_in_operator034460 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _MLDIV_in_operator034473 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _operator02_in_expression034493 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
+		public static readonly BitSet _expression03_in_expression034497 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _expression02_in_expression034518 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _PLUS_in_operator024537 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _MINUS_in_operator024551 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _NOT_in_operator024565 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _expression00_in_expression024586 = new BitSet(new ulong[]{0x400000000040002UL,0x4000040UL});
+		public static readonly BitSet _operator01_in_expression024623 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
+		public static readonly BitSet _expression01_in_expression024627 = new BitSet(new ulong[]{0x400000000040002UL,0x4000040UL});
+		public static readonly BitSet _TRANS_in_expression024652 = new BitSet(new ulong[]{0x400000000040002UL,0x4000040UL});
+		public static readonly BitSet _CTRANS_in_expression024673 = new BitSet(new ulong[]{0x400000000040002UL,0x4000040UL});
+		public static readonly BitSet _POW_in_operator014702 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _MPOW_in_operator014715 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _operator02_in_expression014735 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
+		public static readonly BitSet _expression01_in_expression014739 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _expression00_in_expression014760 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _atom_in_expression004779 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _chain_in_atom4794 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _real_in_atom4808 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _imaginary_in_atom4819 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _string_in_atom4830 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _regularArray_in_atom4841 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _cellArray_in_atom4852 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _parenthesized_in_atom4863 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _end_in_atom4874 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _functionHandle_in_atom4885 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _anonymousFunction_in_atom4896 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _metaclass_in_atom4907 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _var_in_chain4936 = new BitSet(new ulong[]{0x10100004000042UL});
+		public static readonly BitSet _dotExpressionOperator_in_chain4957 = new BitSet(new ulong[]{0x10100004000042UL});
+		public static readonly BitSet _dotNameOperator_in_chain4979 = new BitSet(new ulong[]{0x10100004000042UL});
+		public static readonly BitSet _parenthesisOperator_in_chain5001 = new BitSet(new ulong[]{0x10100004000042UL});
+		public static readonly BitSet _curlyBraceOperator_in_chain5026 = new BitSet(new ulong[]{0x10100004000042UL});
+		public static readonly BitSet _atBaseOperator_in_chain5048 = new BitSet(new ulong[]{0x10100004000042UL});
+		public static readonly BitSet _name_in_var5078 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _DOT_in_dotExpressionOperator5106 = new BitSet(new ulong[]{0x10000000000000UL});
+		public static readonly BitSet _LPAREN_in_dotExpressionOperator5108 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
+		public static readonly BitSet _expression_in_dotExpressionOperator5110 = new BitSet(new ulong[]{0x0UL,0x2000UL});
+		public static readonly BitSet _RPAREN_in_dotExpressionOperator5112 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _DOT_in_dotNameOperator5133 = new BitSet(new ulong[]{0x33870021E00UL,0x2910100EUL});
+		public static readonly BitSet _anyName_in_dotNameOperator5135 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _xANYID_in_anyName5152 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _LPAREN_in_parenthesisOperator5182 = new BitSet(new ulong[]{0x2130150040002040UL,0x402890UL});
+		public static readonly BitSet _arguments_in_parenthesisOperator5185 = new BitSet(new ulong[]{0x0UL,0x2000UL});
+		public static readonly BitSet _RPAREN_in_parenthesisOperator5189 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _argument_in_arguments5209 = new BitSet(new ulong[]{0x4002UL});
+		public static readonly BitSet _COMMA_in_arguments5212 = new BitSet(new ulong[]{0x2130150040002040UL,0x400890UL});
+		public static readonly BitSet _argument_in_arguments5214 = new BitSet(new ulong[]{0x4002UL});
+		public static readonly BitSet _expression_in_argument5232 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _COLON_in_argument5245 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _LCURLY_in_curlyBraceOperator5276 = new BitSet(new ulong[]{0x2130150040002040UL,0x400890UL});
+		public static readonly BitSet _arguments_in_curlyBraceOperator5278 = new BitSet(new ulong[]{0x0UL,0x200UL});
+		public static readonly BitSet _RCURLY_in_curlyBraceOperator5280 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _AT_in_atBaseOperator5303 = new BitSet(new ulong[]{0x10000000000UL});
+		public static readonly BitSet _classReference_in_atBaseOperator5305 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _REAL_in_real5324 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _IMAGINARY_in_imaginary5339 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _STRING_in_string5354 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _LSQUARE_in_regularArray5378 = new BitSet(new ulong[]{0x21301500C0004040UL,0x408890UL});
+		public static readonly BitSet _rows_in_regularArray5380 = new BitSet(new ulong[]{0x0UL,0x4000UL});
+		public static readonly BitSet _RSQUARE_in_regularArray5382 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _row_in_rows5409 = new BitSet(new ulong[]{0x80000002UL,0x8000UL});
+		public static readonly BitSet _SEMICOLON_in_rows5413 = new BitSet(new ulong[]{0x21301500C0004040UL,0x408890UL});
+		public static readonly BitSet _EOL_in_rows5417 = new BitSet(new ulong[]{0x21301500C0004040UL,0x408890UL});
+		public static readonly BitSet _row_in_rows5420 = new BitSet(new ulong[]{0x80000002UL,0x8000UL});
+		public static readonly BitSet _COMMA_in_row5439 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
+		public static readonly BitSet _columns_in_row5443 = new BitSet(new ulong[]{0x4002UL});
+		public static readonly BitSet _COMMA_in_row5446 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _COMMA_in_row5463 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _column_in_columns5490 = new BitSet(new ulong[]{0x2130150040004042UL,0x400890UL});
+		public static readonly BitSet _COMMA_in_columns5497 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
+		public static readonly BitSet _column_in_columns5501 = new BitSet(new ulong[]{0x2130150040004042UL,0x400890UL});
+		public static readonly BitSet _NOT_in_column5540 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _expression_in_column5563 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _LCURLY_in_cellArray5590 = new BitSet(new ulong[]{0x21301500C0004040UL,0x408890UL});
+		public static readonly BitSet _rows_in_cellArray5592 = new BitSet(new ulong[]{0x0UL,0x200UL});
+		public static readonly BitSet _RCURLY_in_cellArray5594 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _LPAREN_in_parenthesized5630 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
+		public static readonly BitSet _expression_in_parenthesized5632 = new BitSet(new ulong[]{0x0UL,0x2000UL});
+		public static readonly BitSet _RPAREN_in_parenthesized5634 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _END_in_end5656 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _AT_in_functionHandle5671 = new BitSet(new ulong[]{0x10000000000UL});
+		public static readonly BitSet _functionReference_in_functionHandle5673 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _fullFunctioName_in_functionReference5691 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _xID_in_fullFunctioName5709 = new BitSet(new ulong[]{0x4000002UL});
+		public static readonly BitSet _DOT_in_fullFunctioName5712 = new BitSet(new ulong[]{0x33870021E00UL,0x2910100EUL});
+		public static readonly BitSet _xANYID_in_fullFunctioName5714 = new BitSet(new ulong[]{0x4000002UL});
+		public static readonly BitSet _AT_in_anonymousFunction5741 = new BitSet(new ulong[]{0x10000000000000UL});
+		public static readonly BitSet _inputPortion_in_anonymousFunction5743 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
+		public static readonly BitSet _expression_in_anonymousFunction5745 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _QUESTION_in_metaclass5770 = new BitSet(new ulong[]{0x10000000000UL});
+		public static readonly BitSet _classReference_in_metaclass5772 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _SEMICOLON_in_xEOS5791 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _COMMA_in_xEOS5802 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _EOL_in_xEOS5814 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _EOL_in_xEOL5831 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _ID_in_xID5845 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _ID_in_xANYID5858 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _BREAK_in_xANYID5871 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _CASE_in_xANYID5885 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _CATCH_in_xANYID5899 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _CLASSDEF_in_xANYID5913 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _CONTINUE_in_xANYID5927 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _ELSE_in_xANYID5941 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _ELSEIF_in_xANYID5955 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _END_in_xANYID5969 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _FOR_in_xANYID5983 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _FUNCTION_in_xANYID5997 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _GLOBAL_in_xANYID6011 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _IF_in_xANYID6025 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _OTHERWISE_in_xANYID6039 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _PARFOR_in_xANYID6053 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _PERSISTENT_in_xANYID6067 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _RETURN_in_xANYID6081 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _SPMD_in_xANYID6095 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _SWITCH_in_xANYID6109 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _TRY_in_xANYID6123 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _WHILE_in_xANYID6137 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _ID_in_xFUNCTIONID6156 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _END_in_xFUNCTIONID6168 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _ID_in_xPARAMETERID6186 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _NOT_in_xPARAMETERID6200 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _ID_in_xEVENTS6223 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _ID_in_xPROPERTIES6239 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _ID_in_xMETHODS6255 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _ID_in_xENUMERATION6271 = new BitSet(new ulong[]{0x2UL});
 		public static readonly BitSet _openFunctionFile_in_synpred1_MatlabParser388 = new BitSet(new ulong[]{0x2UL});
 		public static readonly BitSet _assignment_in_synpred2_MatlabParser2114 = new BitSet(new ulong[]{0x2UL});
 		public static readonly BitSet _action_in_synpred3_MatlabParser2139 = new BitSet(new ulong[]{0x2UL});
@@ -28032,10 +28033,10 @@ internal partial class MatlabParser : Antlr.Runtime.Parser
 		public static readonly BitSet _ASSIGN_in_synpred6_MatlabParser3397 = new BitSet(new ulong[]{0x2130150040000040UL,0x400890UL});
 		public static readonly BitSet _expression_in_synpred6_MatlabParser3399 = new BitSet(new ulong[]{0x4000UL});
 		public static readonly BitSet _COMMA_in_synpred6_MatlabParser3401 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _DOT_in_synpred7_MatlabParser4946 = new BitSet(new ulong[]{0x10000000000000UL});
-		public static readonly BitSet _LPAREN_in_synpred7_MatlabParser4948 = new BitSet(new ulong[]{0x2UL});
-		public static readonly BitSet _NOT_in_synpred8_MatlabParser5517 = new BitSet(new ulong[]{0x80004000UL,0xC000UL});
-		public static readonly BitSet _set_in_synpred8_MatlabParser5519 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _DOT_in_synpred7_MatlabParser4949 = new BitSet(new ulong[]{0x10000000000000UL});
+		public static readonly BitSet _LPAREN_in_synpred7_MatlabParser4951 = new BitSet(new ulong[]{0x2UL});
+		public static readonly BitSet _NOT_in_synpred8_MatlabParser5520 = new BitSet(new ulong[]{0x80004000UL,0xC000UL});
+		public static readonly BitSet _set_in_synpred8_MatlabParser5522 = new BitSet(new ulong[]{0x2UL});
 	}
 	#endregion Follow sets
 }

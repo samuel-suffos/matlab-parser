@@ -305,7 +305,7 @@ statement : (assignment)=> assignment -> assignment
 
 // ASSIGNMENT -----------------------------------------------
 
-assignment : {(Command_IsEnabled() || !Command_IsEnabled())}?=> assignmentCore -> assignmentCore ;
+assignment : {True()}?=> assignmentCore -> assignmentCore ;
 
 assignmentCore : chain ASSIGN expression xEOS -> ^(ASSIGN chain expression xEOS) 
 			   | storage ASSIGN expression xEOS -> ^(ASSIGN storage expression xEOS) 
@@ -325,7 +325,7 @@ slot : chain -> chain
 
 // ACTION ---------------------------------------------------
 
-action : {(Command_IsEnabled() || !Command_IsEnabled())}?=> expression xEOS -> ^(ACTION[""] expression xEOS) ;
+action : {True()}?=> expression xEOS -> ^(ACTION[""] expression xEOS) ;
 
 // SIMPLE COMMAND -------------------------------------------
 
@@ -436,7 +436,7 @@ try : tryPart (catchPart)? END xEOS -> ^(TRYCATCH[$tryPart.start] tryPart (catch
 
 tryPart : TRY statements -> ^(TRY (statements)?) ;
 
-catchPart : CATCH (options {greedy=true;}: capturePortion)? statements -> ^(CATCH (capturePortion)? (statements)?) ;
+catchPart : CATCH (options {greedy=true;}: {True()}?=> capturePortion)? statements -> ^(CATCH (capturePortion)? (statements)?) ;
 
 capturePortion : var xEOS -> var ;
 

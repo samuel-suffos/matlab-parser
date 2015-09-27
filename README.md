@@ -6,7 +6,7 @@ This project is a parser for Matlab 8.1 (R2013a). The parser processes M-files w
 
 ## Development: 
 
-The project has been written in the C# programming language version 5.0, and targets Microsoft's .NET Framework version 4.5. The project is also partly written in ANTLR. The ANTLR code was written for the C# port of the ANTLR Tool, version 3.5.0.2. 
+The project has been written in the C# programming language version 5.0, and targets Microsoft's .NET Framework version 4.5. The .NET Framework version 4.5 is freely downloadable from [here](http://www.microsoft.com/en-us/download/details.aspx?id=42642).The project is also partly written in ANTLR. The ANTLR code was written for the C# port of the ANTLR Tool version 3.5.0.2. The necessary ANTLR Runtime is redistributed with this project. 
 
 ## Contents: 
 
@@ -19,9 +19,9 @@ The contents of this repository is a Visual Studio 2013 solution, made of five C
 
 ## How to build the project: 
 
-Just open the solution in Visual Studio and compile it! Once compiled, the application will be located in `Matlab.Parser\bin\Release`. 
+Open the solution in Visual Studio. Set `Matlab.Parser` to be the default project (menu `Project`, action `Set StartUp Projects...`). Next, set the solution to Release mode (menu `Build`, action `Configuration Manager...`). Then, compile the solution (menu `Build`, action `Build Solution`). Once compiled, the application will be located in `\Matlab.Parser\bin\Release`. 
 
-The application is made of the following files: 
+The application is made of the following files (plus the necessary LICENSE and README files): 
 * `Antlr3.Runtime.dll`
 * `Matlab.Info.dll`
 * `Matlab.Utils.dll` 
@@ -65,7 +65,9 @@ You may find it interesting to know that, during testing, I discovered that a sm
 ## License: 
 
 [The BSD 3-Clause License]
+
 Copyright (c) 2015, Samuel Suffos
+
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
