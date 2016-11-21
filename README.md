@@ -10,7 +10,7 @@ The project has been written in the C# programming language version 5.0, and tar
 
 ## Contents: 
 
-The contents of this repository is a Visual Studio 2013 solution, made of five C# projects: 
+The contents of this repository is a Visual Studio 2015 solution, made of five C# projects: 
 * `Matlab.Info` (class library) - Contains information about the project. 
 * `Matlab.Utils` (class library) - Contains utility classes for the project. 
 * `Matlab.Nodes` (class library) - Contains the nodes that ASTs are made of. 
@@ -53,6 +53,33 @@ The application is made of the following files (plus the necessary LICENSE and R
 * To analyze all files whose names match pattern `*.m` in the current working directory (and its subdirectories) for syntactic correctness but without generating any output file (that is, just to be notified of any syntactic problems with the files' contents), type `Matlab.Parser /out: ? /pattern: *.m`. 
 
 * To process all files whose names match pattern `*.m` in the current working directory (and its subdirectories) and generate new files with the XML serialization of each input file's AST, type `Matlab.Parser /out: * /pattern: *.m`. 
+
+## How to use the API:
+
+The public methods of class `MRecognizer` are the entry point to the parsing API. There are three of them: `RecognizeText`, `RecognizeFile`, and `RecognizeFiles`.
+
+The code below shows a simple example of how to process an M-file (`inputPath`). If the file is syntactically valid, the AST built from its content is XML-serialized and stored in another file (`outputPath`). Otherwise, the errors encountered during parsing are displayed on the console. (To use this code you will, of course, need to reference the necessary DLLs from this project and include the appropriate `using` statements.)
+
+```
+string inputPath = ...;
+
+string outputPath = ...;
+
+Result<UnitNode> result = MRecognizer.RecognizeFile(inputPath, true, null);
+
+if (result.Report.IsOk)
+{
+    XDocument document = NodeToXmlBuilder.Build(result.Value);
+    document.Save(outputPath);
+}
+else 
+{
+    foreach (Message m in result.Report)
+    {
+        Console.WriteLine("[{0}] Line: [{1}] Column: [{2}] Text: [{3}]", m.Severity, m.Line, m.Column, m.Text);
+    }
+}
+```
 
 ## More about the project: 
 

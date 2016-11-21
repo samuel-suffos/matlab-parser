@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// $ANTLR 3.5.0.2 d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3 2015-09-27 18:23:50
+// $ANTLR 3.5.0.2 D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3 2016-11-20 19:17:48
 
 // The variable 'variable' is assigned but its value is never used.
 #pragma warning disable 219
@@ -175,7 +175,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 
 		OnCreated();
 	}
-	public override string GrammarFileName { get { return "d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3"; } }
+	public override string GrammarFileName { get { return "D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3"; } }
 
 
 	partial void OnCreated();
@@ -196,7 +196,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		{
 			int _type = START;
 			int _channel = DefaultTokenChannel;
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:109:7: ({...}? => DEFAULT_MODE |{...}? => COMMAND_MODE |{...}? => BANG_MODE )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:109:7: ({...}? => DEFAULT_MODE |{...}? => COMMAND_MODE |{...}? => BANG_MODE )
 			int alt1=3;
 			try { DebugEnterDecision(1, false);
 			int LA1_1 = input.LA(1);
@@ -1005,7 +1005,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:109:9: {...}? => DEFAULT_MODE
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:109:9: {...}? => DEFAULT_MODE
 				{
 				DebugLocation(109, 9);
 				if (!((Machine_InMode(Mode.Default))))
@@ -1025,7 +1025,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 2:
 				DebugEnterAlt(2);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:110:9: {...}? => COMMAND_MODE
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:110:9: {...}? => COMMAND_MODE
 				{
 				DebugLocation(110, 9);
 				if (!((Machine_InMode(Mode.Command))))
@@ -1045,7 +1045,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 3:
 				DebugEnterAlt(3);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:111:9: {...}? => BANG_MODE
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:111:9: {...}? => BANG_MODE
 				{
 				DebugLocation(111, 9);
 				if (!((Machine_InMode(Mode.Bang))))
@@ -1089,7 +1089,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("DEFAULT_MODE", 2);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:114:23: ( LINECOMMENT1 | LINECOMMENT2 | LINECOMMENT3 | BLOCKCOMMENT | ELLIPSIS | SPACES | EOL | ( STRING )=> STRING | QUOTATION | CTRANS | REAL | IMAGINARY | ID | PLUS | MINUS | MTIMES | TIMES | MRDIV | RDIV | MLDIV | LDIV | MPOW | POW | TRANS | EQ | NOTEQ | LT | LTEQ | GT | GTEQ | NOT | AND | SHORTAND | OR | SHORTOR | ASSIGN | COMMA | SEMICOLON | COLON | DOT | LPAREN | RPAREN | LSQUARE | RSQUARE | LCURLY | RCURLY | AT | QUESTION | EXCLAMATION | UNKNOWN )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:114:23: ( LINECOMMENT1 | LINECOMMENT2 | LINECOMMENT3 | BLOCKCOMMENT | ELLIPSIS | SPACES | EOL | ( STRING )=> STRING | QUOTATION | CTRANS | REAL | IMAGINARY | ID | PLUS | MINUS | MTIMES | TIMES | MRDIV | RDIV | MLDIV | LDIV | MPOW | POW | TRANS | EQ | NOTEQ | LT | LTEQ | GT | GTEQ | NOT | AND | SHORTAND | OR | SHORTOR | ASSIGN | COMMA | SEMICOLON | COLON | DOT | LPAREN | RPAREN | LSQUARE | RSQUARE | LCURLY | RCURLY | AT | QUESTION | EXCLAMATION | UNKNOWN )
 			int alt2=50;
 			try { DebugEnterDecision(2, false);
 			try
@@ -1106,7 +1106,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:114:25: LINECOMMENT1
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:114:25: LINECOMMENT1
 				{
 				DebugLocation(114, 25);
 				mLINECOMMENT1(); if (state.failed) return;
@@ -1120,7 +1120,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 2:
 				DebugEnterAlt(2);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:115:25: LINECOMMENT2
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:115:25: LINECOMMENT2
 				{
 				DebugLocation(115, 25);
 				mLINECOMMENT2(); if (state.failed) return;
@@ -1134,7 +1134,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 3:
 				DebugEnterAlt(3);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:116:10: LINECOMMENT3
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:116:10: LINECOMMENT3
 				{
 				DebugLocation(116, 10);
 				mLINECOMMENT3(); if (state.failed) return;
@@ -1148,7 +1148,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 4:
 				DebugEnterAlt(4);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:117:10: BLOCKCOMMENT
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:117:10: BLOCKCOMMENT
 				{
 				DebugLocation(117, 10);
 				mBLOCKCOMMENT(); if (state.failed) return;
@@ -1162,7 +1162,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 5:
 				DebugEnterAlt(5);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:118:10: ELLIPSIS
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:118:10: ELLIPSIS
 				{
 				DebugLocation(118, 10);
 				mELLIPSIS(); if (state.failed) return;
@@ -1176,7 +1176,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 6:
 				DebugEnterAlt(6);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:119:10: SPACES
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:119:10: SPACES
 				{
 				DebugLocation(119, 10);
 				mSPACES(); if (state.failed) return;
@@ -1190,7 +1190,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 7:
 				DebugEnterAlt(7);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:120:10: EOL
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:120:10: EOL
 				{
 				DebugLocation(120, 10);
 				mEOL(); if (state.failed) return;
@@ -1204,7 +1204,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 8:
 				DebugEnterAlt(8);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:121:10: ( STRING )=> STRING
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:121:10: ( STRING )=> STRING
 				{
 				DebugLocation(121, 21);
 				mSTRING(); if (state.failed) return;
@@ -1218,7 +1218,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 9:
 				DebugEnterAlt(9);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:122:10: QUOTATION
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:122:10: QUOTATION
 				{
 				DebugLocation(122, 10);
 				mQUOTATION(); if (state.failed) return;
@@ -1232,7 +1232,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 10:
 				DebugEnterAlt(10);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:123:10: CTRANS
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:123:10: CTRANS
 				{
 				DebugLocation(123, 10);
 				mCTRANS(); if (state.failed) return;
@@ -1246,7 +1246,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 11:
 				DebugEnterAlt(11);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:124:10: REAL
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:124:10: REAL
 				{
 				DebugLocation(124, 10);
 				mREAL(); if (state.failed) return;
@@ -1260,7 +1260,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 12:
 				DebugEnterAlt(12);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:125:10: IMAGINARY
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:125:10: IMAGINARY
 				{
 				DebugLocation(125, 10);
 				mIMAGINARY(); if (state.failed) return;
@@ -1274,7 +1274,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 13:
 				DebugEnterAlt(13);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:126:10: ID
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:126:10: ID
 				{
 				DebugLocation(126, 10);
 				mID(); if (state.failed) return;
@@ -1288,7 +1288,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 14:
 				DebugEnterAlt(14);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:127:10: PLUS
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:127:10: PLUS
 				{
 				DebugLocation(127, 10);
 				mPLUS(); if (state.failed) return;
@@ -1302,7 +1302,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 15:
 				DebugEnterAlt(15);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:128:10: MINUS
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:128:10: MINUS
 				{
 				DebugLocation(128, 10);
 				mMINUS(); if (state.failed) return;
@@ -1316,7 +1316,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 16:
 				DebugEnterAlt(16);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:129:10: MTIMES
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:129:10: MTIMES
 				{
 				DebugLocation(129, 10);
 				mMTIMES(); if (state.failed) return;
@@ -1330,7 +1330,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 17:
 				DebugEnterAlt(17);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:130:10: TIMES
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:130:10: TIMES
 				{
 				DebugLocation(130, 10);
 				mTIMES(); if (state.failed) return;
@@ -1344,7 +1344,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 18:
 				DebugEnterAlt(18);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:131:10: MRDIV
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:131:10: MRDIV
 				{
 				DebugLocation(131, 10);
 				mMRDIV(); if (state.failed) return;
@@ -1358,7 +1358,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 19:
 				DebugEnterAlt(19);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:132:10: RDIV
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:132:10: RDIV
 				{
 				DebugLocation(132, 10);
 				mRDIV(); if (state.failed) return;
@@ -1372,7 +1372,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 20:
 				DebugEnterAlt(20);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:133:10: MLDIV
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:133:10: MLDIV
 				{
 				DebugLocation(133, 10);
 				mMLDIV(); if (state.failed) return;
@@ -1386,7 +1386,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 21:
 				DebugEnterAlt(21);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:134:10: LDIV
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:134:10: LDIV
 				{
 				DebugLocation(134, 10);
 				mLDIV(); if (state.failed) return;
@@ -1400,7 +1400,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 22:
 				DebugEnterAlt(22);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:135:10: MPOW
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:135:10: MPOW
 				{
 				DebugLocation(135, 10);
 				mMPOW(); if (state.failed) return;
@@ -1414,7 +1414,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 23:
 				DebugEnterAlt(23);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:136:10: POW
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:136:10: POW
 				{
 				DebugLocation(136, 10);
 				mPOW(); if (state.failed) return;
@@ -1428,7 +1428,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 24:
 				DebugEnterAlt(24);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:137:10: TRANS
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:137:10: TRANS
 				{
 				DebugLocation(137, 10);
 				mTRANS(); if (state.failed) return;
@@ -1442,7 +1442,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 25:
 				DebugEnterAlt(25);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:138:10: EQ
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:138:10: EQ
 				{
 				DebugLocation(138, 10);
 				mEQ(); if (state.failed) return;
@@ -1456,7 +1456,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 26:
 				DebugEnterAlt(26);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:139:10: NOTEQ
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:139:10: NOTEQ
 				{
 				DebugLocation(139, 10);
 				mNOTEQ(); if (state.failed) return;
@@ -1470,7 +1470,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 27:
 				DebugEnterAlt(27);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:140:10: LT
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:140:10: LT
 				{
 				DebugLocation(140, 10);
 				mLT(); if (state.failed) return;
@@ -1484,7 +1484,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 28:
 				DebugEnterAlt(28);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:141:10: LTEQ
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:141:10: LTEQ
 				{
 				DebugLocation(141, 10);
 				mLTEQ(); if (state.failed) return;
@@ -1498,7 +1498,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 29:
 				DebugEnterAlt(29);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:142:10: GT
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:142:10: GT
 				{
 				DebugLocation(142, 10);
 				mGT(); if (state.failed) return;
@@ -1512,7 +1512,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 30:
 				DebugEnterAlt(30);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:143:10: GTEQ
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:143:10: GTEQ
 				{
 				DebugLocation(143, 10);
 				mGTEQ(); if (state.failed) return;
@@ -1526,7 +1526,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 31:
 				DebugEnterAlt(31);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:144:10: NOT
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:144:10: NOT
 				{
 				DebugLocation(144, 10);
 				mNOT(); if (state.failed) return;
@@ -1540,7 +1540,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 32:
 				DebugEnterAlt(32);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:145:10: AND
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:145:10: AND
 				{
 				DebugLocation(145, 10);
 				mAND(); if (state.failed) return;
@@ -1554,7 +1554,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 33:
 				DebugEnterAlt(33);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:146:10: SHORTAND
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:146:10: SHORTAND
 				{
 				DebugLocation(146, 10);
 				mSHORTAND(); if (state.failed) return;
@@ -1568,7 +1568,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 34:
 				DebugEnterAlt(34);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:147:10: OR
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:147:10: OR
 				{
 				DebugLocation(147, 10);
 				mOR(); if (state.failed) return;
@@ -1582,7 +1582,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 35:
 				DebugEnterAlt(35);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:148:10: SHORTOR
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:148:10: SHORTOR
 				{
 				DebugLocation(148, 10);
 				mSHORTOR(); if (state.failed) return;
@@ -1596,7 +1596,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 36:
 				DebugEnterAlt(36);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:149:10: ASSIGN
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:149:10: ASSIGN
 				{
 				DebugLocation(149, 10);
 				mASSIGN(); if (state.failed) return;
@@ -1610,7 +1610,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 37:
 				DebugEnterAlt(37);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:150:10: COMMA
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:150:10: COMMA
 				{
 				DebugLocation(150, 10);
 				mCOMMA(); if (state.failed) return;
@@ -1624,7 +1624,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 38:
 				DebugEnterAlt(38);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:151:10: SEMICOLON
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:151:10: SEMICOLON
 				{
 				DebugLocation(151, 10);
 				mSEMICOLON(); if (state.failed) return;
@@ -1638,7 +1638,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 39:
 				DebugEnterAlt(39);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:152:10: COLON
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:152:10: COLON
 				{
 				DebugLocation(152, 10);
 				mCOLON(); if (state.failed) return;
@@ -1652,7 +1652,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 40:
 				DebugEnterAlt(40);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:153:10: DOT
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:153:10: DOT
 				{
 				DebugLocation(153, 10);
 				mDOT(); if (state.failed) return;
@@ -1666,7 +1666,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 41:
 				DebugEnterAlt(41);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:154:10: LPAREN
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:154:10: LPAREN
 				{
 				DebugLocation(154, 10);
 				mLPAREN(); if (state.failed) return;
@@ -1680,7 +1680,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 42:
 				DebugEnterAlt(42);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:155:10: RPAREN
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:155:10: RPAREN
 				{
 				DebugLocation(155, 10);
 				mRPAREN(); if (state.failed) return;
@@ -1694,7 +1694,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 43:
 				DebugEnterAlt(43);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:156:10: LSQUARE
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:156:10: LSQUARE
 				{
 				DebugLocation(156, 10);
 				mLSQUARE(); if (state.failed) return;
@@ -1708,7 +1708,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 44:
 				DebugEnterAlt(44);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:157:10: RSQUARE
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:157:10: RSQUARE
 				{
 				DebugLocation(157, 10);
 				mRSQUARE(); if (state.failed) return;
@@ -1722,7 +1722,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 45:
 				DebugEnterAlt(45);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:158:10: LCURLY
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:158:10: LCURLY
 				{
 				DebugLocation(158, 10);
 				mLCURLY(); if (state.failed) return;
@@ -1736,7 +1736,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 46:
 				DebugEnterAlt(46);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:159:10: RCURLY
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:159:10: RCURLY
 				{
 				DebugLocation(159, 10);
 				mRCURLY(); if (state.failed) return;
@@ -1750,7 +1750,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 47:
 				DebugEnterAlt(47);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:160:10: AT
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:160:10: AT
 				{
 				DebugLocation(160, 10);
 				mAT(); if (state.failed) return;
@@ -1764,7 +1764,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 48:
 				DebugEnterAlt(48);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:161:10: QUESTION
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:161:10: QUESTION
 				{
 				DebugLocation(161, 10);
 				mQUESTION(); if (state.failed) return;
@@ -1778,7 +1778,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 49:
 				DebugEnterAlt(49);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:162:10: EXCLAMATION
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:162:10: EXCLAMATION
 				{
 				DebugLocation(162, 10);
 				mEXCLAMATION(); if (state.failed) return;
@@ -1792,7 +1792,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 50:
 				DebugEnterAlt(50);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:163:10: UNKNOWN
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:163:10: UNKNOWN
 				{
 				DebugLocation(163, 10);
 				mUNKNOWN(); if (state.failed) return;
@@ -1828,7 +1828,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("COMMAND_MODE", 3);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:166:23: ( LINECOMMENT1 | LINECOMMENT2 | LINECOMMENT3 | BLOCKCOMMENT | ELLIPSIS | SPACES | EOL | COMMA | SEMICOLON | STRINGBLOCK | DEFAULTBLOCK1 | DEFAULTBLOCK2 | DEFAULTBLOCK3 | DEFAULTBLOCK4 )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:166:23: ( LINECOMMENT1 | LINECOMMENT2 | LINECOMMENT3 | BLOCKCOMMENT | ELLIPSIS | SPACES | EOL | COMMA | SEMICOLON | STRINGBLOCK | DEFAULTBLOCK1 | DEFAULTBLOCK2 | DEFAULTBLOCK3 | DEFAULTBLOCK4 )
 			int alt3=14;
 			try { DebugEnterDecision(3, false);
 			try
@@ -1845,7 +1845,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:166:25: LINECOMMENT1
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:166:25: LINECOMMENT1
 				{
 				DebugLocation(166, 25);
 				mLINECOMMENT1(); if (state.failed) return;
@@ -1859,7 +1859,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 2:
 				DebugEnterAlt(2);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:167:25: LINECOMMENT2
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:167:25: LINECOMMENT2
 				{
 				DebugLocation(167, 25);
 				mLINECOMMENT2(); if (state.failed) return;
@@ -1873,7 +1873,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 3:
 				DebugEnterAlt(3);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:168:10: LINECOMMENT3
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:168:10: LINECOMMENT3
 				{
 				DebugLocation(168, 10);
 				mLINECOMMENT3(); if (state.failed) return;
@@ -1887,7 +1887,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 4:
 				DebugEnterAlt(4);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:169:10: BLOCKCOMMENT
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:169:10: BLOCKCOMMENT
 				{
 				DebugLocation(169, 10);
 				mBLOCKCOMMENT(); if (state.failed) return;
@@ -1901,7 +1901,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 5:
 				DebugEnterAlt(5);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:170:10: ELLIPSIS
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:170:10: ELLIPSIS
 				{
 				DebugLocation(170, 10);
 				mELLIPSIS(); if (state.failed) return;
@@ -1915,7 +1915,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 6:
 				DebugEnterAlt(6);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:171:10: SPACES
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:171:10: SPACES
 				{
 				DebugLocation(171, 10);
 				mSPACES(); if (state.failed) return;
@@ -1929,7 +1929,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 7:
 				DebugEnterAlt(7);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:172:10: EOL
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:172:10: EOL
 				{
 				DebugLocation(172, 10);
 				mEOL(); if (state.failed) return;
@@ -1943,7 +1943,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 8:
 				DebugEnterAlt(8);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:173:10: COMMA
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:173:10: COMMA
 				{
 				DebugLocation(173, 10);
 				mCOMMA(); if (state.failed) return;
@@ -1957,7 +1957,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 9:
 				DebugEnterAlt(9);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:174:10: SEMICOLON
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:174:10: SEMICOLON
 				{
 				DebugLocation(174, 10);
 				mSEMICOLON(); if (state.failed) return;
@@ -1971,7 +1971,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 10:
 				DebugEnterAlt(10);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:175:10: STRINGBLOCK
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:175:10: STRINGBLOCK
 				{
 				DebugLocation(175, 10);
 				mSTRINGBLOCK(); if (state.failed) return;
@@ -1985,7 +1985,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 11:
 				DebugEnterAlt(11);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:176:10: DEFAULTBLOCK1
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:176:10: DEFAULTBLOCK1
 				{
 				DebugLocation(176, 10);
 				mDEFAULTBLOCK1(); if (state.failed) return;
@@ -1999,7 +1999,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 12:
 				DebugEnterAlt(12);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:177:10: DEFAULTBLOCK2
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:177:10: DEFAULTBLOCK2
 				{
 				DebugLocation(177, 10);
 				mDEFAULTBLOCK2(); if (state.failed) return;
@@ -2013,7 +2013,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 13:
 				DebugEnterAlt(13);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:178:10: DEFAULTBLOCK3
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:178:10: DEFAULTBLOCK3
 				{
 				DebugLocation(178, 10);
 				mDEFAULTBLOCK3(); if (state.failed) return;
@@ -2027,7 +2027,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 14:
 				DebugEnterAlt(14);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:179:10: DEFAULTBLOCK4
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:179:10: DEFAULTBLOCK4
 				{
 				DebugLocation(179, 10);
 				mDEFAULTBLOCK4(); if (state.failed) return;
@@ -2063,7 +2063,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("BANG_MODE", 4);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:182:20: ( EOL | LINE )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:182:20: ( EOL | LINE )
 			int alt4=2;
 			try { DebugEnterDecision(4, false);
 			int LA4_1 = input.LA(1);
@@ -2088,7 +2088,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:182:22: EOL
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:182:22: EOL
 				{
 				DebugLocation(182, 22);
 				mEOL(); if (state.failed) return;
@@ -2102,7 +2102,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 2:
 				DebugEnterAlt(2);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:183:10: LINE
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:183:10: LINE
 				{
 				DebugLocation(183, 10);
 				mLINE(); if (state.failed) return;
@@ -2138,9 +2138,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("LETTER", 5);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:188:17: ( 'a' .. 'z' | 'A' .. 'Z' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:188:17: ( 'a' .. 'z' | 'A' .. 'Z' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 			{
 			DebugLocation(188, 17);
 			if ((input.LA(1)>='A' && input.LA(1)<='Z')||(input.LA(1)>='a' && input.LA(1)<='z'))
@@ -2182,9 +2182,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("DIGIT", 6);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:190:16: ( '0' .. '9' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:190:16: ( '0' .. '9' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 			{
 			DebugLocation(190, 16);
 			if ((input.LA(1)>='0' && input.LA(1)<='9'))
@@ -2226,9 +2226,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("EXP", 7);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:192:14: ( 'e' | 'E' | 'd' | 'D' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:192:14: ( 'e' | 'E' | 'd' | 'D' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 			{
 			DebugLocation(192, 14);
 			if ((input.LA(1)>='D' && input.LA(1)<='E')||(input.LA(1)>='d' && input.LA(1)<='e'))
@@ -2270,9 +2270,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("IMG", 8);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:194:14: ( 'i' | 'j' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:194:14: ( 'i' | 'j' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 			{
 			DebugLocation(194, 14);
 			if ((input.LA(1)>='i' && input.LA(1)<='j'))
@@ -2314,9 +2314,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("SIGN", 9);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:196:15: ( '+' | '-' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:196:15: ( '+' | '-' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 			{
 			DebugLocation(196, 15);
 			if (input.LA(1)=='+'||input.LA(1)=='-')
@@ -2358,9 +2358,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("POINT", 10);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:198:16: ( '.' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:198:16: ( '.' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:198:18: '.'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:198:18: '.'
 			{
 			DebugLocation(198, 18);
 			Match('.'); if (state.failed) return;
@@ -2389,9 +2389,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("WS", 11);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:200:13: ( ' ' | '\\t' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:200:13: ( ' ' | '\\t' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 			{
 			DebugLocation(200, 13);
 			if (input.LA(1)=='\t'||input.LA(1)==' ')
@@ -2433,12 +2433,12 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("NUMBER", 12);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:17: ( ( ( DIGIT )+ ( '.' ( DIGIT )* )? | '.' ( DIGIT )+ ) ( EXP ( SIGN )? ( DIGIT )+ )? )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:17: ( ( ( DIGIT )+ ( '.' ( DIGIT )* )? | '.' ( DIGIT )+ ) ( EXP ( SIGN )? ( DIGIT )+ )? )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:19: ( ( DIGIT )+ ( '.' ( DIGIT )* )? | '.' ( DIGIT )+ ) ( EXP ( SIGN )? ( DIGIT )+ )?
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:19: ( ( DIGIT )+ ( '.' ( DIGIT )* )? | '.' ( DIGIT )+ ) ( EXP ( SIGN )? ( DIGIT )+ )?
 			{
 			DebugLocation(202, 19);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:19: ( ( DIGIT )+ ( '.' ( DIGIT )* )? | '.' ( DIGIT )+ )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:19: ( ( DIGIT )+ ( '.' ( DIGIT )* )? | '.' ( DIGIT )+ )
 			int alt9=2;
 			try { DebugEnterSubRule(9);
 			try { DebugEnterDecision(9, false);
@@ -2464,10 +2464,10 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:20: ( DIGIT )+ ( '.' ( DIGIT )* )?
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:20: ( DIGIT )+ ( '.' ( DIGIT )* )?
 				{
 				DebugLocation(202, 20);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:20: ( DIGIT )+
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:20: ( DIGIT )+
 				int cnt5=0;
 				try { DebugEnterSubRule(5);
 				while (true)
@@ -2487,7 +2487,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 					{
 					case 1:
 						DebugEnterAlt(1);
-						// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+						// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 						{
 						DebugLocation(202, 20);
 						input.Consume();
@@ -2513,7 +2513,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				} finally { DebugExitSubRule(5); }
 
 				DebugLocation(202, 29);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:29: ( '.' ( DIGIT )* )?
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:29: ( '.' ( DIGIT )* )?
 				int alt7=2;
 				try { DebugEnterSubRule(7);
 				try { DebugEnterDecision(7, false);
@@ -2528,12 +2528,12 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:30: '.' ( DIGIT )*
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:30: '.' ( DIGIT )*
 					{
 					DebugLocation(202, 30);
 					Match('.'); if (state.failed) return;
 					DebugLocation(202, 34);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:34: ( DIGIT )*
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:34: ( DIGIT )*
 					try { DebugEnterSubRule(6);
 					while (true)
 					{
@@ -2552,7 +2552,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 						{
 						case 1:
 							DebugEnterAlt(1);
-							// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+							// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 							{
 							DebugLocation(202, 34);
 							input.Consume();
@@ -2583,12 +2583,12 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 2:
 				DebugEnterAlt(2);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:47: '.' ( DIGIT )+
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:47: '.' ( DIGIT )+
 				{
 				DebugLocation(202, 47);
 				Match('.'); if (state.failed) return;
 				DebugLocation(202, 51);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:51: ( DIGIT )+
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:51: ( DIGIT )+
 				int cnt8=0;
 				try { DebugEnterSubRule(8);
 				while (true)
@@ -2608,7 +2608,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 					{
 					case 1:
 						DebugEnterAlt(1);
-						// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+						// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 						{
 						DebugLocation(202, 51);
 						input.Consume();
@@ -2641,7 +2641,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			} finally { DebugExitSubRule(9); }
 
 			DebugLocation(202, 61);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:61: ( EXP ( SIGN )? ( DIGIT )+ )?
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:61: ( EXP ( SIGN )? ( DIGIT )+ )?
 			int alt12=2;
 			try { DebugEnterSubRule(12);
 			try { DebugEnterDecision(12, false);
@@ -2656,12 +2656,12 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:62: EXP ( SIGN )? ( DIGIT )+
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:62: EXP ( SIGN )? ( DIGIT )+
 				{
 				DebugLocation(202, 62);
 				mEXP(); if (state.failed) return;
 				DebugLocation(202, 66);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:66: ( SIGN )?
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:66: ( SIGN )?
 				int alt10=2;
 				try { DebugEnterSubRule(10);
 				try { DebugEnterDecision(10, false);
@@ -2676,7 +2676,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 					{
 					DebugLocation(202, 66);
 					input.Consume();
@@ -2689,7 +2689,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				} finally { DebugExitSubRule(10); }
 
 				DebugLocation(202, 74);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:74: ( DIGIT )+
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:202:74: ( DIGIT )+
 				int cnt11=0;
 				try { DebugEnterSubRule(11);
 				while (true)
@@ -2709,7 +2709,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 					{
 					case 1:
 						DebugEnterAlt(1);
-						// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+						// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 						{
 						DebugLocation(202, 74);
 						input.Consume();
@@ -2766,9 +2766,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("LINECOMMENT1", 13);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:208:23: ({...}? => '%' (~ ( '\\r' | '\\n' ) )* )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:208:23: ({...}? => '%' (~ ( '\\r' | '\\n' ) )* )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:208:25: {...}? => '%' (~ ( '\\r' | '\\n' ) )*
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:208:25: {...}? => '%' (~ ( '\\r' | '\\n' ) )*
 			{
 			DebugLocation(208, 25);
 			if (!((!Spaces_SpacesPrecedeInLine())))
@@ -2779,7 +2779,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			DebugLocation(208, 60);
 			Match('%'); if (state.failed) return;
 			DebugLocation(208, 64);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:208:64: (~ ( '\\r' | '\\n' ) )*
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:208:64: (~ ( '\\r' | '\\n' ) )*
 			try { DebugEnterSubRule(13);
 			while (true)
 			{
@@ -2798,7 +2798,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 					{
 					DebugLocation(208, 64);
 					input.Consume();
@@ -2842,9 +2842,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("LINECOMMENT2", 14);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:210:23: ({...}? => '%' '{' ( WS )* ~ ( ' ' | '\\t' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:210:23: ({...}? => '%' '{' ( WS )* ~ ( ' ' | '\\t' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:210:25: {...}? => '%' '{' ( WS )* ~ ( ' ' | '\\t' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )*
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:210:25: {...}? => '%' '{' ( WS )* ~ ( ' ' | '\\t' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )*
 			{
 			DebugLocation(210, 25);
 			if (!((Spaces_SpacesPrecedeInLine())))
@@ -2857,7 +2857,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			DebugLocation(210, 63);
 			Match('{'); if (state.failed) return;
 			DebugLocation(210, 67);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:210:67: ( WS )*
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:210:67: ( WS )*
 			try { DebugEnterSubRule(14);
 			while (true)
 			{
@@ -2876,7 +2876,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 					{
 					DebugLocation(210, 67);
 					input.Consume();
@@ -2911,7 +2911,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			}
 
 			DebugLocation(210, 101);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:210:101: (~ ( '\\r' | '\\n' ) )*
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:210:101: (~ ( '\\r' | '\\n' ) )*
 			try { DebugEnterSubRule(15);
 			while (true)
 			{
@@ -2930,7 +2930,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 					{
 					DebugLocation(210, 101);
 					input.Consume();
@@ -2974,9 +2974,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("LINECOMMENT3", 15);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:212:23: ({...}? => '%' (~ ( '{' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* )? )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:212:23: ({...}? => '%' (~ ( '{' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* )? )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:212:25: {...}? => '%' (~ ( '{' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* )?
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:212:25: {...}? => '%' (~ ( '{' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* )?
 			{
 			DebugLocation(212, 25);
 			if (!((Spaces_SpacesPrecedeInLine())))
@@ -2987,7 +2987,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			DebugLocation(212, 59);
 			Match('%'); if (state.failed) return;
 			DebugLocation(212, 63);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:212:63: (~ ( '{' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* )?
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:212:63: (~ ( '{' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* )?
 			int alt17=2;
 			try { DebugEnterSubRule(17);
 			try { DebugEnterDecision(17, false);
@@ -3002,13 +3002,13 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:212:64: ~ ( '{' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )*
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:212:64: ~ ( '{' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )*
 				{
 				DebugLocation(212, 64);
 				input.Consume();
 				state.failed=false;
 				DebugLocation(212, 85);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:212:85: (~ ( '\\r' | '\\n' ) )*
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:212:85: (~ ( '\\r' | '\\n' ) )*
 				try { DebugEnterSubRule(16);
 				while (true)
 				{
@@ -3027,7 +3027,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 					{
 					case 1:
 						DebugEnterAlt(1);
-						// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+						// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 						{
 						DebugLocation(212, 85);
 						input.Consume();
@@ -3078,9 +3078,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("BLOCKCOMMENT", 16);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:214:23: ({...}? => '%' '{' ( WS )* EOL ( ( WS )* BLOCKCOMMENT | ( WS )* EOL | ( WS )* ~ ( '%' | ' ' | '\\t' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* EOL | ( WS )* '%' EOL | ( WS )* '%' ~ ( '{' | '}' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* EOL | ( WS )* '%' ( '{' | '}' ) ( WS )* ~ ( ' ' | '\\t' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* EOL )* ( WS )* '%' '}' ( WS )* EOL )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:214:23: ({...}? => '%' '{' ( WS )* EOL ( ( WS )* BLOCKCOMMENT | ( WS )* EOL | ( WS )* ~ ( '%' | ' ' | '\\t' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* EOL | ( WS )* '%' EOL | ( WS )* '%' ~ ( '{' | '}' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* EOL | ( WS )* '%' ( '{' | '}' ) ( WS )* ~ ( ' ' | '\\t' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* EOL )* ( WS )* '%' '}' ( WS )* EOL )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:214:25: {...}? => '%' '{' ( WS )* EOL ( ( WS )* BLOCKCOMMENT | ( WS )* EOL | ( WS )* ~ ( '%' | ' ' | '\\t' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* EOL | ( WS )* '%' EOL | ( WS )* '%' ~ ( '{' | '}' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* EOL | ( WS )* '%' ( '{' | '}' ) ( WS )* ~ ( ' ' | '\\t' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* EOL )* ( WS )* '%' '}' ( WS )* EOL
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:214:25: {...}? => '%' '{' ( WS )* EOL ( ( WS )* BLOCKCOMMENT | ( WS )* EOL | ( WS )* ~ ( '%' | ' ' | '\\t' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* EOL | ( WS )* '%' EOL | ( WS )* '%' ~ ( '{' | '}' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* EOL | ( WS )* '%' ( '{' | '}' ) ( WS )* ~ ( ' ' | '\\t' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* EOL )* ( WS )* '%' '}' ( WS )* EOL
 			{
 			DebugLocation(214, 25);
 			if (!((Spaces_SpacesPrecedeInLine())))
@@ -3093,7 +3093,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			DebugLocation(215, 29);
 			Match('{'); if (state.failed) return;
 			DebugLocation(215, 33);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:215:33: ( WS )*
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:215:33: ( WS )*
 			try { DebugEnterSubRule(18);
 			while (true)
 			{
@@ -3112,7 +3112,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 					{
 					DebugLocation(215, 33);
 					input.Consume();
@@ -3134,7 +3134,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			DebugLocation(215, 39);
 			mEOL(); if (state.failed) return;
 			DebugLocation(216, 25);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:216:25: ( ( WS )* BLOCKCOMMENT | ( WS )* EOL | ( WS )* ~ ( '%' | ' ' | '\\t' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* EOL | ( WS )* '%' EOL | ( WS )* '%' ~ ( '{' | '}' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* EOL | ( WS )* '%' ( '{' | '}' ) ( WS )* ~ ( ' ' | '\\t' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* EOL )*
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:216:25: ( ( WS )* BLOCKCOMMENT | ( WS )* EOL | ( WS )* ~ ( '%' | ' ' | '\\t' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* EOL | ( WS )* '%' EOL | ( WS )* '%' ~ ( '{' | '}' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* EOL | ( WS )* '%' ( '{' | '}' ) ( WS )* ~ ( ' ' | '\\t' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* EOL )*
 			try { DebugEnterSubRule(29);
 			while (true)
 			{
@@ -3154,10 +3154,10 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:216:30: ( WS )* BLOCKCOMMENT
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:216:30: ( WS )* BLOCKCOMMENT
 					{
 					DebugLocation(216, 30);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:216:30: ( WS )*
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:216:30: ( WS )*
 					try { DebugEnterSubRule(19);
 					while (true)
 					{
@@ -3176,7 +3176,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 						{
 						case 1:
 							DebugEnterAlt(1);
-							// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+							// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 							{
 							DebugLocation(216, 30);
 							input.Consume();
@@ -3202,10 +3202,10 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 					break;
 				case 2:
 					DebugEnterAlt(2);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:217:19: ( WS )* EOL
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:217:19: ( WS )* EOL
 					{
 					DebugLocation(217, 19);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:217:19: ( WS )*
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:217:19: ( WS )*
 					try { DebugEnterSubRule(20);
 					while (true)
 					{
@@ -3224,7 +3224,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 						{
 						case 1:
 							DebugEnterAlt(1);
-							// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+							// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 							{
 							DebugLocation(217, 19);
 							input.Consume();
@@ -3250,10 +3250,10 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 					break;
 				case 3:
 					DebugEnterAlt(3);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:218:19: ( WS )* ~ ( '%' | ' ' | '\\t' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* EOL
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:218:19: ( WS )* ~ ( '%' | ' ' | '\\t' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* EOL
 					{
 					DebugLocation(218, 19);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:218:19: ( WS )*
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:218:19: ( WS )*
 					try { DebugEnterSubRule(21);
 					while (true)
 					{
@@ -3272,7 +3272,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 						{
 						case 1:
 							DebugEnterAlt(1);
-							// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+							// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 							{
 							DebugLocation(218, 19);
 							input.Consume();
@@ -3295,7 +3295,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 					input.Consume();
 					state.failed=false;
 					DebugLocation(218, 59);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:218:59: (~ ( '\\r' | '\\n' ) )*
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:218:59: (~ ( '\\r' | '\\n' ) )*
 					try { DebugEnterSubRule(22);
 					while (true)
 					{
@@ -3314,7 +3314,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 						{
 						case 1:
 							DebugEnterAlt(1);
-							// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+							// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 							{
 							DebugLocation(218, 59);
 							input.Consume();
@@ -3340,10 +3340,10 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 					break;
 				case 4:
 					DebugEnterAlt(4);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:219:19: ( WS )* '%' EOL
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:219:19: ( WS )* '%' EOL
 					{
 					DebugLocation(219, 19);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:219:19: ( WS )*
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:219:19: ( WS )*
 					try { DebugEnterSubRule(23);
 					while (true)
 					{
@@ -3362,7 +3362,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 						{
 						case 1:
 							DebugEnterAlt(1);
-							// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+							// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 							{
 							DebugLocation(219, 19);
 							input.Consume();
@@ -3390,10 +3390,10 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 					break;
 				case 5:
 					DebugEnterAlt(5);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:220:19: ( WS )* '%' ~ ( '{' | '}' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* EOL
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:220:19: ( WS )* '%' ~ ( '{' | '}' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* EOL
 					{
 					DebugLocation(220, 19);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:220:19: ( WS )*
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:220:19: ( WS )*
 					try { DebugEnterSubRule(24);
 					while (true)
 					{
@@ -3412,7 +3412,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 						{
 						case 1:
 							DebugEnterAlt(1);
-							// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+							// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 							{
 							DebugLocation(220, 19);
 							input.Consume();
@@ -3437,7 +3437,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 					input.Consume();
 					state.failed=false;
 					DebugLocation(220, 56);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:220:56: (~ ( '\\r' | '\\n' ) )*
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:220:56: (~ ( '\\r' | '\\n' ) )*
 					try { DebugEnterSubRule(25);
 					while (true)
 					{
@@ -3456,7 +3456,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 						{
 						case 1:
 							DebugEnterAlt(1);
-							// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+							// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 							{
 							DebugLocation(220, 56);
 							input.Consume();
@@ -3482,10 +3482,10 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 					break;
 				case 6:
 					DebugEnterAlt(6);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:221:19: ( WS )* '%' ( '{' | '}' ) ( WS )* ~ ( ' ' | '\\t' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* EOL
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:221:19: ( WS )* '%' ( '{' | '}' ) ( WS )* ~ ( ' ' | '\\t' | '\\r' | '\\n' ) (~ ( '\\r' | '\\n' ) )* EOL
 					{
 					DebugLocation(221, 19);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:221:19: ( WS )*
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:221:19: ( WS )*
 					try { DebugEnterSubRule(26);
 					while (true)
 					{
@@ -3504,7 +3504,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 						{
 						case 1:
 							DebugEnterAlt(1);
-							// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+							// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 							{
 							DebugLocation(221, 19);
 							input.Consume();
@@ -3529,7 +3529,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 					input.Consume();
 					state.failed=false;
 					DebugLocation(221, 41);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:221:41: ( WS )*
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:221:41: ( WS )*
 					try { DebugEnterSubRule(27);
 					while (true)
 					{
@@ -3548,7 +3548,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 						{
 						case 1:
 							DebugEnterAlt(1);
-							// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+							// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 							{
 							DebugLocation(221, 41);
 							input.Consume();
@@ -3571,7 +3571,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 					input.Consume();
 					state.failed=false;
 					DebugLocation(221, 75);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:221:75: (~ ( '\\r' | '\\n' ) )*
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:221:75: (~ ( '\\r' | '\\n' ) )*
 					try { DebugEnterSubRule(28);
 					while (true)
 					{
@@ -3590,7 +3590,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 						{
 						case 1:
 							DebugEnterAlt(1);
-							// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+							// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 							{
 							DebugLocation(221, 75);
 							input.Consume();
@@ -3626,7 +3626,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			} finally { DebugExitSubRule(29); }
 
 			DebugLocation(223, 25);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:223:25: ( WS )*
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:223:25: ( WS )*
 			try { DebugEnterSubRule(30);
 			while (true)
 			{
@@ -3645,7 +3645,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 					{
 					DebugLocation(223, 25);
 					input.Consume();
@@ -3669,7 +3669,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			DebugLocation(223, 35);
 			Match('}'); if (state.failed) return;
 			DebugLocation(223, 39);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:223:39: ( WS )*
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:223:39: ( WS )*
 			try { DebugEnterSubRule(31);
 			while (true)
 			{
@@ -3688,7 +3688,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 					{
 					DebugLocation(223, 39);
 					input.Consume();
@@ -3734,9 +3734,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("ELLIPSIS", 17);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:227:19: ({...}? => '...' (~ ( '\\r' | '\\n' ) )* EOL )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:227:19: ({...}? => '...' (~ ( '\\r' | '\\n' ) )* EOL )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:227:21: {...}? => '...' (~ ( '\\r' | '\\n' ) )* EOL
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:227:21: {...}? => '...' (~ ( '\\r' | '\\n' ) )* EOL
 			{
 			DebugLocation(227, 21);
 			if (!((Text_ThreeDotsFollow())))
@@ -3748,7 +3748,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			Match("..."); if (state.failed) return;
 
 			DebugLocation(227, 55);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:227:55: (~ ( '\\r' | '\\n' ) )*
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:227:55: (~ ( '\\r' | '\\n' ) )*
 			try { DebugEnterSubRule(32);
 			while (true)
 			{
@@ -3767,7 +3767,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 					{
 					DebugLocation(227, 55);
 					input.Consume();
@@ -3813,12 +3813,12 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("SPACES", 18);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:229:17: ( ( WS )+ )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:229:17: ( ( WS )+ )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:229:19: ( WS )+
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:229:19: ( WS )+
 			{
 			DebugLocation(229, 19);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:229:19: ( WS )+
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:229:19: ( WS )+
 			int cnt33=0;
 			try { DebugEnterSubRule(33);
 			while (true)
@@ -3838,7 +3838,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 					{
 					DebugLocation(229, 19);
 					input.Consume();
@@ -3888,7 +3888,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("EOL", 19);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:231:14: ( '\\r\\n' | '\\r' | '\\n' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:231:14: ( '\\r\\n' | '\\r' | '\\n' )
 			int alt34=3;
 			try { DebugEnterDecision(34, false);
 			int LA34_1 = input.LA(1);
@@ -3922,7 +3922,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:231:16: '\\r\\n'
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:231:16: '\\r\\n'
 				{
 				DebugLocation(231, 16);
 				Match("\r\n"); if (state.failed) return;
@@ -3932,7 +3932,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 2:
 				DebugEnterAlt(2);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:231:25: '\\r'
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:231:25: '\\r'
 				{
 				DebugLocation(231, 25);
 				Match('\r'); if (state.failed) return;
@@ -3941,7 +3941,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				break;
 			case 3:
 				DebugEnterAlt(3);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:231:32: '\\n'
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:231:32: '\\n'
 				{
 				DebugLocation(231, 32);
 				Match('\n'); if (state.failed) return;
@@ -3972,9 +3972,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("STRING", 20);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:235:17: ({...}? => '\\'' ( '\\'\\'' |~ ( '\\'' | '\\r' | '\\n' ) )* '\\'' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:235:17: ({...}? => '\\'' ( '\\'\\'' |~ ( '\\'' | '\\r' | '\\n' ) )* '\\'' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:235:19: {...}? => '\\'' ( '\\'\\'' |~ ( '\\'' | '\\r' | '\\n' ) )* '\\''
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:235:19: {...}? => '\\'' ( '\\'\\'' |~ ( '\\'' | '\\r' | '\\n' ) )* '\\''
 			{
 			DebugLocation(235, 19);
 			if (!((!Quotation_TransposeIsEnabled())))
@@ -3985,7 +3985,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			DebugLocation(235, 56);
 			Match('\''); if (state.failed) return;
 			DebugLocation(235, 61);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:235:61: ( '\\'\\'' |~ ( '\\'' | '\\r' | '\\n' ) )*
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:235:61: ( '\\'\\'' |~ ( '\\'' | '\\r' | '\\n' ) )*
 			try { DebugEnterSubRule(35);
 			while (true)
 			{
@@ -4015,7 +4015,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:235:62: '\\'\\''
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:235:62: '\\'\\''
 					{
 					DebugLocation(235, 62);
 					Match("''"); if (state.failed) return;
@@ -4025,7 +4025,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 					break;
 				case 2:
 					DebugEnterAlt(2);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:235:71: ~ ( '\\'' | '\\r' | '\\n' )
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:235:71: ~ ( '\\'' | '\\r' | '\\n' )
 					{
 					DebugLocation(235, 71);
 					input.Consume();
@@ -4071,9 +4071,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("QUOTATION", 21);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:237:20: ({...}? => '\\'' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:237:20: ({...}? => '\\'' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:237:22: {...}? => '\\''
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:237:22: {...}? => '\\''
 			{
 			DebugLocation(237, 22);
 			if (!((!Quotation_TransposeIsEnabled())))
@@ -4108,9 +4108,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("CTRANS", 22);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:239:17: ({...}? => '\\'' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:239:17: ({...}? => '\\'' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:239:19: {...}? => '\\''
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:239:19: {...}? => '\\''
 			{
 			DebugLocation(239, 19);
 			if (!((Quotation_TransposeIsEnabled())))
@@ -4145,9 +4145,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("REAL", 23);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:243:15: ( NUMBER )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:243:15: ( NUMBER )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:243:17: NUMBER
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:243:17: NUMBER
 			{
 			DebugLocation(243, 17);
 			mNUMBER(); if (state.failed) return;
@@ -4176,9 +4176,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("IMAGINARY", 24);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:245:20: ( NUMBER IMG )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:245:20: ( NUMBER IMG )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:245:22: NUMBER IMG
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:245:22: NUMBER IMG
 			{
 			DebugLocation(245, 22);
 			mNUMBER(); if (state.failed) return;
@@ -4209,14 +4209,14 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("ID", 25);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:247:13: ( LETTER ( '_' | LETTER | DIGIT )* )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:247:13: ( LETTER ( '_' | LETTER | DIGIT )* )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:247:15: LETTER ( '_' | LETTER | DIGIT )*
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:247:15: LETTER ( '_' | LETTER | DIGIT )*
 			{
 			DebugLocation(247, 15);
 			mLETTER(); if (state.failed) return;
 			DebugLocation(247, 22);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:247:22: ( '_' | LETTER | DIGIT )*
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:247:22: ( '_' | LETTER | DIGIT )*
 			try { DebugEnterSubRule(36);
 			while (true)
 			{
@@ -4235,7 +4235,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 					{
 					DebugLocation(247, 22);
 					input.Consume();
@@ -4279,9 +4279,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("PLUS", 26);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:251:15: ( '+' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:251:15: ( '+' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:251:17: '+'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:251:17: '+'
 			{
 			DebugLocation(251, 17);
 			Match('+'); if (state.failed) return;
@@ -4310,9 +4310,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("MINUS", 27);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:253:16: ( '-' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:253:16: ( '-' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:253:18: '-'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:253:18: '-'
 			{
 			DebugLocation(253, 18);
 			Match('-'); if (state.failed) return;
@@ -4341,9 +4341,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("MTIMES", 28);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:255:17: ( '*' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:255:17: ( '*' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:255:19: '*'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:255:19: '*'
 			{
 			DebugLocation(255, 19);
 			Match('*'); if (state.failed) return;
@@ -4372,9 +4372,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("TIMES", 29);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:257:16: ( '.*' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:257:16: ( '.*' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:257:18: '.*'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:257:18: '.*'
 			{
 			DebugLocation(257, 18);
 			Match(".*"); if (state.failed) return;
@@ -4404,9 +4404,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("MRDIV", 30);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:259:16: ( '/' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:259:16: ( '/' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:259:18: '/'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:259:18: '/'
 			{
 			DebugLocation(259, 18);
 			Match('/'); if (state.failed) return;
@@ -4435,9 +4435,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("RDIV", 31);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:261:15: ( './' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:261:15: ( './' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:261:17: './'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:261:17: './'
 			{
 			DebugLocation(261, 17);
 			Match("./"); if (state.failed) return;
@@ -4467,9 +4467,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("MLDIV", 32);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:263:16: ( '\\\\' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:263:16: ( '\\\\' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:263:18: '\\\\'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:263:18: '\\\\'
 			{
 			DebugLocation(263, 18);
 			Match('\\'); if (state.failed) return;
@@ -4498,9 +4498,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("LDIV", 33);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:265:15: ( '.\\\\' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:265:15: ( '.\\\\' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:265:17: '.\\\\'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:265:17: '.\\\\'
 			{
 			DebugLocation(265, 17);
 			Match(".\\"); if (state.failed) return;
@@ -4530,9 +4530,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("MPOW", 34);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:267:15: ( '^' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:267:15: ( '^' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:267:17: '^'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:267:17: '^'
 			{
 			DebugLocation(267, 17);
 			Match('^'); if (state.failed) return;
@@ -4561,9 +4561,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("POW", 35);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:269:14: ( '.^' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:269:14: ( '.^' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:269:16: '.^'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:269:16: '.^'
 			{
 			DebugLocation(269, 16);
 			Match(".^"); if (state.failed) return;
@@ -4593,9 +4593,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("TRANS", 36);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:271:16: ( '.\\'' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:271:16: ( '.\\'' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:271:18: '.\\''
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:271:18: '.\\''
 			{
 			DebugLocation(271, 18);
 			Match(".'"); if (state.failed) return;
@@ -4625,9 +4625,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("EQ", 37);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:275:13: ( '==' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:275:13: ( '==' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:275:15: '=='
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:275:15: '=='
 			{
 			DebugLocation(275, 15);
 			Match("=="); if (state.failed) return;
@@ -4657,9 +4657,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("NOTEQ", 38);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:277:16: ( '~=' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:277:16: ( '~=' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:277:18: '~='
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:277:18: '~='
 			{
 			DebugLocation(277, 18);
 			Match("~="); if (state.failed) return;
@@ -4689,9 +4689,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("LT", 39);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:279:13: ( '<' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:279:13: ( '<' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:279:15: '<'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:279:15: '<'
 			{
 			DebugLocation(279, 15);
 			Match('<'); if (state.failed) return;
@@ -4720,9 +4720,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("LTEQ", 40);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:281:15: ( '<=' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:281:15: ( '<=' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:281:17: '<='
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:281:17: '<='
 			{
 			DebugLocation(281, 17);
 			Match("<="); if (state.failed) return;
@@ -4752,9 +4752,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("GT", 41);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:283:13: ( '>' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:283:13: ( '>' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:283:15: '>'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:283:15: '>'
 			{
 			DebugLocation(283, 15);
 			Match('>'); if (state.failed) return;
@@ -4783,9 +4783,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("GTEQ", 42);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:285:15: ( '>=' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:285:15: ( '>=' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:285:17: '>='
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:285:17: '>='
 			{
 			DebugLocation(285, 17);
 			Match(">="); if (state.failed) return;
@@ -4815,9 +4815,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("NOT", 43);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:289:14: ( '~' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:289:14: ( '~' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:289:16: '~'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:289:16: '~'
 			{
 			DebugLocation(289, 16);
 			Match('~'); if (state.failed) return;
@@ -4846,9 +4846,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("AND", 44);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:291:14: ( '&' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:291:14: ( '&' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:291:16: '&'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:291:16: '&'
 			{
 			DebugLocation(291, 16);
 			Match('&'); if (state.failed) return;
@@ -4877,9 +4877,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("SHORTAND", 45);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:293:19: ( '&&' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:293:19: ( '&&' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:293:21: '&&'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:293:21: '&&'
 			{
 			DebugLocation(293, 21);
 			Match("&&"); if (state.failed) return;
@@ -4909,9 +4909,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("OR", 46);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:295:13: ( '|' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:295:13: ( '|' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:295:15: '|'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:295:15: '|'
 			{
 			DebugLocation(295, 15);
 			Match('|'); if (state.failed) return;
@@ -4940,9 +4940,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("SHORTOR", 47);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:297:18: ( '||' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:297:18: ( '||' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:297:20: '||'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:297:20: '||'
 			{
 			DebugLocation(297, 20);
 			Match("||"); if (state.failed) return;
@@ -4972,9 +4972,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("ASSIGN", 48);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:301:17: ( '=' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:301:17: ( '=' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:301:19: '='
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:301:19: '='
 			{
 			DebugLocation(301, 19);
 			Match('='); if (state.failed) return;
@@ -5003,9 +5003,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("COMMA", 49);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:303:16: ( ',' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:303:16: ( ',' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:303:18: ','
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:303:18: ','
 			{
 			DebugLocation(303, 18);
 			Match(','); if (state.failed) return;
@@ -5034,9 +5034,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("SEMICOLON", 50);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:305:20: ( ';' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:305:20: ( ';' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:305:22: ';'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:305:22: ';'
 			{
 			DebugLocation(305, 22);
 			Match(';'); if (state.failed) return;
@@ -5065,9 +5065,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("COLON", 51);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:307:16: ( ':' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:307:16: ( ':' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:307:18: ':'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:307:18: ':'
 			{
 			DebugLocation(307, 18);
 			Match(':'); if (state.failed) return;
@@ -5096,9 +5096,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("DOT", 52);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:309:14: ( '.' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:309:14: ( '.' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:309:16: '.'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:309:16: '.'
 			{
 			DebugLocation(309, 16);
 			Match('.'); if (state.failed) return;
@@ -5127,9 +5127,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("LPAREN", 53);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:311:17: ( '(' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:311:17: ( '(' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:311:19: '('
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:311:19: '('
 			{
 			DebugLocation(311, 19);
 			Match('('); if (state.failed) return;
@@ -5158,9 +5158,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("RPAREN", 54);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:313:17: ( ')' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:313:17: ( ')' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:313:19: ')'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:313:19: ')'
 			{
 			DebugLocation(313, 19);
 			Match(')'); if (state.failed) return;
@@ -5189,9 +5189,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("LSQUARE", 55);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:315:18: ( '[' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:315:18: ( '[' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:315:20: '['
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:315:20: '['
 			{
 			DebugLocation(315, 20);
 			Match('['); if (state.failed) return;
@@ -5220,9 +5220,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("RSQUARE", 56);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:317:18: ( ']' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:317:18: ( ']' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:317:20: ']'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:317:20: ']'
 			{
 			DebugLocation(317, 20);
 			Match(']'); if (state.failed) return;
@@ -5251,9 +5251,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("LCURLY", 57);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:319:17: ( '{' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:319:17: ( '{' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:319:19: '{'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:319:19: '{'
 			{
 			DebugLocation(319, 19);
 			Match('{'); if (state.failed) return;
@@ -5282,9 +5282,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("RCURLY", 58);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:321:17: ( '}' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:321:17: ( '}' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:321:19: '}'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:321:19: '}'
 			{
 			DebugLocation(321, 19);
 			Match('}'); if (state.failed) return;
@@ -5313,9 +5313,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("AT", 59);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:323:13: ( '@' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:323:13: ( '@' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:323:15: '@'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:323:15: '@'
 			{
 			DebugLocation(323, 15);
 			Match('@'); if (state.failed) return;
@@ -5344,9 +5344,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("QUESTION", 60);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:325:19: ( '?' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:325:19: ( '?' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:325:21: '?'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:325:21: '?'
 			{
 			DebugLocation(325, 21);
 			Match('?'); if (state.failed) return;
@@ -5375,9 +5375,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("EXCLAMATION", 61);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:327:22: ( '!' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:327:22: ( '!' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:327:24: '!'
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:327:24: '!'
 			{
 			DebugLocation(327, 24);
 			Match('!'); if (state.failed) return;
@@ -5406,9 +5406,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("UNKNOWN", 62);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:331:18: (~ ( '%' | '.' | ' ' | '\\t' | '\\r' | '\\n' | '0' .. '9' | '\\'' | 'a' .. 'z' | 'A' .. 'Z' | '+' | '-' | '*' | '\\\\' | '/' | '^' | '=' | '~' | '<' | '>' | '&' | '|' | ',' | ';' | ':' | '(' | '[' | '{' | ')' | ']' | '}' | '@' | '?' | '!' ) )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:331:18: (~ ( '%' | '.' | ' ' | '\\t' | '\\r' | '\\n' | '0' .. '9' | '\\'' | 'a' .. 'z' | 'A' .. 'Z' | '+' | '-' | '*' | '\\\\' | '/' | '^' | '=' | '~' | '<' | '>' | '&' | '|' | ',' | ';' | ':' | '(' | '[' | '{' | ')' | ']' | '}' | '@' | '?' | '!' ) )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 			{
 			DebugLocation(331, 18);
 			if ((input.LA(1)>='\u0000' && input.LA(1)<='\b')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\u001F')||(input.LA(1)>='\"' && input.LA(1)<='$')||(input.LA(1)>='_' && input.LA(1)<='`')||(input.LA(1)>='\u007F' && input.LA(1)<='\uFFFF'))
@@ -5450,14 +5450,14 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("STRINGBLOCK", 63);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:335:22: ( '\\'' ( '\\'\\'' |~ ( '\\'' | '\\r' | '\\n' ) )* '\\'' )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:335:22: ( '\\'' ( '\\'\\'' |~ ( '\\'' | '\\r' | '\\n' ) )* '\\'' )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:335:24: '\\'' ( '\\'\\'' |~ ( '\\'' | '\\r' | '\\n' ) )* '\\''
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:335:24: '\\'' ( '\\'\\'' |~ ( '\\'' | '\\r' | '\\n' ) )* '\\''
 			{
 			DebugLocation(335, 24);
 			Match('\''); if (state.failed) return;
 			DebugLocation(335, 29);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:335:29: ( '\\'\\'' |~ ( '\\'' | '\\r' | '\\n' ) )*
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:335:29: ( '\\'\\'' |~ ( '\\'' | '\\r' | '\\n' ) )*
 			try { DebugEnterSubRule(37);
 			while (true)
 			{
@@ -5487,7 +5487,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:335:30: '\\'\\''
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:335:30: '\\'\\''
 					{
 					DebugLocation(335, 30);
 					Match("''"); if (state.failed) return;
@@ -5497,7 +5497,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 					break;
 				case 2:
 					DebugEnterAlt(2);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:335:39: ~ ( '\\'' | '\\r' | '\\n' )
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:335:39: ~ ( '\\'' | '\\r' | '\\n' )
 					{
 					DebugLocation(335, 39);
 					input.Consume();
@@ -5543,9 +5543,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("DEFAULTBLOCK1", 64);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:337:24: ( ( '(' | '[' | '{' ) ( DEFAULTBLOCK1 | DEFAULTBLOCK3 |~ ( '(' | '[' | '{' | ')' | ']' | '}' | '.' | ';' | '\\r' | '\\n' ) )* ( ')' | ']' | '}' )? )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:337:24: ( ( '(' | '[' | '{' ) ( DEFAULTBLOCK1 | DEFAULTBLOCK3 |~ ( '(' | '[' | '{' | ')' | ']' | '}' | '.' | ';' | '\\r' | '\\n' ) )* ( ')' | ']' | '}' )? )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:337:26: ( '(' | '[' | '{' ) ( DEFAULTBLOCK1 | DEFAULTBLOCK3 |~ ( '(' | '[' | '{' | ')' | ']' | '}' | '.' | ';' | '\\r' | '\\n' ) )* ( ')' | ']' | '}' )?
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:337:26: ( '(' | '[' | '{' ) ( DEFAULTBLOCK1 | DEFAULTBLOCK3 |~ ( '(' | '[' | '{' | ')' | ']' | '}' | '.' | ';' | '\\r' | '\\n' ) )* ( ')' | ']' | '}' )?
 			{
 			DebugLocation(337, 26);
 			if (input.LA(1)=='('||input.LA(1)=='['||input.LA(1)=='{')
@@ -5563,7 +5563,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			}
 
 			DebugLocation(337, 44);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:337:44: ( DEFAULTBLOCK1 | DEFAULTBLOCK3 |~ ( '(' | '[' | '{' | ')' | ']' | '}' | '.' | ';' | '\\r' | '\\n' ) )*
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:337:44: ( DEFAULTBLOCK1 | DEFAULTBLOCK3 |~ ( '(' | '[' | '{' | ')' | ']' | '}' | '.' | ';' | '\\r' | '\\n' ) )*
 			try { DebugEnterSubRule(38);
 			while (true)
 			{
@@ -5590,7 +5590,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:337:45: DEFAULTBLOCK1
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:337:45: DEFAULTBLOCK1
 					{
 					DebugLocation(337, 45);
 					mDEFAULTBLOCK1(); if (state.failed) return;
@@ -5599,7 +5599,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 					break;
 				case 2:
 					DebugEnterAlt(2);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:337:61: DEFAULTBLOCK3
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:337:61: DEFAULTBLOCK3
 					{
 					DebugLocation(337, 61);
 					mDEFAULTBLOCK3(); if (state.failed) return;
@@ -5608,7 +5608,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 					break;
 				case 3:
 					DebugEnterAlt(3);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:337:77: ~ ( '(' | '[' | '{' | ')' | ']' | '}' | '.' | ';' | '\\r' | '\\n' )
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:337:77: ~ ( '(' | '[' | '{' | ')' | ']' | '}' | '.' | ';' | '\\r' | '\\n' )
 					{
 					DebugLocation(337, 77);
 					input.Consume();
@@ -5628,7 +5628,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			} finally { DebugExitSubRule(38); }
 
 			DebugLocation(337, 142);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:337:142: ( ')' | ']' | '}' )?
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:337:142: ( ')' | ']' | '}' )?
 			int alt39=2;
 			try { DebugEnterSubRule(39);
 			try { DebugEnterDecision(39, false);
@@ -5643,7 +5643,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 				{
 				DebugLocation(337, 142);
 				input.Consume();
@@ -5680,9 +5680,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("DEFAULTBLOCK2", 65);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:339:24: ( ( ')' | ']' | '}' ) ( DEFAULTBLOCK2 | DEFAULTBLOCK3 |~ ( '(' | '[' | '{' | ')' | ']' | '}' | '.' | ';' | '\\r' | '\\n' ) )* ( '(' | '[' | '{' )? )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:339:24: ( ( ')' | ']' | '}' ) ( DEFAULTBLOCK2 | DEFAULTBLOCK3 |~ ( '(' | '[' | '{' | ')' | ']' | '}' | '.' | ';' | '\\r' | '\\n' ) )* ( '(' | '[' | '{' )? )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:339:26: ( ')' | ']' | '}' ) ( DEFAULTBLOCK2 | DEFAULTBLOCK3 |~ ( '(' | '[' | '{' | ')' | ']' | '}' | '.' | ';' | '\\r' | '\\n' ) )* ( '(' | '[' | '{' )?
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:339:26: ( ')' | ']' | '}' ) ( DEFAULTBLOCK2 | DEFAULTBLOCK3 |~ ( '(' | '[' | '{' | ')' | ']' | '}' | '.' | ';' | '\\r' | '\\n' ) )* ( '(' | '[' | '{' )?
 			{
 			DebugLocation(339, 26);
 			if (input.LA(1)==')'||input.LA(1)==']'||input.LA(1)=='}')
@@ -5700,7 +5700,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			}
 
 			DebugLocation(339, 44);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:339:44: ( DEFAULTBLOCK2 | DEFAULTBLOCK3 |~ ( '(' | '[' | '{' | ')' | ']' | '}' | '.' | ';' | '\\r' | '\\n' ) )*
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:339:44: ( DEFAULTBLOCK2 | DEFAULTBLOCK3 |~ ( '(' | '[' | '{' | ')' | ']' | '}' | '.' | ';' | '\\r' | '\\n' ) )*
 			try { DebugEnterSubRule(40);
 			while (true)
 			{
@@ -5727,7 +5727,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:339:45: DEFAULTBLOCK2
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:339:45: DEFAULTBLOCK2
 					{
 					DebugLocation(339, 45);
 					mDEFAULTBLOCK2(); if (state.failed) return;
@@ -5736,7 +5736,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 					break;
 				case 2:
 					DebugEnterAlt(2);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:339:61: DEFAULTBLOCK3
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:339:61: DEFAULTBLOCK3
 					{
 					DebugLocation(339, 61);
 					mDEFAULTBLOCK3(); if (state.failed) return;
@@ -5745,7 +5745,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 					break;
 				case 3:
 					DebugEnterAlt(3);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:339:77: ~ ( '(' | '[' | '{' | ')' | ']' | '}' | '.' | ';' | '\\r' | '\\n' )
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:339:77: ~ ( '(' | '[' | '{' | ')' | ']' | '}' | '.' | ';' | '\\r' | '\\n' )
 					{
 					DebugLocation(339, 77);
 					input.Consume();
@@ -5765,7 +5765,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			} finally { DebugExitSubRule(40); }
 
 			DebugLocation(339, 142);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:339:142: ( '(' | '[' | '{' )?
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:339:142: ( '(' | '[' | '{' )?
 			int alt41=2;
 			try { DebugEnterSubRule(41);
 			try { DebugEnterDecision(41, false);
@@ -5780,7 +5780,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 				{
 				DebugLocation(339, 142);
 				input.Consume();
@@ -5817,9 +5817,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("DEFAULTBLOCK3", 66);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:341:24: ({...}? => '.' ( '.' )? )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:341:24: ({...}? => '.' ( '.' )? )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:341:26: {...}? => '.' ( '.' )?
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:341:26: {...}? => '.' ( '.' )?
 			{
 			DebugLocation(341, 26);
 			if (!((!Text_ThreeDotsFollow())))
@@ -5830,7 +5830,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			DebugLocation(341, 55);
 			Match('.'); if (state.failed) return;
 			DebugLocation(341, 59);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:341:59: ( '.' )?
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:341:59: ( '.' )?
 			int alt42=2;
 			try { DebugEnterSubRule(42);
 			try { DebugEnterDecision(42, false);
@@ -5845,7 +5845,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 			{
 			case 1:
 				DebugEnterAlt(1);
-				// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:341:60: '.'
+				// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:341:60: '.'
 				{
 				DebugLocation(341, 60);
 				Match('.'); if (state.failed) return;
@@ -5881,12 +5881,12 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("DEFAULTBLOCK4", 67);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:343:24: ( (~ ( '\\'' | '(' | '[' | '{' | ')' | ']' | '}' | '.' | '%' | ' ' | '\\t' | ',' | ';' | '\\r' | '\\n' ) )+ )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:343:24: ( (~ ( '\\'' | '(' | '[' | '{' | ')' | ']' | '}' | '.' | '%' | ' ' | '\\t' | ',' | ';' | '\\r' | '\\n' ) )+ )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:343:26: (~ ( '\\'' | '(' | '[' | '{' | ')' | ']' | '}' | '.' | '%' | ' ' | '\\t' | ',' | ';' | '\\r' | '\\n' ) )+
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:343:26: (~ ( '\\'' | '(' | '[' | '{' | ')' | ']' | '}' | '.' | '%' | ' ' | '\\t' | ',' | ';' | '\\r' | '\\n' ) )+
 			{
 			DebugLocation(343, 26);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:343:26: (~ ( '\\'' | '(' | '[' | '{' | ')' | ']' | '}' | '.' | '%' | ' ' | '\\t' | ',' | ';' | '\\r' | '\\n' ) )+
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:343:26: (~ ( '\\'' | '(' | '[' | '{' | ')' | ']' | '}' | '.' | '%' | ' ' | '\\t' | ',' | ';' | '\\r' | '\\n' ) )+
 			int cnt43=0;
 			try { DebugEnterSubRule(43);
 			while (true)
@@ -5906,7 +5906,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 					{
 					DebugLocation(343, 26);
 					input.Consume();
@@ -5956,12 +5956,12 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("LINE", 68);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:347:15: ( (~ ( '\\r' | '\\n' ) )+ )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:347:15: ( (~ ( '\\r' | '\\n' ) )+ )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:347:17: (~ ( '\\r' | '\\n' ) )+
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:347:17: (~ ( '\\r' | '\\n' ) )+
 			{
 			DebugLocation(347, 17);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:347:17: (~ ( '\\r' | '\\n' ) )+
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:347:17: (~ ( '\\r' | '\\n' ) )+
 			int cnt44=0;
 			try { DebugEnterSubRule(44);
 			while (true)
@@ -5981,7 +5981,7 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 				{
 				case 1:
 					DebugEnterAlt(1);
-					// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
+					// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:
 					{
 					DebugLocation(347, 17);
 					input.Consume();
@@ -6021,9 +6021,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 
 	public override void mTokens()
 	{
-		// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:1:8: ( START )
+		// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:1:8: ( START )
 		DebugEnterAlt(1);
-		// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:1:10: START
+		// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:1:10: START
 		{
 		DebugLocation(1, 10);
 		mSTART(); if (state.failed) return;
@@ -6044,9 +6044,9 @@ internal partial class MatlabLexer : Antlr.Runtime.Lexer
 		TraceIn("synpred1_MatlabLexer_fragment", 70);
 		try
 		{
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:121:10: ( STRING )
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:121:10: ( STRING )
 			DebugEnterAlt(1);
-			// d:\\!users\\samuel\\documents\\visual studio 2013\\Projects\\Matlab\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:121:11: STRING
+			// D:\\!USERS\\SAMUEL\\DESKTOP\\matlab-parser\\Matlab.Recognizer\\01 ANTLR\\MatlabLexer.g3:121:11: STRING
 			{
 			DebugLocation(121, 11);
 			mSTRING(); if (state.failed) return;

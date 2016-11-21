@@ -466,7 +466,7 @@ operator06 : LT -> LT
 		   | NOTEQ -> NOTEQ
 		   ;
 
-expression06 : (x1=expression05 -> $x1) (options {greedy=true;}: (options {greedy=true;}: COLON x2=expression05)+ -> ^(COLON (expression05)+))? ;
+expression06 : (x1=expression05 -> $x1) (options {greedy=true;}: ((COLON expression05 COLON expression05)=> COLON x2=expression05 COLON x3=expression05 -> ^(COLON $expression06 $x2 $x3)) | ((COLON expression05)=> COLON x4=expression05 -> ^(COLON $expression06 $x4)))* ;
 
 expression05 : (x1=expression04 -> $x1) (options {greedy=true;}: {!Balance_InCreationOrStore_SpacesOnLeftButNotOnRight()}?=> op=operator04 x2=expression04 -> ^($op $expression05 $x2))* ;
 
